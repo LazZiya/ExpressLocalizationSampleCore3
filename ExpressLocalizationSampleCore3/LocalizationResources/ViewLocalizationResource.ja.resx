@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
+    <value>2FAが無効になっています。あなたは2FAを再度有効にすることができたときに、セットアップオーセンティケータアプリを</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;If you reset your authenticator key your authenticator app will not work until you reconfigure it.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        This process disables 2FA until you verify your authenticator app.&#xA;        If you do not complete your authenticator app configuration you may lose access to your account.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;スパンクラス= "glyphicon glyphicon警告サイン"&gt; &lt;/ span&gt;を
+        あなたは、認証キーをリセットする場合は、あなたがそれを再設定するまでの&lt;strong&gt;あなたのオーセンティケータのアプリが動作しません。&lt;/ strong&gt;を
+    &lt;/ P&gt;
+    &lt;P&gt;
+        あなたはオーセンティケータのアプリを確認するまで、このプロセスは2FAを無効にします。
+        あなたはオーセンティケータのアプリの設定を完了していない場合は、あなたのアカウントへのアクセスを失う可能性があります。
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;Put these codes in a safe place.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        If you lose your device and don't have the recovery codes you will lose access to your account.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key&#xA;        used in an authenticator app you should &lt;a href=&quot;{0}&quot;&gt;reset your authenticator keys.&lt;/a&gt;&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;スパンクラス= "glyphicon glyphicon警告サイン"&gt; &lt;/ span&gt;を
+        &lt;strong&gt;を安全な場所にこれらのコードを入れてください。&lt;/ strong&gt;を
+    &lt;/ P&gt;
+    &lt;P&gt;
+        あなたのデバイスを失い、回復コードをお持ちでない場合は、あなたのアカウントにアクセスできなくなります。
+    &lt;/ P&gt;
+    &lt;P&gt;
+        新しい回復符号を生成することは、オーセンティケータのアプリで使用されるキーは変更されません。あなたは、キーを変更したいとき
+        オーセンティケータアプリで使用されるあなたはhref="{0}"&gt;があなたのオーセンティケータ鍵をリセット&lt;a必要があります。&lt;/a&gt;に
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        Swapping to the &lt;strong&gt;Development&lt;/strong&gt; environment displays detailed information about the error that occurred.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt; It can result in displaying sensitive information from exceptions to end users. For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt; and restarting the app.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;強い&gt;開発&lt;/ strong&gt;の環境が発生したエラーに関する詳細な情報を表示するに入れ替えます。
+    &lt;/ P&gt;
+    &lt;P&gt;
+        &lt;強い&gt;開発環境は、デプロイされたアプリケーションのために有効にするべきではありません。&lt;/ strong&gt;のそれはエンドユーザーに、例外から機密情報を表示するにつながることができます。ローカルデバッグでは、&lt;strong&gt;を開発&lt;/ strong&gt;のへの&lt;strong&gt; ASPNETCORE_ENVIRONMENT &lt;/ strong&gt;の環境変数を設定し、アプリを再起動することでの&lt;strong&gt;開発&lt;/ strong&gt;の環境を有効にします。
+    &lt;/ P&gt;</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;Your account contains personal data that you have given us. This page allows you to download or delete that data.&lt;/p&gt;&#xA;            &lt;p&gt;&#xA;                &lt;strong&gt;Deleting this data will permanently remove your account, and this cannot be recovered.&lt;/strong&gt;&#xA;            &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;あなたのアカウントは、あなたが私たちに与えている個人データが含まれています。このページでは、そのデータをダウンロードしたり、削除することができます。&lt;/ p&gt;
+            &lt;P&gt;
+                &lt;strong&gt;このデータを削除すると、あなたのアカウントを削除し、これを回復することはできません。&lt;/ strong&gt;を
+            &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have 1 recovery code left.&lt;/strong&gt;&#xA;            &lt;p&gt;You can &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;強い&gt;あなたは1つのリカバリーコードが残っている。&lt;/ strong&gt;を
+            &lt;P&gt;あなたはhref="{0}"&gt;が回復コードの新しいセットを生成することができます&lt;a &lt;/a&gt;します。&lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have no recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You must &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;強い&gt;あなたは残されたリカバリーコードを持っていません。&lt;/ strong&gt;を
+            &lt;P&gt;あなたはリカバリコードを使ってログインすることができます前に、&lt;/a&gt;の回復コードの新しいセットを生成href="{0}"&gt;を&lt;a必要があります。&lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have {0} recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You should &lt;a href=&quot;{1}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;強い&gt;あなたは、{0}回復コードが残っている。&lt;/ strong&gt;を
+            &lt;P&gt;あなたは回復コードする&lt;/a&gt;の新しいセットを生成href="{1}"&gt;を&lt;aする必要があります。&lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value>アクセスが拒否されました</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value>ログインする他のサービスを追加します。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Add authenticator app" xml:space="preserve">
+    <value>オーセンティケータアプリを追加</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="An error occurred while processing your request." xml:space="preserve">
+    <value>リクエストの処理中にエラーが発生しました。</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Associate your {0} account." xml:space="preserve">
+    <value>あなたの{0}アカウントを関連付けます。</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>パスワードを変更する</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value>アカウント設定を変更します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Configure authenticator app" xml:space="preserve">
+    <value>オーセンティケータアプリを設定します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Confirm email" xml:space="preserve">
+    <value>Eメール確認</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="Confirm your email" xml:space="preserve">
+    <value>あなたの電子メールを確認してください</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value>新しいアカウントを作成します。</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Development Mode" xml:space="preserve">
+    <value>開発モード</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Disable 2FA" xml:space="preserve">
+    <value>2FAを無効にします</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Don't have access to your authenticator device? You can &lt;a id=&quot;recovery-code-login&quot; href=&quot;{0}&quot;&gt;log in with a recovery code&lt;/a&gt;." xml:space="preserve">
+    <value>お使いのオーセンティケータデバイスへのアクセスを持っていないのですか？あなたは、回復コードする&lt;/a&gt;でログインしhref="{0}"&gt; id="recovery-code-login"を&lt;aすることができます。</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>ダウンロード</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
+    <value>&lt;aのhref="{0}"&gt;のWindows Phone &lt;/a&gt;のマイクロソフトオーセンティケータのような二要素認証アプリをダウンロードし、&lt;aのhref="{1}"&gt;アンドロイド&lt;/a&gt;と&lt;HREF = "{ 2} "&gt;のiOS &lt;/a&gt;のか</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Download Your Data" xml:space="preserve">
+    <value>あなたのデータをダウンロードします</value>
+    <comment>Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml</comment>
+  </data>
+  <data name="Enter your email." xml:space="preserve">
+    <value>メールアドレスを入力。</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Error from external provider: {0}" xml:space="preserve">
+    <value>外部プロバイダからのエラー：{0}</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information during confirmation." xml:space="preserve">
+    <value>確認中に外部ログイン情報を読み込みエラー。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information." xml:space="preserve">
+    <value>外部ログイン情報を読み込みエラー。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="External logins" xml:space="preserve">
+    <value>外部ログイン</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Forget this browser" xml:space="preserve">
+    <value>このブラウザを忘れ</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Forgot password confirmation" xml:space="preserve">
+    <value>忘れたパスワードの確認</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>パスワードをお忘れですか？</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Generate Recovery Codes" xml:space="preserve">
+    <value>回復コードを生成</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
+    <value>二要素認証（2FA）回復コードを生成します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>&lt;aのためのGoogle認証は、Android &lt;/a&gt;と&lt;a href="{4}"&gt; iOSの&lt;/a&gt;にhref="{3}"&gt;。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Hello {0}!" xml:space="preserve">
+    <value>{0}こんにちは！</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>家</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Invalid authenticator code." xml:space="preserve">
+    <value>無効なオーセンティケータコード。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value>無効なログイン試行。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid recovery code entered." xml:space="preserve">
+    <value>無効な回復コードが入力されました。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Learn about &lt;a href=&quot;{0}&quot;&gt;building Web apps with ASP.NET Core&lt;/a&gt;." xml:space="preserve">
+    <value>ASP.NETコア&lt;/a&gt;を持つ&lt;a href="{0}"&gt;建物のWebアプリケーションについて説明します。</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="Locked out" xml:space="preserve">
+    <value>ロックアウトされ</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>ログイン</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log in using your external account" xml:space="preserve">
+    <value>外部アカウントを使用してログインします</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log out" xml:space="preserve">
+    <value>ログアウト</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>管理します</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value>あなたのアカウントを管理します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value>あなたの外部ログインを管理します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
+    <value>あなたは、キー上のQRコードまたは入力をスキャンしたら、あなたの2つの要素認証アプリは、固有のコードを提供します。以下の確認ボックス内のコードを入力します。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Password not correct." xml:space="preserve">
+    <value>パスワードが正しくありません。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value>個人データ</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Please check your email to reset your password." xml:space="preserve">
+    <value>あなたのパスワードをリセットするためにあなたの電子メールをチェックしてください。</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>ここ&lt;/a&gt;をクリック&lt;aのhref='{0}'&gt;してアカウントをご確認ください。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Please enter a valid number." xml:space="preserve">
+    <value>有効な数値を入力してください。</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>ここ&lt;/a&gt;をクリック&lt;aのhref='{0}'&gt;でパスワードをリセットしてください。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>プライバシー</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>個人情報保護方針</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>プロフィール</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Recovery code verification" xml:space="preserve">
+    <value>回復コード検証</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登録</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Register as a new user" xml:space="preserve">
+    <value>新規ユーザーとして登録します</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value>登録ログイン</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>私を覚えてますか？</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Remove this login from your account" xml:space="preserve">
+    <value>アカウントからこのログインを削除します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remove {0}" xml:space="preserve">
+    <value>削除{0}</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Request ID:" xml:space="preserve">
+    <value>リクエストID：</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset authenticator app" xml:space="preserve">
+    <value>オーセンティケータアプリをリセット</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset authenticator key" xml:space="preserve">
+    <value>オーセンティケータキーをリセット</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="Reset password" xml:space="preserve">
+    <value>パスワードを再設定する</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset password confirmation" xml:space="preserve">
+    <value>パスワードの確認をリセット</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Reset recovery codes" xml:space="preserve">
+    <value>回復コードをリセット</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset your password." xml:space="preserve">
+    <value>あなたのパスワードをリセット。</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Sample Form" xml:space="preserve">
+    <value>サンプルフォーム</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存する</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Send verification email" xml:space="preserve">
+    <value>確認メールを送信</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Set password" xml:space="preserve">
+    <value>パスワードを設定してください</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="Setup authenticator app" xml:space="preserve">
+    <value>セットアップ認証アプリ</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提出します</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Thank you for confirming your email." xml:space="preserve">
+    <value>あなたの電子メールを確認いただきありがとうございます。</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
+    <value>現在のブラウザは忘れてしまいました。あなたはこのブラウザから再度ログインすると、あなたの2FAコードの入力を求められます。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was added." xml:space="preserve">
+    <value>外部ログインを追加しました。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was removed." xml:space="preserve">
+    <value>外部ログインを除去しました。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="There are no external authentication services configured. See &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services." xml:space="preserve">
+    <value>構成された外部認証サービスがありません。 &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt;外部サービス経由でログインをサポートするために、このASP.NETアプリケーションを設定する方法の詳細については、この記事&lt;/a&gt;を参照してください。</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="This account has been locked out, please try again later." xml:space="preserve">
+    <value>このアカウントがロックアウトされた、後でもう一度試してください。</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="To enable QR code generation please read our &lt;a href=&quot;{0}&quot;&gt;documentation&lt;/a&gt;." xml:space="preserve">
+    <value>QRコードの生成を有効にするにはGoogleの&lt;a href="{0}"&gt;ドキュメント&lt;/a&gt;をお読みください。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
+    <value>オーセンティケータアプリを使用するには、次の手順を経ます：</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication" xml:space="preserve">
+    <value>二要素認証</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication (2FA)" xml:space="preserve">
+    <value>二要素認証（2FA）</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value>パスワードを更新します。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Use a local account to log in." xml:space="preserve">
+    <value>ログインするためにローカルアカウントを使用してください。</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use another service to log in." xml:space="preserve">
+    <value>ログインするために別のサービスを使用してください。</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use this page to detail your site's privacy policy." xml:space="preserve">
+    <value>詳細あなたのサイトのプライバシーポリシーに、このページを使用します。</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Use this space to summarize your privacy and cookie use policy. &lt;a href=&quot;{0}&quot;&gt;Learn More&lt;/a&gt;.&#xA;        &lt;button type=&quot;button&quot; class=&quot;accept-policy close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot; data-cookie-string=&quot;{1}&quot;&gt;&#xA;            &lt;span aria-hidden=&quot;true&quot;&gt;Accept&lt;/span&gt;&#xA;        &lt;/button&gt;" xml:space="preserve">
+    <value>あなたのプライバシーとクッキーの使用ポリシーを要約するために、このスペースを使用します。 &lt;a href="{0}"&gt;は&lt;/a&gt;をご覧ください。
+        &lt;ボタンタイプ=「ボタン」クラス=「クローズポリシーを受け入れる」データ却下=「警告」ARIAラベル=「閉じる」データ・クッキーの文字列=「{1}」&gt;
+            &lt;スパンARIA-隠さ= "真の"&gt; &lt;/スパン&gt;を受け入れます
+        &lt;/ button&gt;の</value>
+    <comment>Pages/Shared/_CookieConsentPartial.cshtml</comment>
+  </data>
+  <data name="Verification Code" xml:space="preserve">
+    <value>検証コード</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Verification email sent. Please check your email." xml:space="preserve">
+    <value>確認メールを送信しました。メールを確認してください。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>検証します</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>ようこそ</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
+    <value>あなたはこのサイトのローカルのユーザ名/パスワードを持っていません。あなたは外部ログインなしでログインできるように、ローカルアカウントを追加します。</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="You do not have access to this resource." xml:space="preserve">
+    <value>あなたはこのリソースにアクセスすることはできません。</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="You have generated new recovery codes." xml:space="preserve">
+    <value>あなたは、新しい回復コードを生成しています。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
+    <value>あなたはリカバリコードを使ってログインするように要求しています。あなたがログに、オーセンティケータアプリのコードを提供したり、2FAを無効にして再度ログインするまで、このログインは記憶されません。</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="You have successfully logged out of the application." xml:space="preserve">
+    <value>あなたは成功したアプリケーションからログアウトしています。</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
+    <value>あなたは成功したの&lt;strong&gt; {0} &lt;/ strong&gt;を使用して認証しました。以下、このサイトのためにメールアドレスを入力してログインを完了するために登録]ボタンをクリックしてください。</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Your authenticator app has been verified." xml:space="preserve">
+    <value>あなたのオーセンティケータのアプリが確認されています。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
+    <value>あなたのオーセンティケータアプリキーがリセットされた、新しいキーを使用して、オーセンティケータアプリを設定する必要があります。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
+    <value>あなたのログインはオーセンティケータアプリで保護されています。下記のおオーセンティケータコードを入力します。</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value>あなたのパスワードは変更されました。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your password has been reset. Please &lt;a href=&quot;{0}&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
+    <value>あなたのパスワードはリセットされました。 &lt;/a&gt;のログインにはここをクリックしhref="{0}"&gt; &lt;aしてください。</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Your password has been set." xml:space="preserve">
+    <value>パスワードが設定されています。</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your profile has been updated" xml:space="preserve">
+    <value>あなたのプロフィールを更新しました</value>
+    <comment>Custom back end message</comment>
+  </data>
+</root>

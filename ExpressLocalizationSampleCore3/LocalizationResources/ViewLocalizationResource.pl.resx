@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
+    <value>2fa została wyłączona. można ponownie włączyć 2fa podczas konfiguracji aplikacji Authenticator</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;If you reset your authenticator key your authenticator app will not work until you reconfigure it.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        This process disables 2FA until you verify your authenticator app.&#xA;        If you do not complete your authenticator app configuration you may lose access to your account.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;Span class = "glyphicon glyphicon ostrzegania-znak"&gt; &lt;/ span&gt;
+        &lt;Strong&gt; Jeśli zresetować klucz uwierzytelniający Authenticator aplikacja nie będzie działać, dopóki go przekonfigurować. &lt;/ Strong&gt;
+    &lt;/ P&gt;
+    &lt;P&gt;
+        Proces ten wyłącza 2fa aż zweryfikować swoją aplikację Authenticator.
+        Jeśli nie zakończyć konfigurację aplikacji Authenticator można utracić dostęp do swojego konta.
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;Put these codes in a safe place.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        If you lose your device and don't have the recovery codes you will lose access to your account.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key&#xA;        used in an authenticator app you should &lt;a href=&quot;{0}&quot;&gt;reset your authenticator keys.&lt;/a&gt;&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;Span class = "glyphicon glyphicon ostrzegania-znak"&gt; &lt;/ span&gt;
+        &lt;Strong&gt; Umieść te kody w bezpiecznym miejscu. &lt;/ Strong&gt;
+    &lt;/ P&gt;
+    &lt;P&gt;
+        Jeśli stracisz urządzenie i nie ma kodów odzyskiwania utracisz dostęp do swojego konta.
+    &lt;/ P&gt;
+    &lt;P&gt;
+        Generowania nowych kodów odzyskiwania nie zmienia klucze używane w aplikacji Authenticator. Jeśli chcesz zmienić klucz
+        wykorzystywane w aplikacji Authenticator należy &lt;a href="{0}"&gt; przywrócić klucze Authenticator. &lt;/a&gt;
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        Swapping to the &lt;strong&gt;Development&lt;/strong&gt; environment displays detailed information about the error that occurred.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt; It can result in displaying sensitive information from exceptions to end users. For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt; and restarting the app.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        Zamiana na &lt;strong&gt; Rozwoju &lt;/ strong&gt; wyświetla środowisko Szczegółowe informacje na temat błędu, który wystąpił.
+    &lt;/ P&gt;
+    &lt;P&gt;
+        &lt;Strong&gt; Środowisko Development nie powinny być włączone dla wdrożonych aplikacji. &lt;/ Strong&gt; Może to spowodować wyświetlenie informacji poufnych z wyjątkami dla użytkowników końcowych. Dla lokalnego debugowania, włącz &lt;strong&gt; Programowanie &lt;/ strong&gt; środowisko poprzez ustawienie &lt;strong&gt; ASPNETCORE_ENVIRONMENT &lt;/ strong&gt; zmienną środowiskową &lt;strong&gt; Programowanie &lt;/ strong&gt; i ponownym uruchomieniu aplikacji.
+    &lt;/ P&gt;</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;Your account contains personal data that you have given us. This page allows you to download or delete that data.&lt;/p&gt;&#xA;            &lt;p&gt;&#xA;                &lt;strong&gt;Deleting this data will permanently remove your account, and this cannot be recovered.&lt;/strong&gt;&#xA;            &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt; Twoje konto zawiera dane osobowe, które nam dałeś. Ta strona pozwala na pobranie lub usunięcia tych danych. &lt;/ P&gt;
+            &lt;P&gt;
+                &lt;Strong&gt; Usuwanie te dane zostaną trwale usunąć swoje konto, i nie mogą być odzyskane. &lt;/ Strong&gt;
+            &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have 1 recovery code left.&lt;/strong&gt;&#xA;            &lt;p&gt;You can &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;Strong&gt; masz kod 1 odzysk lewo. &lt;/ Strong&gt;
+            &lt;P&gt; &lt;a href="{0}"&gt; można wygenerować nowy zestaw kodów odzyskiwania &lt;/a&gt;. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have no recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You must &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;Strong&gt; Nie masz żadnych kodów odzyskiwania lewej stronie. &lt;/ Strong&gt;
+            &lt;P&gt; &lt;a href="{0}"&gt; Musisz wygenerować nowy zestaw kodów odzyskiwania &lt;/a&gt; zanim będzie można zalogować się przy użyciu kodu odzyskiwania. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have {0} recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You should &lt;a href=&quot;{1}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;Strong&gt; Masz {0} Kody odzyskiwania lewo. &lt;/ Strong&gt;
+            &lt;P&gt; &lt;a href="{1}"&gt; powinien wygenerować nowy zestaw kodów odzyskiwania &lt;/a&gt;. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value>Brak dostępu</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value>Dodaj kolejną usługę, aby się zalogować.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Add authenticator app" xml:space="preserve">
+    <value>Dodaj aplikacji Authenticator</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="An error occurred while processing your request." xml:space="preserve">
+    <value>Podczas przetwarzania żądania wystąpił błąd.</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Associate your {0} account." xml:space="preserve">
+    <value>Powiązać {0} konta.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>Zmień hasło</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value>Zmień ustawienia konta</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Configure authenticator app" xml:space="preserve">
+    <value>Konfigurowania aplikacji Authenticator</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Confirm email" xml:space="preserve">
+    <value>Potwierdź email</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="Confirm your email" xml:space="preserve">
+    <value>Potwierdź swój email</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value>Stwórz nowe konto.</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Development Mode" xml:space="preserve">
+    <value>Tryb rozwoju</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Disable 2FA" xml:space="preserve">
+    <value>Wyłącz 2fa</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Don't have access to your authenticator device? You can &lt;a id=&quot;recovery-code-login&quot; href=&quot;{0}&quot;&gt;log in with a recovery code&lt;/a&gt;." xml:space="preserve">
+    <value>Nie masz dostępu do swojego urządzenia Authenticator? Możesz &lt;a id="recovery-code-login" href="{0}"&gt; zalogować się przy użyciu kodu &lt;/a&gt; odzysku.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Ściągnij</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
+    <value>Pobieranie aplikacji Authenticator dwuskładnikowego jak Microsoft Authenticator dla href="{0}"&gt; &lt;a systemu Windows Phone &lt;/a&gt; &lt;a href="{1}"&gt; Android &lt;/a&gt; i &lt;a href = "{ 2} "&gt; &lt;/a&gt; lub iOS</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Download Your Data" xml:space="preserve">
+    <value>Pobierz swoje dane</value>
+    <comment>Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml</comment>
+  </data>
+  <data name="Enter your email." xml:space="preserve">
+    <value>Wprowadź swój email.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Error from external provider: {0}" xml:space="preserve">
+    <value>Błąd od zewnętrznego dostawcy: {0}</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information during confirmation." xml:space="preserve">
+    <value>Błąd ładowania zewnętrznych danych logowania podczas potwierdzenia.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information." xml:space="preserve">
+    <value>Błąd podczas ładowania zewnętrznej informacji logowania.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="External logins" xml:space="preserve">
+    <value>loginy zewnętrzne</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Forget this browser" xml:space="preserve">
+    <value>Zapomnij tę przeglądarkę</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Forgot password confirmation" xml:space="preserve">
+    <value>Zapomniałeś hasło potwierdzenie</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>Zapomniałeś hasła?</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Generate Recovery Codes" xml:space="preserve">
+    <value>Generowanie kodów odzyskiwania</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
+    <value>Generowanie uwierzytelniania dwuskładnikowego (2fa) Kody odzyskiwania</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>Google Authenticator dla &lt;a href="{3}"&gt; &lt;/a&gt; Android i iOS &lt;a href="{4}"&gt; &lt;/a&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Hello {0}!" xml:space="preserve">
+    <value>Witaj {0}!</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Dom</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Invalid authenticator code." xml:space="preserve">
+    <value>Nieprawidłowy kod uwierzytelniający.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value>Nieprawidłowa próba logowania.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid recovery code entered." xml:space="preserve">
+    <value>Nieprawidłowy kod odzyskiwania wprowadzone.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Learn about &lt;a href=&quot;{0}&quot;&gt;building Web apps with ASP.NET Core&lt;/a&gt;." xml:space="preserve">
+    <value>Dowiedz się o href="{0}"&gt; &lt;a aplikacji budynek z ASP.NET Web podstawowej &lt;/a&gt;.</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="Locked out" xml:space="preserve">
+    <value>Zablokowany</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>Zaloguj Się</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log in using your external account" xml:space="preserve">
+    <value>Zaloguj się używając zewnętrznego konta</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log out" xml:space="preserve">
+    <value>Wyloguj</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Zaloguj Się</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Zarządzanie</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value>Zarządzaj kontem</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value>Zarządzanie logowania zewnętrznych</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
+    <value>Po zeskanowaniu kodu QR lub wejście kluczem powyżej Twój uwierzytelniania app dwa czynnikiem dostarczy Ci z unikalnym kodem. Wpisz kod w polu potwierdzenia poniżej.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Hasło</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Password not correct." xml:space="preserve">
+    <value>Hasło nie jest prawidłowe.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value>Dane osobiste</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Please check your email to reset your password." xml:space="preserve">
+    <value>Proszę sprawdzić pocztę, aby zresetować hasło.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>Proszę potwierdzić swoje konto przez href='{0}'&gt; &lt;a klikając tutaj &lt;/a&gt;.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Please enter a valid number." xml:space="preserve">
+    <value>Proszę wprowadzić poprawny numer.</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>Proszę zresetować hasło href='{0}'&gt; &lt;a klikając tutaj &lt;/a&gt;.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Prywatność</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Polityka prywatności</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Recovery code verification" xml:space="preserve">
+    <value>Weryfikacja kodu odzyskiwania</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Zarejestrować</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Register as a new user" xml:space="preserve">
+    <value>Zarejestrować się jako nowy użytkownik</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value>zarejestrowane logowania</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>Zapamiętaj mnie?</value>
+    <comment>Login.cshtml</comment>
+  </data>
+  <data name="Remove this login from your account" xml:space="preserve">
+    <value>Usuń ten logowanie z konta</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remove {0}" xml:space="preserve">
+    <value>Usunąć {0}</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Request ID:" xml:space="preserve">
+    <value>Żądanie ID:</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Nastawić</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset authenticator app" xml:space="preserve">
+    <value>Reset app Authenticator</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset authenticator key" xml:space="preserve">
+    <value>Reset Authenticator</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="Reset password" xml:space="preserve">
+    <value>Zresetuj hasło</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset password confirmation" xml:space="preserve">
+    <value>Potwierdzenie resetowania hasła</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Reset recovery codes" xml:space="preserve">
+    <value>Resetowanie kodów odzyskiwania</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset your password." xml:space="preserve">
+    <value>Zresetuj swoje hasło.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Sample Form" xml:space="preserve">
+    <value>Formularz próbka</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Zapisać</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Send verification email" xml:space="preserve">
+    <value>Wyślij email weryfikacyjny</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Set password" xml:space="preserve">
+    <value>Ustaw hasło</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="Setup authenticator app" xml:space="preserve">
+    <value>Konfiguracja aplikacji Authenticator</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Zatwierdź</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Thank you for confirming your email." xml:space="preserve">
+    <value>Dziękujemy za potwierdzenie adresu e-mail.</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
+    <value>Obecna przeglądarka została zapomniana. Kiedy ponownie zalogować z tej przeglądarki zostaniesz poproszony o podanie kodu 2fa.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was added." xml:space="preserve">
+    <value>Login zewnętrzny został dodany.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was removed." xml:space="preserve">
+    <value>Login zewnętrzny został usunięty.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="There are no external authentication services configured. See &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services." xml:space="preserve">
+    <value>Nie ma żadnych zewnętrznych usług uwierzytelniania skonfigurowany. Zobacz &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt; artykuł &lt;/a&gt; Szczegółowe informacje na temat konfigurowania tej aplikacji ASP.NET do obsługi logowania za pomocą usług zewnętrznych.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="This account has been locked out, please try again later." xml:space="preserve">
+    <value>To konto zostało zablokowane, spróbuj ponownie później.</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="To enable QR code generation please read our &lt;a href=&quot;{0}&quot;&gt;documentation&lt;/a&gt;." xml:space="preserve">
+    <value>Aby umożliwić generowanie kodu QR, zapoznaj się z naszą &lt;a dokumentacji href="{0}"&gt; &lt;/a&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
+    <value>Aby korzystać aplikacja uwierzytelnienia przejść przez następujące etapy:</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication" xml:space="preserve">
+    <value>uwierzytelnianie dwuskładnikowe</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication (2FA)" xml:space="preserve">
+    <value>uwierzytelnianie na podstawie dwóch czynników (2fa)</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value>Aktualizować hasło</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Use a local account to log in." xml:space="preserve">
+    <value>Użyj konta lokalne do logowania.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use another service to log in." xml:space="preserve">
+    <value>Użyj innej usługi do logowania.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use this page to detail your site's privacy policy." xml:space="preserve">
+    <value>Za pomocą tej strony z polityką prywatności detal witryny.</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Use this space to summarize your privacy and cookie use policy. &lt;a href=&quot;{0}&quot;&gt;Learn More&lt;/a&gt;.&#xA;        &lt;button type=&quot;button&quot; class=&quot;accept-policy close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot; data-cookie-string=&quot;{1}&quot;&gt;&#xA;            &lt;span aria-hidden=&quot;true&quot;&gt;Accept&lt;/span&gt;&#xA;        &lt;/button&gt;" xml:space="preserve">
+    <value>Użyj tego miejsca, aby podsumować swoje Polityka prywatności i plików cookie. &lt;a href="{0}"&gt; Dowiedz się więcej &lt;/a&gt;.
+        &lt;Button type = klasa "przycisk" = "akceptują polityki blisko" danych odwołać = "alert" Aria-label = "Zamknij" data-cookie-String = "{1}"&gt;
+            &lt;Span aria ukryte = "true"&gt; Akceptuj &lt;/ span&gt;
+        &lt;/ Button&gt;</value>
+    <comment>Pages/Shared/_CookieConsentPartial.cshtml</comment>
+  </data>
+  <data name="Verification Code" xml:space="preserve">
+    <value>Kod weryfikacyjny</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Verification email sent. Please check your email." xml:space="preserve">
+    <value>e-mail weryfikacyjny został wysłany. Proszę sprawdzić email.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Zweryfikować</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Witamy</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
+    <value>Nie masz lokalną nazwę użytkownika / hasło do tej strony. Dodaj konto lokalne, dzięki czemu można się zalogować bez logowania zewnętrznego.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="You do not have access to this resource." xml:space="preserve">
+    <value>Nie masz dostępu do tego zasobu.</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="You have generated new recovery codes." xml:space="preserve">
+    <value>Wygenerowaniu nowych kodów odzyskiwania.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
+    <value>Zażądano, aby zalogować się za pomocą kodu odzyskiwania. Ten login nie będzie pamiętał, aż podasz moduł uwierzytelniania kodu aplikacji w dzienniku lub wyłączyć 2fa i zalogować się ponownie.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="You have successfully logged out of the application." xml:space="preserve">
+    <value>Pomyślnie wylogowany z aplikacji.</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
+    <value>Pomyślnie uwierzytelnione z &lt;strong&gt; {0} &lt;/ strong&gt;. Proszę podać adres e-mail do tej strony, a następnie kliknij przycisk Zarejestruj, aby zakończyć proces logowania.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Your authenticator app has been verified." xml:space="preserve">
+    <value>Aplikacja Authenticator został zweryfikowany.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
+    <value>Twój klucz uwierzytelniający app został zresetowany, trzeba będzie skonfigurować aplikacji Authenticator przy użyciu nowego klucza.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
+    <value>Twój login jest chroniony aplikacji Authenticator. Wpisz poniżej swój kod Authenticator.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value>Twoje hasło zostało zmienione.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your password has been reset. Please &lt;a href=&quot;{0}&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
+    <value>Twoje hasło zostało zresetowane. &lt;a href="{0}"&gt; kliknij tutaj, aby zalogować się &lt;/a&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Your password has been set." xml:space="preserve">
+    <value>Twoje hasło zostało ustawione.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your profile has been updated" xml:space="preserve">
+    <value>Twój profil został zaktualizowany</value>
+    <comment>Custom back end message</comment>
+  </data>
+</root>

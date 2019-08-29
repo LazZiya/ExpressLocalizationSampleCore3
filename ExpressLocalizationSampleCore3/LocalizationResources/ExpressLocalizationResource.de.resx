@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="'{0}' and '{1}' do not match." xml:space="preserve">
+    <value>'{0}' und '{1}' stimmen nicht überein.</value>
+    <comment>DataAnnotations: CompareAttribute_MustMatch</comment>
+  </data>
+  <data name="A non-empty request body is required." xml:space="preserve">
+    <value>Ein nicht leerer Anforderungshauptteil ist erforderlich.</value>
+    <comment>ModelBinding: ModelBinding_MissingRequestBodyRequiredMember</comment>
+  </data>
+  <data name="A user with this login already exists." xml:space="preserve">
+    <value>Ein Benutzer mit diesem Login existiert bereits.</value>
+    <comment>Identity: LoginAlreadyAssociated</comment>
+  </data>
+  <data name="A value for the '{0}' parameter or property was not provided." xml:space="preserve">
+    <value>Ein Wert für den Parameter oder die Eigenschaft '{0}' wurde nicht angegeben.</value>
+    <comment>ModelBinding: ModelBinding_MissingBindRequiredMember</comment>
+  </data>
+  <data name="A value is required." xml:space="preserve">
+    <value>Ein Wert ist erforderlich.</value>
+    <comment>ModelBinding: KeyValuePair_BothKeyAndValueMustBePresent</comment>
+  </data>
+  <data name="An unknown failure has occurred." xml:space="preserve">
+    <value>Ein unbekannter Fehler ist aufgetreten.</value>
+    <comment>Identity: DefaultError</comment>
+  </data>
+  <data name="Both ErrorMessageResourceType and ErrorMessageResourceName need to be set on this attribute." xml:space="preserve">
+    <value>Sowohl ErrorMessageResourceType als auch ErrorMessageResourceName müssen für dieses Attribut festgelegt werden.</value>
+    <comment>DataAnnotations: ValidationAttribute_NeedBothResourceTypeAndResourceName</comment>
+  </data>
+  <data name="Cannot retrieve property '{0}' because localization failed.  Type '{1}' is not public or does not contain a public static string property with the name '{2}'." xml:space="preserve">
+    <value>Die Eigenschaft '{0}' kann nicht abgerufen werden, da die Lokalisierung fehlgeschlagen ist. Typ '{1}' ist nicht öffentlich oder enthält keine öffentliche statische Zeichenfolge mit dem Namen '{2}'.</value>
+    <comment>DataAnnotations: LocalizableString_LocalizationFailed</comment>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Passwort bestätigen</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Could not convert the value of type '{0}' to '{1}' as expected by method {2}.{3}." xml:space="preserve">
+    <value>Der Wert vom Typ '{0}' konnte nicht wie von Methode {2} erwartet in '{1}' konvertiert werden. {3}.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Conversion_Failed</comment>
+  </data>
+  <data name="Could not find a property named {0}." xml:space="preserve">
+    <value>Es konnte keine Eigenschaft mit dem Namen {0} gefunden werden.</value>
+    <comment>DataAnnotations: CompareAttribute_UnknownProperty</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Datum</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Either ErrorMessageString or ErrorMessageResourceName must be set, but not both." xml:space="preserve">
+    <value>Entweder ErrorMessageString oder ErrorMessageResourceName müssen festgelegt werden, aber nicht beide.</value>
+    <comment>DataAnnotations: ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Email '{0}' is already taken." xml:space="preserve">
+    <value>Die E-Mail-Adresse "{0}" ist bereits vergeben.</value>
+    <comment>Identity: DuplicateEmail</comment>
+  </data>
+  <data name="Email '{0}' is invalid." xml:space="preserve">
+    <value>E-Mail '{0}' ist ungültig.</value>
+    <comment>Identity: InvalidEmail</comment>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ICH WÜRDE</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Incorrect password." xml:space="preserve">
+    <value>Falsches Passwort.</value>
+    <comment>Identity: PasswordMismatch</comment>
+  </data>
+  <data name="Invalid token." xml:space="preserve">
+    <value>Ungültiges Token.</value>
+    <comment>Identity: InvalidToken</comment>
+  </data>
+  <data name="IsValid(object value) has not been implemented by this class.  The preferred entry point is GetValidationResult() and classes should override IsValid(object value, ValidationContext context)." xml:space="preserve">
+    <value>IsValid (Objektwert) wurde von dieser Klasse nicht implementiert. Der bevorzugte Einstiegspunkt ist GetValidationResult (), und Klassen sollten IsValid (Objektwert, ValidationContext-Kontext) überschreiben.</value>
+    <comment>DataAnnotations: ValidationAttribute_IsValid_NotImplemented</comment>
+  </data>
+  <data name="Lockout is not enabled for this user." xml:space="preserve">
+    <value>Die Sperre ist für diesen Benutzer nicht aktiviert.</value>
+    <comment>Identity: UserLockoutNotEnabled</comment>
+  </data>
+  <data name="MaxLengthAttribute must have a Length value that is greater than zero. Use MaxLength() without parameters to indicate that the string or array can have the maximum allowable length." xml:space="preserve">
+    <value>MaxLengthAttribute muss einen Längenwert haben, der größer als Null ist. Verwenden Sie MaxLength () ohne Parameter, um anzugeben, dass die Zeichenfolge oder das Array die maximal zulässige Länge haben kann.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="MetadataClassType cannot be null." xml:space="preserve">
+    <value>MetadataClassType darf nicht null sein.</value>
+    <comment>DataAnnotations: MetadataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="MinLengthAttribute must have a Length value that is zero or greater." xml:space="preserve">
+    <value>MinLengthAttribute muss einen Längenwert haben, der null oder größer ist.</value>
+    <comment>DataAnnotations: MinLengthAttribute_InvalidMinLength</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
+    <value>Optimistischer Parallelitätsfehler, Objekt wurde geändert.</value>
+    <comment>Identity : ConcurrencyFailure</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passwort</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Passwords must be at least {0} characters." xml:space="preserve">
+    <value>Passwörter müssen aus mindestens {0} Zeichen bestehen.</value>
+    <comment>Identity: PasswordTooShort</comment>
+  </data>
+  <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
+    <value>Passwörter müssen mindestens eine Ziffer haben ('0' - '9').</value>
+    <comment>Identity: PasswordRequiresDigit</comment>
+  </data>
+  <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
+    <value>Passwörter müssen mindestens einen Kleinbuchstaben ('a' - 'z') haben.</value>
+    <comment>Identity: PasswordRequiresLower</comment>
+  </data>
+  <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
+    <value>Passwörter müssen mindestens ein nicht alphanumerisches Zeichen enthalten.</value>
+    <comment>Identity: PasswordRequiresNonAlphanumeric</comment>
+  </data>
+  <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
+    <value>Passwörter müssen mindestens einen Großbuchstaben ('A' - 'Z') haben.</value>
+    <comment>Identity: PasswordRequiresUpper</comment>
+  </data>
+  <data name="Passwords must use at least {0} different characters." xml:space="preserve">
+    <value>Passwörter müssen mindestens {0} verschiedene Zeichen enthalten.</value>
+    <comment>Identity: PasswordRequiresUniqueChars</comment>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Preis</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Recovery code redemption failed." xml:space="preserve">
+    <value>Einlösung des Wiederherstellungscodes fehlgeschlagen.</value>
+    <comment>Identity: RecoveryCodeRedemptionFailed</comment>
+  </data>
+  <data name="Role name '{0}' is already taken." xml:space="preserve">
+    <value>Der Rollenname '{0}' ist bereits vergeben.</value>
+    <comment>Identity: DuplicateRoleName</comment>
+  </data>
+  <data name="Role name '{0}' is invalid." xml:space="preserve">
+    <value>Der Rollenname '{0}' ist ungültig.</value>
+    <comment>Identity: InvalidRoleName</comment>
+  </data>
+  <data name="The argument '{0}' cannot be null, empty or contain only whitespace." xml:space="preserve">
+    <value>Das Argument '{0}' darf nicht null, leer oder nur Leerzeichen enthalten.</value>
+    <comment>DataAnnotations: ArgumentIsNullOrWhitespace</comment>
+  </data>
+  <data name="The associated metadata type for type '{0}' contains the following unknown properties or fields: {1}. Please make sure that the names of these members match the names of the properties on the main type." xml:space="preserve">
+    <value>Der zugeordnete Metadatentyp für den Typ '{0}' enthält die folgenden unbekannten Eigenschaften oder Felder: {1}. Stellen Sie sicher, dass die Namen dieser Mitglieder mit den Namen der Eigenschaften des Haupttyps übereinstimmen.</value>
+    <comment>DataAnnotations: AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties</comment>
+  </data>
+  <data name="The custom DataType string cannot be null or empty." xml:space="preserve">
+    <value>Die benutzerdefinierte DataType-Zeichenfolge darf nicht null oder leer sein.</value>
+    <comment>DataAnnotations: DataTypeAttribute_EmptyDataTypeString</comment>
+  </data>
+  <data name="The custom validation type '{0}' must be public." xml:space="preserve">
+    <value>Der benutzerdefinierte Überprüfungstyp '{0}' muss öffentlich sein.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Must_Be_Public</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' does not exist in type '{1}' or is not public and static." xml:space="preserve">
+    <value>Die CustomValidationAttribute-Methode '{0}' ist im Typ '{1}' nicht vorhanden oder nicht öffentlich und statisch.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Not_Found</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must match the expected signature: public static ValidationResult {0}(object value, ValidationContext context).  The value can be strongly typed.  The ValidationContext parameter is optional." xml:space="preserve">
+    <value>Die CustomValidationAttribute-Methode '{0}' im Typ '{1}' muss mit der erwarteten Signatur übereinstimmen: public static ValidationResult {0} (Objektwert, ValidationContext-Kontext). Der Wert kann stark eingegeben werden. Der Parameter ValidationContext ist optional.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Signature</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must return System.ComponentModel.DataAnnotations.ValidationResult.  Use System.ComponentModel.DataAnnotations.ValidationResult.Success to represent success." xml:space="preserve">
+    <value>Die CustomValidationAttribute-Methode '{0}' in Typ '{1}' muss System.ComponentModel.DataAnnotations.ValidationResult zurückgeben. Verwenden Sie System.ComponentModel.DataAnnotations.ValidationResult.Success, um den Erfolg darzustellen.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Must_Return_ValidationResult</comment>
+  </data>
+  <data name="The CustomValidationAttribute.Method was not specified." xml:space="preserve">
+    <value>Die CustomValidationAttribute.Method wurde nicht angegeben.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Required</comment>
+  </data>
+  <data name="The CustomValidationAttribute.ValidatorType was not specified." xml:space="preserve">
+    <value>Der CustomValidationAttribute.ValidatorType wurde nicht angegeben.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidatorType_Required</comment>
+  </data>
+  <data name="The field must be a number." xml:space="preserve">
+    <value>Das Feld muss eine Zahl sein.</value>
+    <comment>ModelBinding: HtmlGeneration_NonPropertyValueMustBeNumber</comment>
+  </data>
+  <data name="The field of type {0} must be a string, array or ICollection type." xml:space="preserve">
+    <value>Das Feld vom Typ {0} muss ein String-, Array- oder ICollection-Typ sein.</value>
+    <comment>DataAnnotations: LengthAttribute_InvalidValueType</comment>
+  </data>
+  <data name="The field {0} is invalid." xml:space="preserve">
+    <value>Das Feld {0} ist ungültig.</value>
+    <comment>DataAnnotations: ValidationAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a number." xml:space="preserve">
+    <value>Das Feld {0} muss eine Zahl sein.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueMustBeNumber</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a maximum length of '{1}'." xml:space="preserve">
+    <value>Das Feld {0} muss ein String- oder Array-Typ mit einer maximalen Länge von '{1}' sein.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a minimum length of '{1}'." xml:space="preserve">
+    <value>Das Feld {0} muss ein String- oder Array-Typ mit einer Mindestlänge von '{1}' sein.</value>
+    <comment>DataAnnotations: MinLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
+    <value>Das Feld {0} muss eine Zeichenfolge mit einer maximalen Länge von {1} sein.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a minimum length of {2} and a maximum length of {1}." xml:space="preserve">
+    <value>Das Feld {0} muss eine Zeichenfolge mit einer Mindestlänge von {2} und einer Höchstlänge von {1} sein.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationErrorIncludingMinimum</comment>
+  </data>
+  <data name="The field {0} must be between {1} and {2}." xml:space="preserve">
+    <value>Das Feld {0} muss zwischen {1} und {2} liegen.</value>
+    <comment>DataAnnotations: RangeAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must match the regular expression '{1}'." xml:space="preserve">
+    <value>Das Feld {0} muss mit dem regulären Ausdruck '{1}' übereinstimmen.</value>
+    <comment>DataAnnotations: RegexAttribute_ValidationError</comment>
+  </data>
+  <data name="The instance provided must match the ObjectInstance on the ValidationContext supplied." xml:space="preserve">
+    <value>Die angegebene Instanz muss mit ObjectInstance im angegebenen ValidationContext übereinstimmen.</value>
+    <comment>DataAnnotations: Validator_InstanceMustMatchValidationContextInstance</comment>
+  </data>
+  <data name="The key parameter at position {0} is null. Every key control parameter must be a string." xml:space="preserve">
+    <value>Der Schlüsselparameter an Position {0} ist null. Jeder Schlüsselsteuerungsparameter muss eine Zeichenfolge sein.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNull</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' is not a string. Every key control parameter must be a string." xml:space="preserve">
+    <value>Der Schlüsselparameter an Position {0} mit dem Wert '{1}' ist keine Zeichenfolge. Jeder Schlüsselsteuerungsparameter muss eine Zeichenfolge sein.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNotAString</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' occurs more than once." xml:space="preserve">
+    <value>Der Schlüsselparameter an Position {0} mit dem Wert '{1}' kommt mehrmals vor.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyOccursMoreThanOnce</comment>
+  </data>
+  <data name="The maximum length must be a nonnegative integer." xml:space="preserve">
+    <value>Die maximale Länge muss eine nicht negative Ganzzahl sein.</value>
+    <comment>DataAnnotations: StringLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="The maximum value '{0}' must be greater than or equal to the minimum value '{1}'." xml:space="preserve">
+    <value>Der Maximalwert '{0}' muss größer oder gleich dem Minimalwert '{1}' sein.</value>
+    <comment>DataAnnotations: RangeAttribute_MinGreaterThanMax</comment>
+  </data>
+  <data name="The minimum and maximum values must be set." xml:space="preserve">
+    <value>Die Minimal- und Maximalwerte müssen eingestellt werden.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Min_And_Max</comment>
+  </data>
+  <data name="The number of control parameters must be even." xml:space="preserve">
+    <value>Die Anzahl der Steuerparameter muss gerade sein.</value>
+    <comment>DataAnnotations: UIHintImplementation_NeedEvenNumberOfControlParameters</comment>
+  </data>
+  <data name="The OperandType must be set when strings are used for minimum and maximum values." xml:space="preserve">
+    <value>Der OperandType muss festgelegt werden, wenn Zeichenfolgen für minimale und maximale Werte verwendet werden.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Operand_Type</comment>
+  </data>
+  <data name="The pattern must be set to a valid regular expression." xml:space="preserve">
+    <value>Das Muster muss auf einen gültigen regulären Ausdruck gesetzt sein.</value>
+    <comment>DataAnnotations: RegularExpressionAttribute_Empty_Pattern</comment>
+  </data>
+  <data name="The property '{0}' on resource type '{1}' is not a string type." xml:space="preserve">
+    <value>Die Eigenschaft '{0}' für den Ressourcentyp '{1}' ist kein Zeichenfolgentyp.</value>
+    <comment>DataAnnotations:ValidationAttribute_ResourcePropertyNotStringType</comment>
+  </data>
+  <data name="The property {0}.{1} could not be found." xml:space="preserve">
+    <value>Die Eigenschaft {0}. {1} wurde nicht gefunden.</value>
+    <comment>DataAnnotations: Common_PropertyNotFound</comment>
+  </data>
+  <data name="The resource type '{0}' does not have an accessible static property named '{1}'." xml:space="preserve">
+    <value>Der Ressourcentyp "{0}" verfügt nicht über eine zugreifbare statische Eigenschaft mit dem Namen "{1}".</value>
+    <comment>DataAnnotations: ValidationAttribute_ResourceTypeDoesNotHaveProperty</comment>
+  </data>
+  <data name="The supplied value is invalid for {0}." xml:space="preserve">
+    <value>Der angegebene Wert ist für {0} ungültig.</value>
+    <comment>ModelBinding: ModelState_UnknownValueIsInvalid</comment>
+  </data>
+  <data name="The supplied value is invalid." xml:space="preserve">
+    <value>Der angegebene Wert ist ungültig.</value>
+    <comment>ModelBinding: ModelState_NonPropertyUnknownValueIsInvalid</comment>
+  </data>
+  <data name="The type '{0}' does not contain a public property named '{1}'." xml:space="preserve">
+    <value>Der Typ "{0}" enthält keine öffentliche Eigenschaft mit dem Namen "{1}".</value>
+    <comment>DataAnnotations: AttributeStore_Unknown_Property</comment>
+  </data>
+  <data name="The type '{0}' needs to represent an enumeration type." xml:space="preserve">
+    <value>Der Typ '{0}' muss einen Aufzählungstyp darstellen.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeNeedsToBeAnEnum</comment>
+  </data>
+  <data name="The type provided for EnumDataTypeAttribute cannot be null." xml:space="preserve">
+    <value>Der für EnumDataTypeAttribute angegebene Typ darf nicht null sein.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="The type {0} must implement {1}." xml:space="preserve">
+    <value>Der Typ {0} muss {1} implementieren.</value>
+    <comment>DataAnnotations: RangeAttribute_ArbitraryTypeNotIComparable</comment>
+  </data>
+  <data name="The value '{0}' is invalid." xml:space="preserve">
+    <value>Der Wert "{0}" ist ungültig.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueIsInvalid, ModelBinding_NullValueNotValid</comment>
+  </data>
+  <data name="The value '{0}' is not valid for {1}." xml:space="preserve">
+    <value>Der Wert '{0}' ist für {1} nicht gültig.</value>
+    <comment>ModelBinding: ModelState_AttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value '{0}' is not valid." xml:space="preserve">
+    <value>Der Wert '{0}' ist ungültig.</value>
+    <comment>ModelBinding: ModelState_NonPropertyAttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value for property '{0}' must be of type '{1}'." xml:space="preserve">
+    <value>Der Wert für die Eigenschaft '{0}' muss vom Typ '{1}' sein.</value>
+    <comment>DataAnnotations: Validator_Property_Value_Wrong_Type</comment>
+  </data>
+  <data name="The {0} field is not a valid credit card number." xml:space="preserve">
+    <value>Das Feld {0} ist keine gültige Kreditkartennummer.</value>
+    <comment>DataAnnotations: CreditCardAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid e-mail address." xml:space="preserve">
+    <value>Das Feld {0} ist keine gültige E-Mail-Adresse.</value>
+    <comment>DataAnnotations: EmailAddressAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid fully-qualified http, https, or ftp URL." xml:space="preserve">
+    <value>Das Feld {0} ist keine gültige vollqualifizierte http-, https- oder ftp-URL.</value>
+    <comment>DataAnnotations: UrlAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid phone number." xml:space="preserve">
+    <value>Das Feld {0} ist keine gültige Telefonnummer.</value>
+    <comment>DataAnnotations: PhoneAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>Das Feld {0} ist erforderlich.</value>
+    <comment>DataAnnotations: RequiredAttribute_ValidationError</comment>
+  </data>
+  <data name="The {0} field only accepts files with the following extensions: {1}" xml:space="preserve">
+    <value>Das Feld {0} akzeptiert nur Dateien mit den folgenden Erweiterungen: {1}</value>
+    <comment>DataAnnotations: FileExtensionsAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} property has not been set.  Use the {1} method to get the value." xml:space="preserve">
+    <value>Die Eigenschaft {0} wurde nicht festgelegt. Verwenden Sie die Methode {1}, um den Wert abzurufen.</value>
+    <comment>DataAnnotations: DisplayAttribute_PropertyNotSet</comment>
+  </data>
+  <data name="User already has a password set." xml:space="preserve">
+    <value>Der Benutzer hat bereits ein Passwort festgelegt.</value>
+    <comment>Identity: UserAlreadyHasPassword</comment>
+  </data>
+  <data name="User already in role '{0}'." xml:space="preserve">
+    <value>Benutzer ist bereits in der Rolle "{0}".</value>
+    <comment>Identity: UserAlreadyInRole</comment>
+  </data>
+  <data name="User is not in role '{0}'." xml:space="preserve">
+    <value>Der Benutzer ist nicht in der Rolle "{0}".</value>
+    <comment>Identity: UserNotInRole</comment>
+  </data>
+  <data name="User name '{0}' is already taken." xml:space="preserve">
+    <value>Der Benutzername '{0}' ist bereits vergeben.</value>
+    <comment>Identity: DuplicateUserName</comment>
+  </data>
+  <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
+    <value>Der Benutzername '{0}' ist ungültig und darf nur Buchstaben oder Ziffern enthalten.</value>
+    <comment>Identity: InvalidUserName</comment>
+  </data>
+  <data name="{0} is not valid." xml:space="preserve">
+    <value>{0} ist ungültig.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidationError</comment>
+  </data>
+  <data name="Current password" xml:space="preserve">
+    <value>Aktuelles Passwort!</value>
+  </data>
+  <data name="New password" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>Telefonnummer:</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Benutzername</value>
+  </data>
+  <data name="Verification code" xml:space="preserve">
+    <value>Bestätigungscode</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Remember this machine?" xml:space="preserve">
+    <value>Erinnerst du dich an dieses Gerät ?!</value>
+  </data>
+  <data name="Confirm new password" xml:space="preserve">
+    <value>Confirm New Password</value>
+  </data>
+</root>

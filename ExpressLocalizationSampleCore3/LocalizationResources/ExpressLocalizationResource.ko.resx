@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A non-empty request body is required." xml:space="preserve">
+    <value>비 빈 요청 본문이 필요합니다.</value>
+    <comment>ModelBinding: ModelBinding_MissingRequestBodyRequiredMember</comment>
+  </data>
+  <data name="A user with this login already exists." xml:space="preserve">
+    <value>이 로그인을 가진 사용자가 이미 존재합니다.</value>
+    <comment>Identity: LoginAlreadyAssociated</comment>
+  </data>
+  <data name="A value for the '{0}' parameter or property was not provided." xml:space="preserve">
+    <value>'{0}'파라미터 또는 속성 값이 제공되지 않았다.</value>
+    <comment>ModelBinding: ModelBinding_MissingBindRequiredMember</comment>
+  </data>
+  <data name="A value is required." xml:space="preserve">
+    <value>값이 필요합니다.</value>
+    <comment>ModelBinding: KeyValuePair_BothKeyAndValueMustBePresent</comment>
+  </data>
+  <data name="An unknown failure has occurred." xml:space="preserve">
+    <value>알 수없는 오류가 발생했습니다.</value>
+    <comment>Identity: DefaultError</comment>
+  </data>
+  <data name="Both ErrorMessageResourceType and ErrorMessageResourceName need to be set on this attribute." xml:space="preserve">
+    <value>ErrorMessageResourceType 및 ErrorMessageResourceName 모두이 속성에 설정해야합니다.</value>
+    <comment>DataAnnotations: ValidationAttribute_NeedBothResourceTypeAndResourceName</comment>
+  </data>
+  <data name="Cannot retrieve property '{0}' because localization failed.  Type '{1}' is not public or does not contain a public static string property with the name '{2}'." xml:space="preserve">
+    <value>속성을 검색 할 수 없습니다 '{0}'때문에 현지화에 실패했습니다. 형식 '{1}'공공 없거나 이름을 가진 공공 정적 문자열 속성을 포함하지 않는 '{2}'.</value>
+    <comment>DataAnnotations: LocalizableString_LocalizationFailed</comment>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>비밀번호 확인</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Could not convert the value of type '{0}' to '{1}' as expected by method {2}.{3}." xml:space="preserve">
+    <value>입력 값을 변환 할 수 없습니다 '{0}'{1}에있어서 예상하기 {2}. {3}.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Conversion_Failed</comment>
+  </data>
+  <data name="Could not find a property named {0}." xml:space="preserve">
+    <value>이름 {0} 속성을 찾을 수 없습니다.</value>
+    <comment>DataAnnotations: CompareAttribute_UnknownProperty</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>날짜</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Either ErrorMessageString or ErrorMessageResourceName must be set, but not both." xml:space="preserve">
+    <value>어느 ErrorMessageString 또는 ErrorMessageResourceName 모두 설정,하지만해야합니다.</value>
+    <comment>DataAnnotations: ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>이메일</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Email '{0}' is already taken." xml:space="preserve">
+    <value>이메일은 '{0}'이 (가) 이미 취해진 다.</value>
+    <comment>Identity: DuplicateEmail</comment>
+  </data>
+  <data name="Email '{0}' is invalid." xml:space="preserve">
+    <value>이메일은 '{0}'이 (가) 잘못되었습니다.</value>
+    <comment>Identity: InvalidEmail</comment>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>신분증</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Incorrect password." xml:space="preserve">
+    <value>잘못된 비밀번호.</value>
+    <comment>Identity: PasswordMismatch</comment>
+  </data>
+  <data name="Invalid token." xml:space="preserve">
+    <value>잘못된 토큰.</value>
+    <comment>Identity: InvalidToken</comment>
+  </data>
+  <data name="IsValid(object value) has not been implemented by this class.  The preferred entry point is GetValidationResult() and classes should override IsValid(object value, ValidationContext context)." xml:space="preserve">
+    <value>IsValid (개체 값)이 클래스에 의해 구현되지 않았습니다. 바람직한 엔트리 포인트 GetValidationResult ()을하고 IsValid 클래스 (객체 값 ValidationContext 콘텍스트)을 무시한다.</value>
+    <comment>DataAnnotations: ValidationAttribute_IsValid_NotImplemented</comment>
+  </data>
+  <data name="Lockout is not enabled for this user." xml:space="preserve">
+    <value>잠금이 사용자를 사용할 수 없습니다.</value>
+    <comment>Identity: UserLockoutNotEnabled</comment>
+  </data>
+  <data name="MaxLengthAttribute must have a Length value that is greater than zero. Use MaxLength() without parameters to indicate that the string or array can have the maximum allowable length." xml:space="preserve">
+    <value>MaxLengthAttribute는 0보다 큰 길이 값이 있어야합니다. 문자열이나 배열이 최대 허용 길이를 가질 수 있음을 표시하는 매개 변수없이 최대 길이 ()를 사용합니다.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="MetadataClassType cannot be null." xml:space="preserve">
+    <value>MetadataClassType은 null 일 수 없습니다.</value>
+    <comment>DataAnnotations: MetadataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="MinLengthAttribute must have a Length value that is zero or greater." xml:space="preserve">
+    <value>MinLengthAttribute는 0 개 이상을하는 길이 값이 있어야합니다.</value>
+    <comment>DataAnnotations: MinLengthAttribute_InvalidMinLength</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
+    <value>낙관적 동시성 실패, 개체가 수정되었습니다.</value>
+    <comment>Identity : ConcurrencyFailure</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>암호</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Passwords must be at least {0} characters." xml:space="preserve">
+    <value>암호는 적어도 {0} 자 여야합니다.</value>
+    <comment>Identity: PasswordTooShort</comment>
+  </data>
+  <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
+    <value>암호는 적어도 하나 개의 숫자 (- '9' '0')가 있어야합니다.</value>
+    <comment>Identity: PasswordRequiresDigit</comment>
+  </data>
+  <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
+    <value>비밀번호는 적어도 하나의 소문자 (- ', Z' '는')를 가져야한다.</value>
+    <comment>Identity: PasswordRequiresLower</comment>
+  </data>
+  <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
+    <value>암호는 적어도 하나 개의 비 영숫자 문자가 있어야합니다.</value>
+    <comment>Identity: PasswordRequiresNonAlphanumeric</comment>
+  </data>
+  <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
+    <value>암호는 적어도 하나의 대문자 (- 'Z' 'A')를 가지고 있어야합니다.</value>
+    <comment>Identity: PasswordRequiresUpper</comment>
+  </data>
+  <data name="Passwords must use at least {0} different characters." xml:space="preserve">
+    <value>암호는 적어도 {0} 다른 문자를 사용해야합니다.</value>
+    <comment>Identity: PasswordRequiresUniqueChars</comment>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>가격</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Recovery code redemption failed." xml:space="preserve">
+    <value>복구 코드 사용에 실패했습니다.</value>
+    <comment>Identity: RecoveryCodeRedemptionFailed</comment>
+  </data>
+  <data name="Role name '{0}' is already taken." xml:space="preserve">
+    <value>역할 이름 '{0}'이 (가) 이미 취해진 다.</value>
+    <comment>Identity: DuplicateRoleName</comment>
+  </data>
+  <data name="Role name '{0}' is invalid." xml:space="preserve">
+    <value>역할 이름은 '{0}'이 (가) 잘못되었습니다.</value>
+    <comment>Identity: InvalidRoleName</comment>
+  </data>
+  <data name="The argument '{0}' cannot be null, empty or contain only whitespace." xml:space="preserve">
+    <value>인수는 '{0}', null이 비어 있거나 공백 만 포함 할 수 없습니다.</value>
+    <comment>DataAnnotations: ArgumentIsNullOrWhitespace</comment>
+  </data>
+  <data name="The associated metadata type for type '{0}' contains the following unknown properties or fields: {1}. Please make sure that the names of these members match the names of the properties on the main type." xml:space="preserve">
+    <value>유형에 대한 관련 메타 데이터 형식 '{0}'다음 알 수없는 속성 또는 필드를 포함합니다 : {1}. 이 멤버의 이름이 주요 유형에 속성의 이름과 일치하는지 확인하십시오.</value>
+    <comment>DataAnnotations: AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties</comment>
+  </data>
+  <data name="The custom DataType string cannot be null or empty." xml:space="preserve">
+    <value>사용자 정의 데이터 형식 문자열은 null 또는 비어있을 수 없습니다.</value>
+    <comment>DataAnnotations: DataTypeAttribute_EmptyDataTypeString</comment>
+  </data>
+  <data name="The custom validation type '{0}' must be public." xml:space="preserve">
+    <value>사용자 정의 유효성 검사 유형은 '{0}'공개해야합니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Must_Be_Public</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' does not exist in type '{1}' or is not public and static." xml:space="preserve">
+    <value>CustomValidationAttribute 방법 '{0}'형태로 존재하지 않는다 '는 {1} 또는 공용 정적이 아니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Not_Found</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must match the expected signature: public static ValidationResult {0}(object value, ValidationContext context).  The value can be strongly typed.  The ValidationContext parameter is optional." xml:space="preserve">
+    <value>정적 공용에 ValidationResult {0} (개체 값 ValidationContext 컨텍스트) 다음 CustomValidationAttribute 방법은 '{0}'타입 '{1} 예상 된 서명과 일치한다. 값은 강력하게 입력 할 수 있습니다. ValidationContext 매개 변수는 선택 사항입니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Signature</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must return System.ComponentModel.DataAnnotations.ValidationResult.  Use System.ComponentModel.DataAnnotations.ValidationResult.Success to represent success." xml:space="preserve">
+    <value>CustomValidationAttribute 방법은 '{0}'형식의 '{1}'System.ComponentModel.DataAnnotations.ValidationResult을 반환해야합니다. 성공을 나타내는 System.ComponentModel.DataAnnotations.ValidationResult.Success를 사용합니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Must_Return_ValidationResult</comment>
+  </data>
+  <data name="The CustomValidationAttribute.Method was not specified." xml:space="preserve">
+    <value>CustomValidationAttribute.Method이 지정되지 않았습니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Required</comment>
+  </data>
+  <data name="The CustomValidationAttribute.ValidatorType was not specified." xml:space="preserve">
+    <value>CustomValidationAttribute.ValidatorType이 지정되지 않았습니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidatorType_Required</comment>
+  </data>
+  <data name="The field must be a number." xml:space="preserve">
+    <value>필드는 숫자 여야합니다.</value>
+    <comment>ModelBinding: HtmlGeneration_NonPropertyValueMustBeNumber</comment>
+  </data>
+  <data name="The field of type {0} must be a string, array or ICollection type." xml:space="preserve">
+    <value>타입 필드는 {0} 문자열 배열 또는 ICollection이 타입이어야한다.</value>
+    <comment>DataAnnotations: LengthAttribute_InvalidValueType</comment>
+  </data>
+  <data name="The field {0} is invalid." xml:space="preserve">
+    <value>필드 {0} 유효하지 않습니다.</value>
+    <comment>DataAnnotations: ValidationAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a number." xml:space="preserve">
+    <value>필드 {0} 숫자 여야합니다.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueMustBeNumber</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a maximum length of '{1}'." xml:space="preserve">
+    <value>이 필드는 {0}의 최대 길이를 가진 문자열이나 배열 타입이어야한다 '{1}.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a minimum length of '{1}'." xml:space="preserve">
+    <value>이 필드는 {0}의 최소 길이를 가진 문자열이나 배열 타입이어야한다 '{1}.</value>
+    <comment>DataAnnotations: MinLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
+    <value>{0} 필드는 최대 길이 문자열이어야합니다 {1}.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a minimum length of {2} and a maximum length of {1}." xml:space="preserve">
+    <value>{0} 필드는 {2}의 최대 길이와 최소 길이의 문자열이어야 {1}.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationErrorIncludingMinimum</comment>
+  </data>
+  <data name="The field {0} must be between {1} and {2}." xml:space="preserve">
+    <value>필드 {0} 사이 여야 및 {1} {2}.</value>
+    <comment>DataAnnotations: RangeAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must match the regular expression '{1}'." xml:space="preserve">
+    <value>필드 {0} 정규 표현식과 일치해야합니다 '{1}'.</value>
+    <comment>DataAnnotations: RegexAttribute_ValidationError</comment>
+  </data>
+  <data name="The instance provided must match the ObjectInstance on the ValidationContext supplied." xml:space="preserve">
+    <value>제공하는 인스턴스가 제공되는 ValidationContext의 ObjectInstance를 일치해야합니다.</value>
+    <comment>DataAnnotations: Validator_InstanceMustMatchValidationContextInstance</comment>
+  </data>
+  <data name="The key parameter at position {0} is null. Every key control parameter must be a string." xml:space="preserve">
+    <value>위치의 키 파라미터는 {0} 널. 모든 키 제어 매개 변수는 문자열이어야합니다.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNull</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' is not a string. Every key control parameter must be a string." xml:space="preserve">
+    <value>값이 {0} 위치에서 중요한 매개 변수는 '{1} 문자열 아니다. 모든 키 제어 매개 변수는 문자열이어야합니다.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNotAString</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' occurs more than once." xml:space="preserve">
+    <value>값이 {0} 위치에서 중요한 매개 변수는 '{1} "번 이상 발생한다.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyOccursMoreThanOnce</comment>
+  </data>
+  <data name="The maximum length must be a nonnegative integer." xml:space="preserve">
+    <value>최대 길이는 음수가 아닌 정수 여야합니다.</value>
+    <comment>DataAnnotations: StringLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="The maximum value '{0}' must be greater than or equal to the minimum value '{1}'." xml:space="preserve">
+    <value>최대 값은 '{0} 최소값보다 크거나 같아야'{1}.</value>
+    <comment>DataAnnotations: RangeAttribute_MinGreaterThanMax</comment>
+  </data>
+  <data name="The minimum and maximum values must be set." xml:space="preserve">
+    <value>최소 및 최대 값을 설정해야합니다.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Min_And_Max</comment>
+  </data>
+  <data name="The number of control parameters must be even." xml:space="preserve">
+    <value>제어 매개 변수의 수는도해야합니다.</value>
+    <comment>DataAnnotations: UIHintImplementation_NeedEvenNumberOfControlParameters</comment>
+  </data>
+  <data name="The OperandType must be set when strings are used for minimum and maximum values." xml:space="preserve">
+    <value>문자열은 최소 및 최대 값에 사용되는 경우 OperandType 설정되어야한다.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Operand_Type</comment>
+  </data>
+  <data name="The pattern must be set to a valid regular expression." xml:space="preserve">
+    <value>패턴은 유효한 정규 표현식으로 설정해야합니다.</value>
+    <comment>DataAnnotations: RegularExpressionAttribute_Empty_Pattern</comment>
+  </data>
+  <data name="The property '{0}' on resource type '{1}' is not a string type." xml:space="preserve">
+    <value>자원 유형에 대한 속성 '{0}' '{1}'문자열 유형이 아닙니다.</value>
+    <comment>DataAnnotations:ValidationAttribute_ResourcePropertyNotStringType</comment>
+  </data>
+  <data name="The property {0}.{1} could not be found." xml:space="preserve">
+    <value>속성 {0}. {1}을 (를) 찾을 수 없습니다.</value>
+    <comment>DataAnnotations: Common_PropertyNotFound</comment>
+  </data>
+  <data name="The resource type '{0}' does not have an accessible static property named '{1}'." xml:space="preserve">
+    <value>자원 유형 '{0}'라는 이름의 접근 정적 속성이 없습니다 '{1}'.</value>
+    <comment>DataAnnotations: ValidationAttribute_ResourceTypeDoesNotHaveProperty</comment>
+  </data>
+  <data name="The supplied value is invalid for {0}." xml:space="preserve">
+    <value>제공된 값에 대한 {0} 유효하지 않습니다.</value>
+    <comment>ModelBinding: ModelState_UnknownValueIsInvalid</comment>
+  </data>
+  <data name="The supplied value is invalid." xml:space="preserve">
+    <value>제공된 값이 올바르지 않습니다.</value>
+    <comment>ModelBinding: ModelState_NonPropertyUnknownValueIsInvalid</comment>
+  </data>
+  <data name="The type '{0}' does not contain a public property named '{1}'." xml:space="preserve">
+    <value>형식 '{0}'라는 공용 속성을 포함하지 않는 '{1}'.</value>
+    <comment>DataAnnotations: AttributeStore_Unknown_Property</comment>
+  </data>
+  <data name="The type '{0}' needs to represent an enumeration type." xml:space="preserve">
+    <value>유형은 '{0}'열거 유형을 표시 할 필요가있다.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeNeedsToBeAnEnum</comment>
+  </data>
+  <data name="The type provided for EnumDataTypeAttribute cannot be null." xml:space="preserve">
+    <value>EnumDataTypeAttribute 제공 유형은 null 일 수 없습니다.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="The type {0} must implement {1}." xml:space="preserve">
+    <value>유형은 {0} 구현해야합니다 {1}.</value>
+    <comment>DataAnnotations: RangeAttribute_ArbitraryTypeNotIComparable</comment>
+  </data>
+  <data name="The value '{0}' is invalid." xml:space="preserve">
+    <value>값은 '{0}'이 (가) 잘못되었습니다.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueIsInvalid, ModelBinding_NullValueNotValid</comment>
+  </data>
+  <data name="The value '{0}' is not valid for {1}." xml:space="preserve">
+    <value>값은 '{0}에 대해 유효하지 않은 {1}.</value>
+    <comment>ModelBinding: ModelState_AttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value '{0}' is not valid." xml:space="preserve">
+    <value>값은 '{0}'유효하지 않습니다.</value>
+    <comment>ModelBinding: ModelState_NonPropertyAttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value for property '{0}' must be of type '{1}'." xml:space="preserve">
+    <value>속성 값은 '{0} 유형이어야'{1}.</value>
+    <comment>DataAnnotations: Validator_Property_Value_Wrong_Type</comment>
+  </data>
+  <data name="The {0} field is not a valid credit card number." xml:space="preserve">
+    <value>은 {0} 필드는 유효한 신용 카드 번호가 아닙니다.</value>
+    <comment>DataAnnotations: CreditCardAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid e-mail address." xml:space="preserve">
+    <value>은 {0} 필드는 유효한 이메일 주소가 아닙니다.</value>
+    <comment>DataAnnotations: EmailAddressAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid fully-qualified http, https, or ftp URL." xml:space="preserve">
+    <value>은 {0} 필드는 HTTP, HTTPS 또는 FTP URL 유효한 완전한 아닙니다.</value>
+    <comment>DataAnnotations: UrlAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid phone number." xml:space="preserve">
+    <value>은 {0} 필드는 유효한 전화 번호가 아닙니다.</value>
+    <comment>DataAnnotations: PhoneAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>은 {0} 필드는 필수입니다.</value>
+    <comment>DataAnnotations: RequiredAttribute_ValidationError</comment>
+  </data>
+  <data name="The {0} field only accepts files with the following extensions: {1}" xml:space="preserve">
+    <value>은 {0} 필드는 다음과 같은 확장자를 가진 파일을 허용 : {1}</value>
+    <comment>DataAnnotations: FileExtensionsAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} property has not been set.  Use the {1} method to get the value." xml:space="preserve">
+    <value>은 {0} 속성이 설정되지 않았습니다. 값을 얻기 위해 {1} 방법을 사용합니다.</value>
+    <comment>DataAnnotations: DisplayAttribute_PropertyNotSet</comment>
+  </data>
+  <data name="User already has a password set." xml:space="preserve">
+    <value>사용자가 이미 암호 세트가 있습니다.</value>
+    <comment>Identity: UserAlreadyHasPassword</comment>
+  </data>
+  <data name="User already in role '{0}'." xml:space="preserve">
+    <value>이미 역할의 사용자 '{0}'.</value>
+    <comment>Identity: UserAlreadyInRole</comment>
+  </data>
+  <data name="User is not in role '{0}'." xml:space="preserve">
+    <value>사용자 역할에없는 '{0}'.</value>
+    <comment>Identity: UserNotInRole</comment>
+  </data>
+  <data name="User name '{0}' is already taken." xml:space="preserve">
+    <value>사용자 이름 '{0}'이 (가) 이미 취해진 다.</value>
+    <comment>Identity: DuplicateUserName</comment>
+  </data>
+  <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
+    <value>사용자 이름이 '{0}'이 (가) 유효하지 않은 경우에만 문자 또는 숫자를 포함 할 수 있습니다.</value>
+    <comment>Identity: InvalidUserName</comment>
+  </data>
+  <data name="{0} is not valid." xml:space="preserve">
+    <value>{0} 유효하지 않습니다.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidationError</comment>
+  </data>
+  <data name="'{0}' and '{1}' do not match." xml:space="preserve">
+    <value>'{0}' 및 '{1}' 일치하지 않습니다.</value>
+    <comment>DataAnnotations: CompareAttribute_MustMatch</comment>
+  </data>
+  <data name="Current password" xml:space="preserve">
+    <value>현재 비밀번호!</value>
+  </data>
+  <data name="New password" xml:space="preserve">
+    <value>새 암호!</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>로그인 사용자</value>
+  </data>
+  <data name="Verification code" xml:space="preserve">
+    <value>확인 코드!</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>나를 기억해!</value>
+  </data>
+  <data name="Remember this machine?" xml:space="preserve">
+    <value>이 장치를 기억하나요?!</value>
+  </data>
+  <data name="Confirm new password" xml:space="preserve">
+    <value>새 암호를 확인하십시오!</value>
+  </data>
+</root>

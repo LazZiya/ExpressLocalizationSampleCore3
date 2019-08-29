@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
+    <value>2FA이 비활성화되었습니다. 당신은 2FA을 다시 활성화 할 때 설정 인증 자 응용 프로그램을</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;If you reset your authenticator key your authenticator app will not work until you reconfigure it.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        This process disables 2FA until you verify your authenticator app.&#xA;        If you do not complete your authenticator app configuration you may lose access to your account.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p&gt;
+        &lt;스팬 클래스 = "glyphicon glyphicon 경보 서명"&gt; &lt;/ SPAN&gt;
+        당신이 당신의 인증 키를 재설정하면 당신이 그것을 다시 구성 할 때까지 인증 응용 프로그램이 작동하지 않습니다의 &lt;strong&gt;. &lt;/ STRONG&gt;
+    &lt;/ p&gt;
+    &lt;p&gt;
+        당신이 당신의 인증 응용 프로그램을 확인할 때까지이 과정은 2FA을 사용하지 않습니다.
+        당신이 당신의 인증 응용 프로그램 구성을 완료하지 않으면 당신은 당신의 계정에 대한 액세스 권한을 잃을 수 있습니다.
+    &lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;Put these codes in a safe place.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        If you lose your device and don't have the recovery codes you will lose access to your account.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key&#xA;        used in an authenticator app you should &lt;a href=&quot;{0}&quot;&gt;reset your authenticator keys.&lt;/a&gt;&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p&gt;
+        &lt;스팬 클래스 = "glyphicon glyphicon 경보 서명"&gt; &lt;/ SPAN&gt;
+        &lt;strong&gt;을 안전한 장소에 다음 코드를 넣습니다. &lt;/ STRONG&gt;
+    &lt;/ p&gt;
+    &lt;p&gt;
+        당신이 당신의 장치를 잃고 복구 코드가없는 경우 계정에 액세스 할 수 없게됩니다.
+    &lt;/ p&gt;
+    &lt;p&gt;
+        새 복구 코드를 생성하면 인증 애플리케이션에 사용되는 키를 변경하지 않습니다. 당신은 키를 변경하고자하는 경우
+        인증 자 응용 프로그램에서 사용하면 href="{0}"&gt;이 인증 키를 다시 &lt;a한다. &lt;/a&gt;에
+    &lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        Swapping to the &lt;strong&gt;Development&lt;/strong&gt; environment displays detailed information about the error that occurred.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt; It can result in displaying sensitive information from exceptions to end users. For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt; and restarting the app.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p&gt;
+        발생한 오류에 대한 &lt;강한&gt; 개발 &lt;/ STRONG&gt; 환경 자세한 정보가 표시 스와핑.
+    &lt;/ p&gt;
+    &lt;p&gt;
+        &lt;strong&gt;을 개발 환경은 배포 된 응용 프로그램 활성화 할 수 없습니다. &lt;/ STRONG&gt;은 최종 사용자에게 예외 중요한 정보를 표시 될 수 있습니다. 로컬 디버깅 &lt;강한&gt; 개발 &lt;/ STRONG&gt; 앱을 다시 시작하기 &lt;강한&gt; ASPNETCORE_ENVIRONMENT &lt;/ strong&gt;를 환경 변수를 설정하여 &lt;강한&gt; 개발 &lt;/ strong&gt;에서 환경을 가능하게한다.
+    &lt;/ p&gt;</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;Your account contains personal data that you have given us. This page allows you to download or delete that data.&lt;/p&gt;&#xA;            &lt;p&gt;&#xA;                &lt;strong&gt;Deleting this data will permanently remove your account, and this cannot be recovered.&lt;/strong&gt;&#xA;            &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p&gt; 귀하의 계정은 당신이 우리를 제공 한 개인 정보가 포함되어 있습니다. 이 페이지에서는 해당 데이터를 다운로드하거나 삭제할 수 있습니다. &lt;/ P&gt;
+            &lt;p&gt;
+                의 &lt;strong&gt;이 데이터를 삭제하면 영구적으로 계정을 제거하며,이 복구 할 수 없습니다. &lt;/ STRONG&gt;
+            &lt;/ p&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have 1 recovery code left.&lt;/strong&gt;&#xA;            &lt;p&gt;You can &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;strong&gt;을 당신은 1 복구 코드가 남아있다. &lt;/ STRONG&gt;
+            &lt;P&gt; 당신은 href="{0}"&gt; 복구 코드의 새로운 세트를 생성 &lt;/a&gt; 할 수. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have no recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You must &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;strong&gt;을 당신은 남은 복구 코드가 없습니다. &lt;/ STRONG&gt;
+            &lt;P&gt; 당신은 복구 코드로 로그인하기 전에 href="{0}"&gt; &lt;/a&gt;을 복구 코드의 새로운 세트를 생성 &lt;a해야합니다. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have {0} recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You should &lt;a href=&quot;{1}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;strong&gt;을 당신은 {0} 복구 코드는 남아있다. &lt;/ STRONG&gt;
+            &lt;P&gt; 당신은 href="{1}"&gt; 복구 코드의 새로운 세트를 생성 &lt;a해야 &lt;/a&gt;를. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value>접근 불가</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value>로그인 할 다른 서비스를 추가합니다.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Add authenticator app" xml:space="preserve">
+    <value>인증 응용 프로그램 추가</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="An error occurred while processing your request." xml:space="preserve">
+    <value>요청을 처리하는 동안 오류가 발생했습니다.</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Associate your {0} account." xml:space="preserve">
+    <value>당신의 {0} 계정을 연결합니다.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>암호 변경</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value>계정 설정 변경</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Configure authenticator app" xml:space="preserve">
+    <value>인증 응용 프로그램을 구성</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Confirm email" xml:space="preserve">
+    <value>이메일을 확인</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="Confirm your email" xml:space="preserve">
+    <value>이메일을 확인</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value>새로운 계정을 생성.</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Development Mode" xml:space="preserve">
+    <value>개발 모드</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Disable 2FA" xml:space="preserve">
+    <value>안 2FA</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Don't have access to your authenticator device? You can &lt;a id=&quot;recovery-code-login&quot; href=&quot;{0}&quot;&gt;log in with a recovery code&lt;/a&gt;." xml:space="preserve">
+    <value>당신의 인증 장치에 액세스 할 수 없습니까? 당신은 복구 코드 &lt;/a&gt;를 사용하여 로그인 href="{0}"&gt; id="recovery-code-login"을 &lt;a 수 있습니다.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>다운로드</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
+    <value>{ "= &lt;a의 href="{0}"&gt; 윈도우 폰 &lt;/a&gt;에, &lt;a href="{1}"&gt; 안드로이드 &lt;/a&gt;에서 &lt;A HREF 마이크로 소프트 인증 자와 같은 이중 인증 응용 프로그램을 다운로드 2} "&gt; 아이폰 OS거나 &lt;/a&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Download Your Data" xml:space="preserve">
+    <value>데이터 다운로드</value>
+    <comment>Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml</comment>
+  </data>
+  <data name="Enter your email." xml:space="preserve">
+    <value>이메일을 입력합니다.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>오류</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Error from external provider: {0}" xml:space="preserve">
+    <value>외부 공급자로부터 오류 : {0}</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information during confirmation." xml:space="preserve">
+    <value>확인하는 동안 외부 로그인 정보를로드 오류가 발생했습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information." xml:space="preserve">
+    <value>외부 로그인 정보를로드 오류가 발생했습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="External logins" xml:space="preserve">
+    <value>외부 로그인</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Forget this browser" xml:space="preserve">
+    <value>이 브라우저를 잊어 버려</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Forgot password confirmation" xml:space="preserve">
+    <value>패스워드 분실 확인</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>비밀번호를 잊어 버렸습니까?</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Generate Recovery Codes" xml:space="preserve">
+    <value>복구 코드를 생성</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
+    <value>이중 인증 (2FA) 복구 코드를 생성</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>&lt;a를위한 Google 인증 프로그램은 안드로이드 &lt;/a&gt; 및 &lt;a href="{4}"&gt; 아이폰 OS &lt;/a&gt;에 href="{3}"&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Hello {0}!" xml:space="preserve">
+    <value>안녕하세요 {0}!</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>집</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Invalid authenticator code." xml:space="preserve">
+    <value>잘못된 인증 코드입니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value>잘못된 로그인 시도.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid recovery code entered." xml:space="preserve">
+    <value>잘못된 복구 코드를 입력.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Learn about &lt;a href=&quot;{0}&quot;&gt;building Web apps with ASP.NET Core&lt;/a&gt;." xml:space="preserve">
+    <value>ASP.NET 코어 &lt;/a&gt;에와의 &lt;a href="{0}"&gt; 건물 웹 애플리케이션에 대해 알아보세요.</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="Locked out" xml:space="preserve">
+    <value>잠겨</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>로그인</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log in using your external account" xml:space="preserve">
+    <value>외부 계정을 사용하여 로그인</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log out" xml:space="preserve">
+    <value>로그 아웃</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>로그인</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>꾸리다</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value>계정 관리</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value>외부 로그인 관리</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
+    <value>당신이 키 위의 QR 코드 또는 입력을 스캔 한 후, 당신의 두 요소 인증 응용 프로그램은 고유 코드를 제공합니다. 아래의 확인 상자에 코드를 입력합니다.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>암호</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Password not correct." xml:space="preserve">
+    <value>비밀번호 올바르지 않습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value>개인 정보</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Please check your email to reset your password." xml:space="preserve">
+    <value>비밀번호를 재설정 이메일을 확인하시기 바랍니다.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>여기 &lt;/a&gt; 클릭 &lt;a의 href='{0}'&gt;하여 계정을 확인하시기 바랍니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Please enter a valid number." xml:space="preserve">
+    <value>유효한 번호를 입력하십시오.</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>여기 &lt;/a&gt; 클릭 &lt;a의 href='{0}'&gt;하여 암호를 재설정하십시오.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>은둔</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>개인 정보 정책</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>윤곽</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Recovery code verification" xml:space="preserve">
+    <value>복구 코드 검증</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>레지스터</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Register as a new user" xml:space="preserve">
+    <value>새 사용자로 등록</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value>등록 로그인</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>날 기억해?</value>
+    <comment>Login.cshtml</comment>
+  </data>
+  <data name="Remove this login from your account" xml:space="preserve">
+    <value>계정에서이 로그인을 제거</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remove {0}" xml:space="preserve">
+    <value>제거 {0}</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Request ID:" xml:space="preserve">
+    <value>요청 ID :</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>다시 놓기</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset authenticator app" xml:space="preserve">
+    <value>리셋 인증 응용 프로그램</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset authenticator key" xml:space="preserve">
+    <value>리셋 인증 키</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="Reset password" xml:space="preserve">
+    <value>암호를 재설정</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset password confirmation" xml:space="preserve">
+    <value>암호 재설정 확인</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Reset recovery codes" xml:space="preserve">
+    <value>복구 코드를 재설정</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset your password." xml:space="preserve">
+    <value>비밀번호를 재설정.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Sample Form" xml:space="preserve">
+    <value>샘플 양식</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>구하다</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Send verification email" xml:space="preserve">
+    <value>확인 이메일 보내기</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Set password" xml:space="preserve">
+    <value>암호를 설정하세요</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="Setup authenticator app" xml:space="preserve">
+    <value>설정 인증 응용 프로그램</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>제출</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Thank you for confirming your email." xml:space="preserve">
+    <value>이메일을 확인 주셔서 감사합니다.</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
+    <value>현재 브라우저가 잊어 버린되었습니다. 이 브라우저에서 다시 로그인 할 때 당신은 당신의 2FA 코드를 입력하라는 메시지가 표시됩니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was added." xml:space="preserve">
+    <value>외부 로그인이 추가되었습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was removed." xml:space="preserve">
+    <value>외부 로그인이 제거되었습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="There are no external authentication services configured. See &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services." xml:space="preserve">
+    <value>구성 외부 인증 서비스가 없습니다. &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt; 외부 서비스를 통해 로그인을 지원하기 위해 ASP.NET 응용 프로그램을 설정하는 방법에 대한 자세한 내용은이 문서 &lt;/a&gt;를 참조하십시오.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="This account has been locked out, please try again later." xml:space="preserve">
+    <value>이 계정은 잠겨있다, 나중에 다시 시도하십시오.</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="To enable QR code generation please read our &lt;a href=&quot;{0}&quot;&gt;documentation&lt;/a&gt;." xml:space="preserve">
+    <value>QR 코드 생성을 사용하려면 Google의 &lt;a href="{0}"&gt; 문서 &lt;/a&gt;를 읽어 보시기 바랍니다.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
+    <value>인증 자 응용 프로그램은 다음과 같은 단계를 통해 이동 사용하려면 :</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication" xml:space="preserve">
+    <value>이중 인증</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication (2FA)" xml:space="preserve">
+    <value>이중 인증 (2FA)</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value>업데이트 암호</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Use a local account to log in." xml:space="preserve">
+    <value>에 로그인 할 때 로컬 계정을 사용합니다.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use another service to log in." xml:space="preserve">
+    <value>에 로그인 할 때 다른 서비스를 사용합니다.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use this page to detail your site's privacy policy." xml:space="preserve">
+    <value>세부 사이트의 개인 정보 보호 정책이 페이지를 사용합니다.</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Use this space to summarize your privacy and cookie use policy. &lt;a href=&quot;{0}&quot;&gt;Learn More&lt;/a&gt;.&#xA;        &lt;button type=&quot;button&quot; class=&quot;accept-policy close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot; data-cookie-string=&quot;{1}&quot;&gt;&#xA;            &lt;span aria-hidden=&quot;true&quot;&gt;Accept&lt;/span&gt;&#xA;        &lt;/button&gt;" xml:space="preserve">
+    <value>귀하의 개인 정보 보호 및 쿠키 사용 정책을 요약하기 위해이 공간을 사용합니다. &lt;a 자세히 알아보기 &lt;/a&gt; href="{0}"&gt;.
+        &lt;버튼 유형 = "버튼"클래스 = "동의 정책을 가까이"=이 아리아 라벨 = "닫기"데이터 - 쿠키 - 문자열 "경고"데이터 기각 "{1}"&gt;
+            &lt;스팬 아리아 - 숨겨진 = "진정한"&gt; 동의 &lt;/ SPAN&gt;
+        &lt;/ 버튼&gt;</value>
+    <comment>Pages/Shared/_CookieConsentPartial.cshtml</comment>
+  </data>
+  <data name="Verification Code" xml:space="preserve">
+    <value>확인 코드</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Verification email sent. Please check your email." xml:space="preserve">
+    <value>확인 이메일을 보냈습니다. 이메일을 확인하시기 바랍니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>확인</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>환영</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
+    <value>이 사이트에 대한 로컬 사용자 이름 / 암호가 없습니다. 외부 로그인없이 로그인 할 수 있도록 로컬 계정을 추가합니다.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="You do not have access to this resource." xml:space="preserve">
+    <value>당신은이 리소스에 액세스 할 수 없습니다.</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="You have generated new recovery codes." xml:space="preserve">
+    <value>당신은 새 복구 코드를 생성했다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
+    <value>당신은 복구 코드로 로그인 요청했습니다. 당신이 로그에서 인증 자 응용 프로그램 코드를 제공하거나 2FA를 해제하고 다시 로그인 할 때까지이 로그인은 기억되지 않습니다.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="You have successfully logged out of the application." xml:space="preserve">
+    <value>성공적으로 응용 프로그램에서 로그 아웃했다.</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
+    <value>당신이 성공적으로 인증 한의 &lt;strong&gt; {0} &lt;/ strong&gt;을 선택합니다. 아래에이 사이트에 대한 이메일 주소를 입력하고 로깅을 완료 할 수있는 등록 버튼을 클릭하십시오.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Your authenticator app has been verified." xml:space="preserve">
+    <value>귀하의 인증 응용 프로그램이 검증되었습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
+    <value>귀하의 인증 응용 프로그램 키가 재설정 된 새 키를 사용하여 인증 응용 프로그램을 구성해야합니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
+    <value>사용자의 로그인은 인증 자 응용 프로그램과 함께 보호됩니다. 아래에 인증 코드를 입력합니다.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value>당신의 비밀번호가 변경되었습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your password has been reset. Please &lt;a href=&quot;{0}&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
+    <value>비밀번호가 초기화되었습니다. 로그인 &lt;/a&gt; 여기를 클릭 href="{0}"&gt; &lt;a하십시오.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Your password has been set." xml:space="preserve">
+    <value>암호가 설정되어 있습니다.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your profile has been updated" xml:space="preserve">
+    <value>당신의 프로필이 업데이트되었습니다</value>
+    <comment>Custom back end message</comment>
+  </data>
+</root>
