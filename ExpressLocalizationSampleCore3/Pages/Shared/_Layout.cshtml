@@ -6,6 +6,10 @@
     <title><localize>@ViewData["Title"]</localize> - ExpressLocalizationSampleCore3</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @if (System.Globalization.CultureInfo.CurrentCulture.TextInfo.IsRightToLeft)
+    {
+        <link rel="stylesheet" href="~/css/rtl.css" />
+    }
 </head>
 @{ 
     var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
