@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -14,26 +15,30 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         ILogger<ResetAuthenticatorModel> _logger;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         public ResetAuthenticatorModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            ILogger<ResetAuthenticatorModel> logger)
+            ILogger<ResetAuthenticatorModel> logger,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
-        [TempData]
-        public string StatusMessage { get; set; }
 
         public async Task<IActionResult> OnGet()
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             return Page();
@@ -41,10 +46,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
+            string msg;
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             await _userManager.SetTwoFactorEnabledAsync(user, false);
@@ -52,9 +60,9 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             _logger.LogInformation("User with ID '{UserId}' has reset their authentication app key.", user.Id);
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.";
+            msg = _loc.FormattedText("Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.");
 
-            return RedirectToPage("./EnableAuthenticator");
+            return RedirectToPage("./EnableAuthenticator", new { culture });
         }
     }
 }

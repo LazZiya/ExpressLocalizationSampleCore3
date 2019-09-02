@@ -3,10 +3,12 @@
 @{
     ViewData["Title"] = "Manage Email";
     ViewData["ActivePage"] = ManageNavPages.Email;
+    var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
 }
 
-<h4>@ViewData["Title"]</h4>
-<partial name="_StatusMessage" model="Model.StatusMessage" />
+<h4 localize-content>@ViewData["Title"]</h4>
+<alert view-context="ViewContext"></alert>
+
 <div class="row">
     <div class="col-md-6">
         <form id="email-form" method="post">
@@ -25,7 +27,7 @@
                  else
                 {
                     <input asp-for="Email" class="form-control" disabled />
-                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
+                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link"  asp-route-culture="@culture" localize-content>Send verification email</button>
                 }
             </div>
             <div class="form-group">
@@ -33,7 +35,7 @@
                 <input asp-for="Input.NewEmail" class="form-control" />
                 <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
             </div>
-            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary">Change email</button>
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary"  asp-route-culture="@culture" localize-content>Change email</button>
         </form>
     </div>
 </div>

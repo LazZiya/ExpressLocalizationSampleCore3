@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,13 +11,16 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<PersonalDataModel> _logger;
+        private readonly SharedCultureLocalizer _loc;
 
         public PersonalDataModel(
             UserManager<IdentityUser> userManager,
-            ILogger<PersonalDataModel> logger)
+            ILogger<PersonalDataModel> logger,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _logger = logger;
+            _loc = loc;
         }
 
         public async Task<IActionResult> OnGet()
@@ -24,7 +28,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             return Page();

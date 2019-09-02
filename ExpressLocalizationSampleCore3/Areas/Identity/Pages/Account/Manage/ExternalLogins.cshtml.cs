@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,13 +15,19 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
+
 
         public ExternalLoginsModel(
             UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         public IList<UserLoginInfo> CurrentLogins { get; set; }
@@ -28,15 +36,14 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public bool ShowRemoveButton { get; set; }
 
-        [TempData]
-        public string StatusMessage { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             CurrentLogins = await _userManager.GetLoginsAsync(user);
@@ -49,22 +56,27 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostRemoveLoginAsync(string loginProvider, string providerKey)
         {
+            string msg;
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var result = await _userManager.RemoveLoginAsync(user, loginProvider, providerKey);
             if (!result.Succeeded)
             {
-                StatusMessage = "The external login was not removed.";
-                return RedirectToPage();
+                msg = _loc.FormattedText("The external login was not removed.");
+                TempData.Danger(msg);
+
+                return RedirectToPage($"~/{culture}");
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "The external login was removed.";
-            return RedirectToPage();
+            msg = _loc.FormattedText("The external login was removed.");
+            TempData.Success(msg);
+            return RedirectToPage($"~/{culture}");
         }
 
         public async Task<IActionResult> OnPostLinkLoginAsync(string provider)
@@ -73,17 +85,20 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             // Request a redirect to the external login provider to link a login for the current user
-            var redirectUrl = Url.Page("./ExternalLogins", pageHandler: "LinkLoginCallback");
+            var redirectUrl = Url.Page("./ExternalLogins", pageHandler: "LinkLoginCallback", new { culture });
             var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl, _userManager.GetUserId(User));
             return new ChallengeResult(provider, properties);
         }
 
         public async Task<IActionResult> OnGetLinkLoginCallbackAsync()
         {
+            string msg;
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var info = await _signInManager.GetExternalLoginInfoAsync(await _userManager.GetUserIdAsync(user));
@@ -95,15 +110,16 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var result = await _userManager.AddLoginAsync(user, info);
             if (!result.Succeeded)
             {
-                StatusMessage = "The external login was not added. External logins can only be associated with one account.";
-                return RedirectToPage();
+                msg = _loc.FormattedText("The external login was not added. External logins can only be associated with one account.");
+                return RedirectToPage($"~/{culture}");
             }
 
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
-            StatusMessage = "The external login was added.";
-            return RedirectToPage();
+            msg = _loc.FormattedText("The external login was added.");
+            TempData.Success(msg);
+            return RedirectToPage($"~/{culture}");
         }
     }
 }

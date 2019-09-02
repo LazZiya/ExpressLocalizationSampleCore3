@@ -5,21 +5,21 @@
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
 }
 
-<partial name="_StatusMessage" for="StatusMessage" />
-<h2>@ViewData["Title"]</h2>
+
+<h2 localize-content>@ViewData["Title"]</h2>
+<alert view-context="ViewContext"></alert>
 
 <div class="alert alert-warning" role="alert">
     <p>
-        <strong>This action only disables 2FA.</strong>
+        <strong localize-content>This action only disables 2FA.</strong>
     </p>
-    <p>
-        Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key
-        used in an authenticator app you should <a asp-page="./ResetAuthenticator">reset your authenticator keys.</a>
+    <p localize-content>
+        Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should <a asp-page="./ResetAuthenticator">reset your authenticator keys.</a>
     </p>
 </div>
 
 <div>
     <form method="post" class="form-group">
-        <button class="btn btn-danger" type="submit">Disable 2FA</button>
+        <button class="btn btn-danger" type="submit" localize-content>Disable 2FA</button>
     </form>
 </div>

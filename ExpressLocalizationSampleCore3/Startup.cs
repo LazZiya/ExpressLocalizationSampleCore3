@@ -34,8 +34,25 @@ namespace ExpressLocalizationSampleCore3
             var cultures = new[]
             {
                 new CultureInfo("ar"),
+                new CultureInfo("cs"),
+                new CultureInfo("de"),
+                new CultureInfo("es"),
+                new CultureInfo("fa"),
+                new CultureInfo("fr"),
+                new CultureInfo("hi"),
+                new CultureInfo("hu"),
+                new CultureInfo("it"),
+                new CultureInfo("ja"),
+                new CultureInfo("ko"),
+                new CultureInfo("nl"),
+                new CultureInfo("pl"),
+                new CultureInfo("pt"),
+                new CultureInfo("pt-br"),
+                new CultureInfo("ru"),
+                new CultureInfo("sv"),
                 new CultureInfo("tr"),
-                new CultureInfo("en"),
+                new CultureInfo("vi"),
+                new CultureInfo("zh"),
             };
 
             services.AddRazorPages()

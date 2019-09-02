@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -16,15 +18,20 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<TwoFactorAuthenticationModel> _logger;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         public TwoFactorAuthenticationModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            ILogger<TwoFactorAuthenticationModel> logger)
+            ILogger<TwoFactorAuthenticationModel> logger,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         public bool HasAuthenticator { get; set; }
@@ -36,15 +43,14 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public bool IsMachineRemembered { get; set; }
 
-        [TempData]
-        public string StatusMessage { get; set; }
 
         public async Task<IActionResult> OnGet()
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             HasAuthenticator = await _userManager.GetAuthenticatorKeyAsync(user) != null;
@@ -57,14 +63,18 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPost()
         {
+            string msg;
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             await _signInManager.ForgetTwoFactorClientAsync();
-            StatusMessage = "The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.";
+            msg = _loc.FormattedText("The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.");
+            TempData.Info(msg);
+
             return RedirectToPage();
         }
     }

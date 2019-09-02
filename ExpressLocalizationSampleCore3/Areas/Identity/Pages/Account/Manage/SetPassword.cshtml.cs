@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.ExpressLocalization.Messages;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,25 +16,28 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         public SetPasswordModel(
             UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         [BindProperty]
         public InputModel Input { get; set; }
 
-        [TempData]
-        public string StatusMessage { get; set; }
 
         public class InputModel
         {
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
+            [StringLength(100, ErrorMessage = DataAnnotationsErrorMessages.StringLengthAttribute_ValidationErrorIncludingMinimum, MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "New password")]
             public string NewPassword { get; set; }
@@ -47,14 +53,15 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var hasPassword = await _userManager.HasPasswordAsync(user);
 
             if (hasPassword)
             {
-                return RedirectToPage("./ChangePassword");
+                return RedirectToPage("./ChangePassword", new { culture });
             }
 
             return Page();
@@ -67,10 +74,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
+            string msg;
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var addPasswordResult = await _userManager.AddPasswordAsync(user, Input.NewPassword);
@@ -84,9 +94,10 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your password has been set.";
+            msg = _loc.FormattedText("Your password has been set.");
+            TempData.Success(msg);
 
-            return RedirectToPage();
+            return RedirectToPage($"~/{culture}");
         }
     }
 }

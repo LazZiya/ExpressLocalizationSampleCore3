@@ -237,8 +237,8 @@
     <value>İndir</value>
     <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
   </data>
-  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
-    <value>Microsoft Authenticator gibi iki faktörlü kimlik doğrulayıcı uygulamasını indirin &lt;a href="{0}"&gt; Windows Phone &lt;/a&gt;, &lt;a href="{1}"&gt; Android &lt;/a&gt; ve &lt;a href="{2} "&gt; iOS &lt;/a&gt; veya</value>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>Microsoft Authenticator gibi iki faktörlü kimlik doğrulayıcı uygulamasını indirin &lt;a href="{0}"&gt; Windows Phone &lt;/a&gt;, &lt;a href="{1}"&gt; Android &lt;/a&gt; ve &lt;a href="{2} "&gt; iOS &lt;/a&gt; veya &lt;a href="{0}"&gt;Android&lt;/a&gt; ve &lt;a href="{1}"&gt; iOS &lt;/a&gt; için Google Şifrematik.</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Download Your Data" xml:space="preserve">
@@ -617,5 +617,8 @@
   </data>
   <data name="Resend email confirmation" xml:space="preserve">
     <value>Doğrulama epostasını yeniden gönder</value>
+  </data>
+  <data name="Use another service to register." xml:space="preserve">
+    <value>Kayıt olmak için başka service kullan.</value>
   </data>
 </root>

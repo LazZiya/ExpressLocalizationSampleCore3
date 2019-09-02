@@ -3,44 +3,46 @@
 @{
     ViewData["Title"] = "Configure authenticator app";
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+    var links = new[]
+    {
+        "https://go.microsoft.com/fwlink/?Linkid=825071",
+        "https://go.microsoft.com/fwlink/?Linkid=825072",
+        "https://go.microsoft.com/fwlink/?Linkid=825073",
+        "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en",
+        "https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8"
+    };
 }
 
-<partial name="_StatusMessage" for="StatusMessage" />
-<h4>@ViewData["Title"]</h4>
+<h4 localize-content>@ViewData["Title"]</h4>
+<alert view-context="ViewContext"></alert>
+
 <div>
-    <p>To use an authenticator app go through the following steps:</p>
+    <p localize-content>To use an authenticator app go through the following steps:</p>
     <ol class="list">
         <li>
-            <p>
-                Download a two-factor authenticator app like Microsoft Authenticator for
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825071">Windows Phone</a>,
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825072">Android</a> and
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825073">iOS</a> or
-                Google Authenticator for
-                <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en">Android</a> and
-                <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8">iOS</a>.
+            <p localize-args="@links">
+                Download a two-factor authenticator app like Microsoft Authenticator for <a href="{0}">Windows Phone</a>, <a href="{1}">Android</a> and <a href="{2}">iOS</a> or Google Authenticator for <a href="{3}">Android</a> and <a href="{4}">iOS</a>.
             </p>
         </li>
         <li>
-            <p>Scan the QR Code or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
-            <div class="alert alert-info">Learn how to <a href="https://go.microsoft.com/fwlink/?Linkid=852423">enable QR code generation</a>.</div>
+            <p localize-args="@(new[] {Model.SharedKey, "https://go.microsoft.com/fwlink/?Linkid=852423" })">Scan the QR Code or enter this key <kbd>{0}</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
+            <div class="alert alert-info">Learn how to <a href="{1}">enable QR code generation</a>.</div>
             <div id="qrCode"></div>
             <div id="qrCodeData" data-url="@Html.Raw(@Model.AuthenticatorUri)"></div>
         </li>
         <li>
-            <p>
-                Once you have scanned the QR code or input the key above, your two factor authentication app will provide you
-                with a unique code. Enter the code in the confirmation box below.
+            <p localize-content>
+                Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below.
             </p>
             <div class="row">
                 <div class="col-md-6">
                     <form id="send-code" method="post">
                         <div class="form-group">
-                            <label asp-for="Input.Code" class="control-label">Verification Code</label>
+                            <label asp-for="Input.Code" class="control-label" localize-content>Verification Code</label>
                             <input asp-for="Input.Code" class="form-control" autocomplete="off" />
                             <span asp-validation-for="Input.Code" class="text-danger"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Verify</button>
+                        <button type="submit" class="btn btn-primary" localize-content>Verify</button>
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     </form>
                 </div>

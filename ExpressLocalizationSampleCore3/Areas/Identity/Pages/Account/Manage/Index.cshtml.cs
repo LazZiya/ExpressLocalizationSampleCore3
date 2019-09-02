@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.ExpressLocalization.Messages;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,26 +16,29 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         public IndexModel(
             UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
+        [Display(Name = "User name")]
         public string Username { get; set; }
-
-        [TempData]
-        public string StatusMessage { get; set; }
 
         [BindProperty]
         public InputModel Input { get; set; }
 
         public class InputModel
         {
-            [Phone]
+            [Phone(ErrorMessage = DataAnnotationsErrorMessages.PhoneAttribute_Invalid)]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
         }
@@ -55,7 +61,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             await LoadAsync(user);
@@ -64,10 +71,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
+            string msg;
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             if (!ModelState.IsValid)
@@ -88,8 +98,10 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
-            return RedirectToPage();
+            msg = _loc.FormattedText("Your profile has been updated");
+            TempData.Success(msg);
+
+            return RedirectToPage($"~/{culture}");
         }
     }
 }
