@@ -49,7 +49,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -67,12 +67,12 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
             await _signInManager.ForgetTwoFactorClientAsync();
-            msg = _loc.FormattedText("The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.");
+            msg = _loc.GetLocalizedString("The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.");
             TempData.Info(msg);
 
             return RedirectToPage();

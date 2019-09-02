@@ -61,7 +61,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -76,7 +76,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -98,7 +98,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            msg = _loc.FormattedText("Your profile has been updated");
+            msg = _loc.GetLocalizedString("Your profile has been updated");
             TempData.Success(msg);
 
             return RedirectToPage($"~/{culture}");

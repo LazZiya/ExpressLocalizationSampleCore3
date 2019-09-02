@@ -42,7 +42,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -60,21 +60,21 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
             var result = await _userManager.RemoveLoginAsync(user, loginProvider, providerKey);
             if (!result.Succeeded)
             {
-                msg = _loc.FormattedText("The external login was not removed.");
+                msg = _loc.GetLocalizedString("The external login was not removed.");
                 TempData.Danger(msg);
 
                 return RedirectToPage($"~/{culture}");
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            msg = _loc.FormattedText("The external login was removed.");
+            msg = _loc.GetLocalizedString("The external login was removed.");
             TempData.Success(msg);
             return RedirectToPage($"~/{culture}");
         }
@@ -97,7 +97,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -110,14 +110,14 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var result = await _userManager.AddLoginAsync(user, info);
             if (!result.Succeeded)
             {
-                msg = _loc.FormattedText("The external login was not added. External logins can only be associated with one account.");
+                msg = _loc.GetLocalizedString("The external login was not added. External logins can only be associated with one account.");
                 return RedirectToPage($"~/{culture}");
             }
 
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
-            msg = _loc.FormattedText("The external login was added.");
+            msg = _loc.GetLocalizedString("The external login was added.");
             TempData.Success(msg);
             return RedirectToPage($"~/{culture}");
         }

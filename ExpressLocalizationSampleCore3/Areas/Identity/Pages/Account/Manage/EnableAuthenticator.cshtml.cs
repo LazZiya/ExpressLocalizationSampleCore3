@@ -63,7 +63,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -77,7 +77,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -95,7 +95,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
             if (!is2faTokenValid)
             {
-                var invCode = _loc.FormattedText("Verification code is invalid.");
+                var invCode = _loc.GetLocalizedString("Verification code is invalid.");
                 ModelState.AddModelError("Input.Code", invCode);
                 await LoadSharedKeyAndQrCodeUriAsync(user);
                 return Page();
@@ -105,7 +105,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var userId = await _userManager.GetUserIdAsync(user);
             _logger.LogInformation("User with ID '{UserId}' has enabled 2FA with an authenticator app.", userId);
 
-            var successMsg = _loc.FormattedText("Your authenticator app has been verified.");
+            var successMsg = _loc.GetLocalizedString("Your authenticator app has been verified.");
             TempData.Success(successMsg);
 
             if (await _userManager.CountRecoveryCodesAsync(user) == 0)

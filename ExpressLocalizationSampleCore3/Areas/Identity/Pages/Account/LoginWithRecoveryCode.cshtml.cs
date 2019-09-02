@@ -89,7 +89,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             {
                 _logger.LogWarning("Invalid recovery code entered for user with ID '{UserId}' ", user.Id);
 
-                var msg = _loc.FormattedText("Invalid recovery code entered.");
+                var msg = _loc.GetLocalizedString("Invalid recovery code entered.");
                 TempData.Danger(msg);
                 return Page();
             }

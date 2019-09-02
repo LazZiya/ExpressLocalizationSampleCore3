@@ -64,8 +64,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
                     values: new { area = "Identity", code, culture },
                     protocol: Request.Scheme);
 
-                var mailHeader = _loc.FormattedText("Reset Password");
-                var mailBody = _loc.FormattedText("Please reset your password by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
+                var mailHeader = _loc.GetLocalizedString("Reset Password");
+                var mailBody = _loc.GetLocalizedString("Please reset your password by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
 
                 await _emailSender.SendEmailAsync(
                     Input.Email,

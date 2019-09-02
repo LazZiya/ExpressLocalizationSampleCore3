@@ -49,7 +49,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -62,7 +62,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -71,7 +71,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             {
                 if (!await _userManager.CheckPasswordAsync(user, Input.Password))
                 {
-                    var msg = _loc.FormattedText("Incorrect password.");
+                    var msg = _loc.GetLocalizedString("Incorrect password.");
                     ModelState.AddModelError(string.Empty, msg);
                     return Page();
                 }

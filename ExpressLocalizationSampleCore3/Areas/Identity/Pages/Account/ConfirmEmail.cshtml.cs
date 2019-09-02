@@ -37,7 +37,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", userId);
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", userId);
                 return NotFound(msg);
             }
 
@@ -46,12 +46,12 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
 
             if (result.Succeeded)
             {
-                var msg = _loc.FormattedText("Thank you for confirming your email.");
+                var msg = _loc.GetLocalizedString("Thank you for confirming your email.");
                 TempData.Success(msg);
             }
             else
             {
-                var msg = _loc.FormattedText("Error confirming your email.");
+                var msg = _loc.GetLocalizedString("Error confirming your email.");
                 TempData.Danger(msg);
             }
 

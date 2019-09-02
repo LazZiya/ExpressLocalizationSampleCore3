@@ -37,7 +37,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -51,7 +51,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -60,7 +60,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             _logger.LogInformation("User with ID '{UserId}' has reset their authentication app key.", user.Id);
 
             await _signInManager.RefreshSignInAsync(user);
-            msg = _loc.FormattedText("Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.");
+            msg = _loc.GetLocalizedString("Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.");
 
             return RedirectToPage("./EnableAuthenticator", new { culture });
         }

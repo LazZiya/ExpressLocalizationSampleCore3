@@ -72,7 +72,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -85,7 +85,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -106,21 +106,21 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
                     values: new { userId = userId, email = Input.NewEmail, code = code, culture = culture },
                     protocol: Request.Scheme);
 
-                var emailHeader = _loc.FormattedText("Confirm your email");
-                var emailBody = _loc.FormattedText("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
+                var emailHeader = _loc.GetLocalizedString("Confirm your email");
+                var emailBody = _loc.GetLocalizedString("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
 
                 await _emailSender.SendEmailAsync(
                     Input.NewEmail,
                     emailHeader,
                     emailBody);
 
-                var emailSent = _loc.FormattedText("Confirmation link to change email sent. Please check your email.");
+                var emailSent = _loc.GetLocalizedString("Confirmation link to change email sent. Please check your email.");
                 TempData.Info(emailSent);
 
                 return RedirectToPage();
             }
 
-            var emailUnchanged = _loc.FormattedText("Your email is unchanged.");
+            var emailUnchanged = _loc.GetLocalizedString("Your email is unchanged.");
             TempData.Info(emailUnchanged);
 
             return RedirectToPage($"~/{culture}");
@@ -131,7 +131,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -152,15 +152,15 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
                 values: new { area = "Identity", userId = userId, code = code, culture = culture },
                 protocol: Request.Scheme);
             
-            var emailHeader = _loc.FormattedText("Confirm your email");
-            var emailBody = _loc.FormattedText("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
+            var emailHeader = _loc.GetLocalizedString("Confirm your email");
+            var emailBody = _loc.GetLocalizedString("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
 
             await _emailSender.SendEmailAsync(
                 email,
                 emailHeader,
                 emailBody);
 
-            var alert = _loc.FormattedText("Verification email sent. Please check your email.");
+            var alert = _loc.GetLocalizedString("Verification email sent. Please check your email.");
             TempData.Info(alert);
 
             return RedirectToPage($"~/{culture}");

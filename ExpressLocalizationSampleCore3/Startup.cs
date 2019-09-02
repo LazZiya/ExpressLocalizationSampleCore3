@@ -36,6 +36,7 @@ namespace ExpressLocalizationSampleCore3
                 new CultureInfo("ar"),
                 new CultureInfo("cs"),
                 new CultureInfo("de"),
+                new CultureInfo("en"),
                 new CultureInfo("es"),
                 new CultureInfo("fa"),
                 new CultureInfo("fr"),

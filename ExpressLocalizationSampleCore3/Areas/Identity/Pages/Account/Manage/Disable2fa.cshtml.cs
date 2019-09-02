@@ -37,7 +37,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -54,7 +54,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
                 return NotFound(msg);
             }
 
@@ -66,7 +66,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
             _logger.LogInformation("User with ID '{UserId}' has disabled 2fa.", _userManager.GetUserId(User));
 
-            var alert = _loc.FormattedText("2fa has been disabled. You can reenable 2fa when you setup an authenticator app");
+            var alert = _loc.GetLocalizedString("2fa has been disabled. You can reenable 2fa when you setup an authenticator app");
             TempData.Info(alert);
 
             return RedirectToPage("./TwoFactorAuthentication", new { culture });

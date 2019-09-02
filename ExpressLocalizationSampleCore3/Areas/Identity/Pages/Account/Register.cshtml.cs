@@ -96,8 +96,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = user.Id, code = code, culture },
                         protocol: Request.Scheme);
 
-                    var mailHeader = _loc.FormattedText("Confirm your email");
-                    var mailBody = _loc.FormattedText("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
+                    var mailHeader = _loc.GetLocalizedString("Confirm your email");
+                    var mailBody = _loc.GetLocalizedString("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
 
                     await _emailSender.SendEmailAsync(Input.Email, mailHeader, mailBody);
 
