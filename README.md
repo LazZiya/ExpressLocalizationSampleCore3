@@ -4,7 +4,7 @@ Localized using [LazZiya.ExpressLocalization](1) and [LazZiya.TagHelpers.Localiz
 
 ## DotNetCore Version
 This project uses **dotnetcore3.0-preview8**.
-additionally you can find **dotnetcore2.2** compatible version here: [ExpressLocalization Sample](https://github.com/LazZiya/ExpressLocalizationSample)
+additionally you can find **dotnetcore2.2** compatible version here: [ExpressLocalization Sample for DotNetCore 2.2](https://github.com/LazZiya/ExpressLocalizationSample)
 
 ## Features :
  - Custom (route value) RequestCultureProvider
