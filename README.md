@@ -1,15 +1,18 @@
-# ExpressLocalizationSample
-Fully localized project, based on the basic Asp.Net Core 3 template from Visual Studio.
-Localized using [LazZiya.ExpressLocalization](https://github.com/LazZiya/ExpressLocalization).
+# ExpressLocalization sample project for DotNetCore 3.0
+Fully localized Asp.Net Core 3.0 project, based on the basic template from Visual Studio.
+Localized using [LazZiya.ExpressLocalization](1) and [LazZiya.TagHelpers.Localization](2).
 
+## DotNetCore Version
+This project uses **dotnetcore3.0-preview8**.
+additionally you can find **dotnetcore2.2** compatible version here: [ExpressLocalization Sample](https://github.com/LazZiya/ExpressLocalizationSample)
 
 ## Features :
  - Custom (route value) RequestCultureProvider
  - Custom IHtmlStringLocalizer
- - Custom [LocalizeTagHelper](https://github.com/lazziya/TagHelpers.Localization)
+ - Custom [LocalizeTagHelper](2)
  - Validating localized input fields e.g. (12,34 and 12.34)
  - Localization of:
-   - Razor Views (All views locailzed with [LocalizeTagHelper](https://github.com/lazziya/TagHelpers.Localization))
+   - Razor Views (All views locailzed with [LocalizeTagHelper](2))
    - DataAnnotations
    - Model binding and model validation error messages
    - IdentityErrorDescriber messages
@@ -17,7 +20,7 @@ Localized using [LazZiya.ExpressLocalization](https://github.com/LazZiya/Express
 
  
 ## Available Cultures
-_some cultures needs fixing/adding few translations_
+_Resource texts may need fixing/adding translations_
  - Arabic
  - Chinese
  - Czech
@@ -47,12 +50,16 @@ http://ziyad.info/en/articles/33-Express_Localization
 http://ziyad.info/en/articles/36-Develop_Multi_Cultural_Web_Application_Using_ExpressLocalization
 
 ## TagHelpers
-Some parts of this project is using [LazZiya.TagHelpers](https://github.com/LazZiya/TagHelpers) like:
+Some parts of this project is using [LazZiya.TagHelpers](3) like:
  - LanguageNav dropdown
  - Client side validation scripts
  - AlertTagHelper for bootstrap 4 alerts
- - Localization of razor views done with [LocalizeTagHelper](https://github.com/lazziya/TagHelpers.Localization).
+ - Localization of razor views done with [LocalizeTagHelper](2).
 
  
 ## License:
 MIT
+
+[1]: https://github.com/LazZiya/ExpressLocalization/tree/ExpressLocalizationCore3
+[2]: https://github.com/LazZiya/TagHelpers.Localization/tree/TagHelpersLocalizationCore3
+[3]: https://github.com/LazZiya/TagHelpers/tree/TagHelpersCore3
