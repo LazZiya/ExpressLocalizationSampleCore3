@@ -1,4 +1,4 @@
-# ExpressLocalization sample project for DotNetCore 3.0
+# ExpressLocalization sample - Asp.Net Core 3.0
 Fully localized Asp.Net Core 3.0 project, based on the basic template from Visual Studio.
 Localized using [LazZiya.ExpressLocalization](1) and [LazZiya.TagHelpers.Localization](2).
 
