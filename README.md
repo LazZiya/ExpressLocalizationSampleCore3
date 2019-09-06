@@ -6,6 +6,9 @@ Localized using [LazZiya.ExpressLocalization][1] and [LazZiya.TagHelpers.Localiz
 This project uses **dotnetcore3.0-preview8**.
 additionally you can find **dotnetcore2.2** compatible version here: [ExpressLocalization Sample for Asp.Net Core 2.2](https://github.com/LazZiya/ExpressLocalizationSample)
 
+## Visual Studio Version
+In order to work with this project you need to install the latest **preview** version of visual studio with DorNetCore3.0 preview https://visualstudio.microsoft.com/vs/preview/
+
 ## Features :
  - Custom (route value) RequestCultureProvider
  - Custom IHtmlStringLocalizer
