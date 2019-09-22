@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview2" />
     <PackageReference Include="LazZiya.TagHelpers" Version="3.0.0-preview1" />
-    <PackageReference Include="LazZiya.TagHelpers.Localization" Version="1.1.0-preview1" />
+    <PackageReference Include="LazZiya.TagHelpers.Localization" Version="1.1.0-preview2" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.0-preview8.19405.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0-preview8.19405.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0-preview8.19405.7" />
