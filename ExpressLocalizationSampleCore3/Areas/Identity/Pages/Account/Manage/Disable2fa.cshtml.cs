@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,13 +15,18 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<Disable2faModel> _logger;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         public Disable2faModel(
             UserManager<IdentityUser> userManager,
-            ILogger<Disable2faModel> logger)
+            ILogger<Disable2faModel> logger,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _logger = logger;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         [TempData]
@@ -30,7 +37,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             if (!await _userManager.GetTwoFactorEnabledAsync(user))
@@ -46,7 +54,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var disable2faResult = await _userManager.SetTwoFactorEnabledAsync(user, false);
@@ -56,8 +65,11 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             }
 
             _logger.LogInformation("User with ID '{UserId}' has disabled 2fa.", _userManager.GetUserId(User));
-            StatusMessage = "2fa has been disabled. You can reenable 2fa when you setup an authenticator app";
-            return RedirectToPage("./TwoFactorAuthentication");
+
+            var alert = _loc.GetLocalizedString("2fa has been disabled. You can reenable 2fa when you setup an authenticator app");
+            TempData.Info(alert);
+
+            return RedirectToPage("./TwoFactorAuthentication", new { culture });
         }
     }
 }

@@ -237,8 +237,8 @@
     <value>تحميل</value>
     <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
   </data>
-  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
-    <value>تحميل الموثق التطبيق اثنين عامل مثل مايكروسوفت الموثق ل&lt;a href="{0}"&gt; هاتف ويندوز &lt;/a&gt; أو &lt;a href="{1}"&gt; الروبوت &lt;/a&gt; و &lt;لأ href = "{ (2)} "&gt; دائرة الرقابة الداخلية &lt;/a&gt; أو</value>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>تحميل تطبيق التوثيق مثل مايكروسوفت الموثق ل &lt;a href="{0}"&gt; هاتف ويندوز &lt;/a&gt; أو &lt;a href="{1}"&gt; أندرويد &lt;/a&gt; و &lt;a href="{2}"&gt; آبل &lt;/a&gt; أو تطبيق التوثيق من جوجل لـ &lt;a href="{3}"&gt; أندرويد &lt;/a&gt; و &lt;a href="{4}"&gt; آبل &lt;/a&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Download Your Data" xml:space="preserve">
@@ -617,5 +617,8 @@
   </data>
   <data name="Resend email confirmation" xml:space="preserve">
     <value>إعادة إرسال التوثيق على البريد الإلكتروني</value>
+  </data>
+  <data name="Use another service to register." xml:space="preserve">
+    <value>استخدم خدمة أخرى لتسجيل مستخدم جديد.</value>
   </data>
 </root>

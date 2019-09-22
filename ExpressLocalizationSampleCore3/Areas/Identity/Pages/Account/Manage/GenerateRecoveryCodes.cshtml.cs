@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LazZiya.ExpressLocalization;
+using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,27 +15,31 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<GenerateRecoveryCodesModel> _logger;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
+
 
         public GenerateRecoveryCodesModel(
             UserManager<IdentityUser> userManager,
-            ILogger<GenerateRecoveryCodesModel> logger)
+            ILogger<GenerateRecoveryCodesModel> logger,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _logger = logger;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         [TempData]
         public string[] RecoveryCodes { get; set; }
-
-        [TempData]
-        public string StatusMessage { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var isTwoFactorEnabled = await _userManager.GetTwoFactorEnabledAsync(user);
@@ -48,10 +54,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
+            string msg;
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             var isTwoFactorEnabled = await _userManager.GetTwoFactorEnabledAsync(user);
@@ -65,8 +74,11 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             RecoveryCodes = recoveryCodes.ToArray();
 
             _logger.LogInformation("User with ID '{UserId}' has generated new 2FA recovery codes.", userId);
-            StatusMessage = "You have generated new recovery codes.";
-            return RedirectToPage("./ShowRecoveryCodes");
+
+            msg = _loc.GetLocalizedString("You have generated new recovery codes.");
+            TempData.Success(msg);
+
+            return RedirectToPage("./ShowRecoveryCodes", new { culture });
         }
     }
 }

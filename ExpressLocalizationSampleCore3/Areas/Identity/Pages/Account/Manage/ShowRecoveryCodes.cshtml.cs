@@ -14,14 +14,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         [TempData]
         public string[] RecoveryCodes { get; set; }
 
-        [TempData]
-        public string StatusMessage { get; set; }
-
+        
         public IActionResult OnGet()
         {
+            var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
             if (RecoveryCodes == null || RecoveryCodes.Length == 0)
             {
-                return RedirectToPage("./TwoFactorAuthentication");
+                return RedirectToPage("./TwoFactorAuthentication", new { culture });
             }
 
             return Page();

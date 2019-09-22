@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using LazZiya.ExpressLocalization.Messages;
+using LazZiya.ExpressLocalization;
+using LazZiya.TagHelpers.Alerts;
 
 namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 {
@@ -18,17 +21,22 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<EnableAuthenticatorModel> _logger;
         private readonly UrlEncoder _urlEncoder;
+        private readonly SharedCultureLocalizer _loc;
+        private readonly string culture;
 
         private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
 
         public EnableAuthenticatorModel(
             UserManager<IdentityUser> userManager,
             ILogger<EnableAuthenticatorModel> logger,
-            UrlEncoder urlEncoder)
+            UrlEncoder urlEncoder,
+            SharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _logger = logger;
             _urlEncoder = urlEncoder;
+            _loc = loc;
+            culture = System.Globalization.CultureInfo.CurrentCulture.Name;
         }
 
         public string SharedKey { get; set; }
@@ -38,16 +46,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         [TempData]
         public string[] RecoveryCodes { get; set; }
 
-        [TempData]
-        public string StatusMessage { get; set; }
-
         [BindProperty]
         public InputModel Input { get; set; }
 
         public class InputModel
         {
-            [Required]
-            [StringLength(7, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
+            [StringLength(7, ErrorMessage = DataAnnotationsErrorMessages.StringLengthAttribute_ValidationErrorIncludingMinimum, MinimumLength = 6)]
             [DataType(DataType.Text)]
             [Display(Name = "Verification Code")]
             public string Code { get; set; }
@@ -58,7 +63,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             await LoadSharedKeyAndQrCodeUriAsync(user);
@@ -71,7 +77,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                var msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", _userManager.GetUserId(User));
+                return NotFound(msg);
             }
 
             if (!ModelState.IsValid)
@@ -88,7 +95,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
             if (!is2faTokenValid)
             {
-                ModelState.AddModelError("Input.Code", "Verification code is invalid.");
+                var invCode = _loc.GetLocalizedString("Verification code is invalid.");
+                ModelState.AddModelError("Input.Code", invCode);
                 await LoadSharedKeyAndQrCodeUriAsync(user);
                 return Page();
             }
@@ -97,17 +105,18 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
             var userId = await _userManager.GetUserIdAsync(user);
             _logger.LogInformation("User with ID '{UserId}' has enabled 2FA with an authenticator app.", userId);
 
-            StatusMessage = "Your authenticator app has been verified.";
+            var successMsg = _loc.GetLocalizedString("Your authenticator app has been verified.");
+            TempData.Success(successMsg);
 
             if (await _userManager.CountRecoveryCodesAsync(user) == 0)
             {
                 var recoveryCodes = await _userManager.GenerateNewTwoFactorRecoveryCodesAsync(user, 10);
                 RecoveryCodes = recoveryCodes.ToArray();
-                return RedirectToPage("./ShowRecoveryCodes");
+                return RedirectToPage("./ShowRecoveryCodes", new { culture });
             }
             else
             {
-                return RedirectToPage("./TwoFactorAuthentication");
+                return RedirectToPage("./TwoFactorAuthentication", new { culture });
             }
         }
 
