@@ -98,7 +98,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             else
             {
                 _logger.LogWarning("Invalid authenticator code entered for user with ID '{UserId}'.", user.Id);
-                var msg = _loc.FormattedText("Invalid authenticator code.");
+                var msg = _loc.GetLocalizedString("Invalid authenticator code.");
                 TempData.Danger(msg);
                 return Page();
             }

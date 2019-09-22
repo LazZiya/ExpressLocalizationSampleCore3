@@ -42,7 +42,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Unable to load user with email '{0}'.", email);
+                var msg = _loc.GetLocalizedString("Unable to load user with email '{0}'.", email);
                 return NotFound(msg);
             }
 

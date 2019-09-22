@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29209.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressLocalizationSampleCore3", "ExpressLocalizationSampleCore3\ExpressLocalizationSampleCore3.csproj", "{A26CF06C-86A6-4D08-9C62-0BD5164211C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressLocalizationSampleCore3Mvc", "ExpressLocalizationSampleCore3Mvc\ExpressLocalizationSampleCore3Mvc.csproj", "{7E251BF3-5CB2-4674-9E94-B82CE920BA55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A26CF06C-86A6-4D08-9C62-0BD5164211C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26CF06C-86A6-4D08-9C62-0BD5164211C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26CF06C-86A6-4D08-9C62-0BD5164211C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E251BF3-5CB2-4674-9E94-B82CE920BA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E251BF3-5CB2-4674-9E94-B82CE920BA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E251BF3-5CB2-4674-9E94-B82CE920BA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E251BF3-5CB2-4674-9E94-B82CE920BA55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

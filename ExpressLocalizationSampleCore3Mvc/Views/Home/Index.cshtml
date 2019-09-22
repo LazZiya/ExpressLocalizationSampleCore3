@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var argsUrl = new[] { "https://docs.microsoft.com/aspnet/core" };
+}
+
+<div class="text-center">
+    <h1 class="display-4" localize-content>Welcome</h1>
+    <p localize-args="@argsUrl">Learn about <a href="{0}">building Web apps with ASP.NET Core</a>.</p>
+</div>

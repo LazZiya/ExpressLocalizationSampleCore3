@@ -41,7 +41,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                msg = _loc.FormattedText("Unable to load user with ID '{0}'.", userId);
+                msg = _loc.GetLocalizedString("Unable to load user with ID '{0}'.", userId);
                 return NotFound(msg);
             }
 
@@ -49,7 +49,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var result = await _userManager.ChangeEmailAsync(user, email, code);
             if (!result.Succeeded)
             {
-                msg = _loc.FormattedText("Error changing email.");
+                msg = _loc.GetLocalizedString("Error changing email.");
                 TempData.Danger(msg);
                 return Page();
             }
@@ -59,13 +59,13 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var setUserNameResult = await _userManager.SetUserNameAsync(user, email);
             if (!setUserNameResult.Succeeded)
             {
-                msg = _loc.FormattedText("Error changing user name.");
+                msg = _loc.GetLocalizedString("Error changing user name.");
                 TempData.Danger(msg);
                 return Page();
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            msg = _loc.FormattedText("Thank you for confirming your email change.");
+            msg = _loc.GetLocalizedString("Thank you for confirming your email change.");
             TempData.Success(msg);
             return Page();
         }

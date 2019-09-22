@@ -101,7 +101,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    var msg = _loc.FormattedText("Invalid login attempt.");
+                    var msg = _loc.GetLocalizedString("Invalid login attempt.");
                     TempData.Warning(msg);
                     return Page();
                 }
@@ -121,7 +121,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             var user = await _userManager.FindByEmailAsync(Input.Email);
             if (user == null)
             {
-                var msg = _loc.FormattedText("Verification email sent. Please check your email.");
+                var msg = _loc.GetLocalizedString("Verification email sent. Please check your email.");
                 TempData.Info(msg);
             }
 
@@ -134,8 +134,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
                 values: new { userId = userId, code = code, culture },
                 protocol: Request.Scheme);
 
-            var mailHeader = _loc.FormattedText("Confirm your email");
-            var mailBody = _loc.FormattedText("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
+            var mailHeader = _loc.GetLocalizedString("Confirm your email");
+            var mailBody = _loc.GetLocalizedString("Please confirm your account by <a href='{0}'>clicking here</a>.", HtmlEncoder.Default.Encode(callbackUrl));
 
             await _emailSender.SendEmailAsync(
                 Input.Email,

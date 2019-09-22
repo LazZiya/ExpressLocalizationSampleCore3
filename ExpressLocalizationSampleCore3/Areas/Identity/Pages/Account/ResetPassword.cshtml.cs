@@ -57,7 +57,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
         {
             if (code == null)
             {
-                var msg = _loc.FormattedText("A code must be supplied for password reset.");
+                var msg = _loc.GetLocalizedString("A code must be supplied for password reset.");
                 return BadRequest(msg);
             }
             else
