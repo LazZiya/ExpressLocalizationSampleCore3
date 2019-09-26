@@ -70,20 +70,20 @@ namespace ExpressLocalizationSampleCore3
                     };
                 });
 
-services.ConfigureApplicationCookie(options =>
-{
-    options.Events = new CookieAuthenticationEvents
-    {
-        OnRedirectToLogin = ctx =>
-        {
-            var requestPath = ctx.Request.Path;
-            var culture = ctx.Request.RouteValues["culture"];
-            ctx.Response.Redirect($"/{culture}/Identity/Account/Login/?ReturnUrl={requestPath}{ctx.Request.QueryString}");
-            return Task.CompletedTask;
-        }
-    };
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Events = new CookieAuthenticationEvents
+                {
+                    OnRedirectToLogin = ctx =>
+                    {
+                        var requestPath = ctx.Request.Path;
+                        var culture = ctx.Request.RouteValues["culture"];
+                        ctx.Response.Redirect($"/{culture}/Identity/Account/Login/?ReturnUrl={requestPath}{ctx.Request.QueryString}");
+                        return Task.CompletedTask;
+                    }
+                };
 
-});
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
