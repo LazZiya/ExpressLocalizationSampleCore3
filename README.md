@@ -3,7 +3,7 @@ Fully localized Asp.Net Core 3.0 project, based on the basic template from Visua
 Localized using [LazZiya.ExpressLocalization][1] and [LazZiya.TagHelpers.Localization][2].
 
 ## DotNetCore Version
-This project uses **dotnetcore3.0-preview8**.
+This project uses **dotnetcore3.0**.
 additionally you can find **dotnetcore2.2** compatible version here: [ExpressLocalization Sample for Asp.Net Core 2.2](https://github.com/LazZiya/ExpressLocalizationSample)
 
 ## Visual Studio Version
