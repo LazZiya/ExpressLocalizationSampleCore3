@@ -10,6 +10,8 @@ using System.Globalization;
 using LazZiya.ExpressLocalization;
 using ExpressLocalizationSampleCore3.LocalizationResources;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Threading.Tasks;
 
 namespace ExpressLocalizationSampleCore3
 {
@@ -57,7 +59,7 @@ namespace ExpressLocalizationSampleCore3
             };
 
             services.AddRazorPages()
-                .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(ops=>
+                .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(ops =>
                 {
                     ops.ResourcesPath = "LocalizationResources";
                     ops.RequestLocalizationOptions = o =>
@@ -67,6 +69,21 @@ namespace ExpressLocalizationSampleCore3
                         o.DefaultRequestCulture = new RequestCulture("en");
                     };
                 });
+
+services.ConfigureApplicationCookie(options =>
+{
+    options.Events = new CookieAuthenticationEvents
+    {
+        OnRedirectToLogin = ctx =>
+        {
+            var requestPath = ctx.Request.Path;
+            var culture = ctx.Request.RouteValues["culture"];
+            ctx.Response.Redirect($"/{culture}/Identity/Account/Login/?ReturnUrl={requestPath}{ctx.Request.QueryString}");
+            return Task.CompletedTask;
+        }
+    };
+
+});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
