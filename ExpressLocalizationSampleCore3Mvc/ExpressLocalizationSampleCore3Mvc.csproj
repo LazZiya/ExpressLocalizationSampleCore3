@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.1.0" />
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.1.1" />
     <PackageReference Include="LazZiya.TagHelpers" Version="3.0.0" />
     <PackageReference Include="LazZiya.TagHelpers.Localization" Version="1.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
