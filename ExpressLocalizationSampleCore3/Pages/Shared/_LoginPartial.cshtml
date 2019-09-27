@@ -14,7 +14,7 @@
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-culture="@culture" asp-route-returnUrl="@Url.Page("/", new { area = "", culture })" method="post">
-                <button type="submit" class="nav-link btn btn-link text-dark" asp-route-culture="@culture" localize-content>Logout</button>
+                <button type="submit" class="nav-link btn btn-link text-dark" localize-content>Logout</button>
             </form>
         </li>
     }
