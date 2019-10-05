@@ -118,165 +118,165 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
-    <value>2FA был отключен. Вы можете включить 2FA при настройке приложения для аутентификации.</value>
+    <value>2FA був відключений. Ви можете включити 2FA, налаштувавши додаток для аутентифікації.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;If you reset your authenticator key your authenticator app will not work until you reconfigure it.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        This process disables 2FA until you verify your authenticator app.&#xA;        If you do not complete your authenticator app configuration you may lose access to your account.&#xA;    &lt;/p&gt;" xml:space="preserve">
     <value>&lt;p&gt;
-&lt;span class="glyphicon glyphicon-warning-sign"&gt;&lt;/span&gt;&lt;strong&gt; Если вы сбросите свой ключ аутентификации, ваше приложение аутентификации не будет работать, пока вы не перенастроите его.&lt;/strong&gt;
+&lt;span class="glyphicon glyphicon-warning-sign"&gt;&lt;/span&gt;&lt;strong&gt; Якщо ви скинете свій ключ аутентифікації, ваше додаток аутентифікації не працюватиме, поки ви не переналаштувати його. &lt;/strong&gt;
 &lt;/p&gt;
 &lt;p&gt;
-Этот процесс отключает двухфакторную аутентификацию (2FA), пока вы не подтвердите свое приложение для проверки подлинности.
-Если вы не завершите настройку приложения-аутентификатора, вы можете потерять доступ к своей учетной записи.
+Цей процес відключає двухфакторную аутентифікацію (2FA), поки ви не підтвердите свій додаток для перевірки автентичності.
+Якщо ви не завершите настройку програми-аутентифікатора, ви можете втратити доступ до свого облікового запису.
 &lt;/p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
   </data>
   <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;Put these codes in a safe place.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        If you lose your device and don't have the recovery codes you will lose access to your account.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key&#xA;        used in an authenticator app you should &lt;a href=&quot;{0}&quot;&gt;reset your authenticator keys.&lt;/a&gt;&#xA;    &lt;/p&gt;" xml:space="preserve">
-    <value>&lt;p&gt;Ваша учетная запись содержит личные данные, которые вы нам предоставили. Эта страница позволяет загружать или удалять эти данные.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Удаление этих данных приведет к удалению вашей учетной записи без возможности восстановления.&lt;/strong&gt;
+    <value>&lt;p&gt;Ваш обліковий запис містить особисті дані, які ви нам надали. Ця сторінка дозволяє завантажувати або видаляти ці дані.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Видалення цих даних призведе до видалення вашого профілю без можливості відновлення.&lt;/strong&gt;
 &lt;/p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
   </data>
   <data name="&lt;p&gt;&#xA;        Swapping to the &lt;strong&gt;Development&lt;/strong&gt; environment displays detailed information about the error that occurred.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt; It can result in displaying sensitive information from exceptions to end users. For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt; and restarting the app.&#xA;    &lt;/p&gt;" xml:space="preserve">
     <value>&lt;p&gt;
-         Если перейти в среду &lt;strong&gt;Development&lt;/strong&gt;, отобразится подробная информация о возникшей ошибке.
+Якщо перейти в середу &lt;strong&gt;Development&lt;/strong&gt;, відобразиться докладна інформація про виниклу помилку.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;strongСреду разработки не следует включать для развернутых приложений. &lt;/strong&gt; Это может привести к отображению конфиденциальной информации от исключений для конечных пользователей. Для локальной отладки включите среду &lt;strong&gt;Development&lt;/strong&gt;, задав для переменной &lt;strong&gt;ASPNETCORE_ENVIRONMENT &lt;/strong&gt; значение &lt;strong&gt;Development&lt;/strong&gt; и перезапустив приложение.
+&lt;strong&gt;Среду розробки не слід включати для розгорнутих додатків.&lt;/ strong&gt; Це може привести до відображення  від винятків конфіденційної інформації для кінцевих користувачів. Для локальної налагодження включите середу &lt;strong&gt; Development&lt;/strong&gt;, задавши для перемінної &lt;strong&gt; ASPNETCORE_ENVIRONMENT&lt;/strong&gt; значення &lt;strong&gt;Development&lt;/strong&gt; і перезапустивши додаток.
 &lt;/p&gt;</value>
     <comment>Pages/Error.cshtml</comment>
   </data>
   <data name="&lt;p&gt;Your account contains personal data that you have given us. This page allows you to download or delete that data.&lt;/p&gt;&#xA;            &lt;p&gt;&#xA;                &lt;strong&gt;Deleting this data will permanently remove your account, and this cannot be recovered.&lt;/strong&gt;&#xA;            &lt;/p&gt;" xml:space="preserve">
-    <value>&lt;p&gt;Ваша учетная запись содержит личные данные, которые вы нам предоставили. Эта страница позволяет загружать или удалять эти данные.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Удаление этих данных приведет к удалению вашей учетной записи без возможности восстановления.&lt;/strong&gt;
+    <value>&lt;p&gt;Ваш обліковий запис містить особисті дані, які ви нам надали. Ця сторінка дозволяє завантажувати або видаляти ці дані. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Видалення цих даних призведе до видалення вашого профілю без можливості відновлення.&lt;/strong&gt;
 &lt;/p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
   </data>
   <data name="&lt;strong&gt;You have 1 recovery code left.&lt;/strong&gt;&#xA;            &lt;p&gt;You can &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
-    <value>&lt;strong&gt;У вас остался 1 код восстановления.&lt;/strong&gt;
-&lt;p&gt;Вы можете &lt;a href="{0}"&gt; создать новый набор кодов восстановления&lt;/a&gt;.&lt;/p&gt;</value>
+    <value>&lt;strong&gt;У вас залишився 1 код відновлення.&lt;/strong&gt;
+&lt;p&gt;Ви можете &lt;a href="{0}"&gt; створити новий набір кодів відновлення&lt;/a&gt;. &lt;/p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="&lt;strong&gt;You have no recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You must &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code.&lt;/p&gt;" xml:space="preserve">
-    <value>&lt;strong&gt;У вас нет кодов восстановления.&lt;/strong&gt;
-&lt;p&gt;Перед тем как войти в систему с помощью кода восстановления, вы должны &lt;a href="{0}"&gt; создать новый набор кодов восстановления&lt;/a&gt;.&lt;/p&gt;</value>
+    <value>&lt;strong&gt;У вас немає кодів відновлення.&lt;/strong&gt;
+&lt;p&gt;Перед тим як увійти в систему за допомогою коду відновлення, ви повинні &lt;a href="{0}"&gt; створити новий набір кодів відновлення &lt;/a&gt;.&lt;/p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="&lt;strong&gt;You have {0} recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You should &lt;a href=&quot;{1}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
-    <value>&lt;strong&gt;У вас осталось {0} кодов восстановления.&lt;/strong&gt;
-&lt;p&gt;Вам следует &lt;a href="{1}"&gt;создать новый набор кодов восстановления&lt;/a&gt;.&lt;/p&gt;</value>
+    <value>&lt;strong&gt;У вас залишилося {0} кодів відновлення. &lt;/strong&gt;
+&lt;p&gt;Вам слід &lt;a href="{1}"&gt; створити новий набір кодів відновлення &lt;/a&gt;. &lt;/ p&gt;</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Access denied" xml:space="preserve">
-    <value>Доступ закрыт</value>
+    <value>Доступ заборонено</value>
     <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
   </data>
   <data name="Add another service to log in." xml:space="preserve">
-    <value>Добавить еще один сервис для входа в систему.</value>
+    <value>Додати ще один сервіс для входу в систему.</value>
     <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
   </data>
   <data name="Add authenticator app" xml:space="preserve">
-    <value>Добавить приложение аутентификации</value>
+    <value>Додати додаток аутентифікації</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="An error occurred while processing your request." xml:space="preserve">
-    <value>Произошла ошибка при обработке вашего запроса.</value>
+    <value>Сталася помилка при обробці Вашого запиту.</value>
     <comment>Pages/Error.cshtml</comment>
   </data>
   <data name="Associate your {0} account." xml:space="preserve">
-    <value>Свяжите вашу {0} учетную запись.</value>
+    <value>Зв'яжіть ваш {0} обліковий запис.</value>
     <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
   </data>
   <data name="Change password" xml:space="preserve">
-    <value>Изменить пароль</value>
+    <value>Змінити пароль</value>
     <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
   </data>
   <data name="Change your account settings" xml:space="preserve">
-    <value>Изменение параметров учетной записи</value>
+    <value>Зміна параметрів облікового запису</value>
     <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
   </data>
   <data name="Configure authenticator app" xml:space="preserve">
-    <value>Настройка приложения аутентификации</value>
+    <value>Налаштування програми аутентифікації</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Confirm email" xml:space="preserve">
-    <value>Подтвердите адрес электронной почты</value>
+    <value>Підтвердіть адресу електронної пошти</value>
     <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
   </data>
   <data name="Confirm your email" xml:space="preserve">
-    <value>Подтвердите ваш адрес электронной почты</value>
+    <value>Підтвердіть Вашу електронну адресу електронної пошти</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Create a new account." xml:space="preserve">
-    <value>Создать новый аккаунт.</value>
+    <value>Створити новий акаунт.</value>
     <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
   </data>
   <data name="Development Mode" xml:space="preserve">
-    <value>Режим разработки</value>
+    <value>Режим розробки</value>
     <comment>Pages/Error.cshtml</comment>
   </data>
   <data name="Disable 2FA" xml:space="preserve">
-    <value>Отключить 2FA</value>
+    <value>Відключити 2FA</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Don't have access to your authenticator device? You can &lt;a id=&quot;recovery-code-login&quot; href=&quot;{0}&quot;&gt;log in with a recovery code&lt;/a&gt;." xml:space="preserve">
-    <value>У вас нет доступа к вашему устройству аутентификации? Вы можете &lt;a id="recovery-code-login" href="{0}"&gt;войти с кодом восстановления&lt;/a&gt;.</value>
+    <value>У вас немає доступу до вашого пристрою аутентифікації? Ви можете &lt;a id="recovery-code-login" href="{0}"&gt; увійти з кодом відновлення &lt;/a&gt;.</value>
     <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Скачать</value>
+    <value>Завантажити</value>
     <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
   </data>
   <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
-    <value>Скачать двухфакторное аутентификационное приложение, как Microsoft Authenticator для &lt;a href="{0}"&gt; Windows Phone &lt;/a&gt;, &lt;a href="{1}"&gt; Android &lt;/a&gt; и &lt;a href="{ 2} "&gt; iOS&lt;/a&gt; или</value>
+    <value>Завантажити додаток двухфакторної аутентифікації, як Microsoft Authenticator для &lt;a href="{0}"&gt; Windows Phone &lt;/a&gt;, &lt;a href="{1}"&gt; Android &lt;/a&gt; і &lt;a href = "{2} "&gt; iOS &lt;/a&gt; або</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Download Your Data" xml:space="preserve">
-    <value>Загрузить ваши данные</value>
+    <value>Завантажити ваші дані</value>
     <comment>Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml</comment>
   </data>
   <data name="Enter your email." xml:space="preserve">
-    <value>Введите адрес электронной почты.</value>
+    <value>Введіть адресу електронної пошти.</value>
     <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Ошибка</value>
+    <value>Помилка</value>
     <comment>Pages/Error.cshtml</comment>
   </data>
   <data name="Error from external provider: {0}" xml:space="preserve">
-    <value>Ошибка от внешнего поставщика: {0}</value>
+    <value>Помилка від зовнішнього постачальника: {0}</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Error loading external login information during confirmation." xml:space="preserve">
-    <value>Ошибка загрузки внешней информации для входа во время подтверждения.</value>
+    <value>Помилка завантаження зовнішньої інформації для входу під час підтвердження.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Error loading external login information." xml:space="preserve">
-    <value>Ошибка загрузки внешней информации для входа.</value>
+    <value>Помилка завантаження зовнішньої інформації для входу.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="External logins" xml:space="preserve">
-    <value>Внешние входы</value>
+    <value>Зовнішні входи</value>
     <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
   </data>
   <data name="Forget this browser" xml:space="preserve">
-    <value>Забудьте этот браузер</value>
+    <value>Забудьте цей браузер</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Forgot password confirmation" xml:space="preserve">
-    <value>Забыли подтверждение пароля</value>
+    <value>Забули підтвердження пароля</value>
     <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
   </data>
   <data name="Forgot your password?" xml:space="preserve">
-    <value>Забыли пароль?</value>
+    <value>Забули пароль?</value>
     <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
   </data>
   <data name="Generate Recovery Codes" xml:space="preserve">
-    <value>Генерация кодов восстановления</value>
+    <value>Генерація кодів відновлення</value>
     <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
   </data>
   <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
-    <value>Генерация кода восстановления для двухфакторной аутентификации (2FA)</value>
+    <value>Генерація коду відновлення для двофакторної аутентифікації (2FA)</value>
     <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
   </data>
   <data name="Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
@@ -284,63 +284,63 @@
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Hello {0}!" xml:space="preserve">
-    <value>Здравствуйте, {0}!</value>
+    <value>Доброго дня, {0}!</value>
     <comment>Pages/Shared/_LoginPartial.cshtml</comment>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Главная</value>
+    <value>Головна</value>
     <comment>Pages/Shared/_Layout.cshtml</comment>
   </data>
   <data name="Invalid authenticator code." xml:space="preserve">
-    <value>Неверный код аутентификации.</value>
+    <value>Невірний код аутентифікації.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Invalid login attempt." xml:space="preserve">
-    <value>Неверная попытка входа.</value>
+    <value>Невірна спроба входу.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Invalid recovery code entered." xml:space="preserve">
-    <value>Введен неверный код восстановления.</value>
+    <value>Введено невірний код відновлення.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Learn about &lt;a href=&quot;{0}&quot;&gt;building Web apps with ASP.NET Core&lt;/a&gt;." xml:space="preserve">
-    <value>Подробнее о &lt;a href="{0}"&gt; создания веб-приложений с ASP.NET Core&lt;/a&gt;.</value>
+    <value>Детальніше про &lt;a href="{0}"&gt; створення веб-додатків з ASP.NET Core &lt;/a&gt;.</value>
     <comment>Pages/Index.cshtml</comment>
   </data>
   <data name="Locked out" xml:space="preserve">
-    <value>Заблокирован</value>
+    <value>Заблокований</value>
     <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
   </data>
   <data name="Log in" xml:space="preserve">
-    <value>Вход</value>
+    <value>Вхід</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Log in using your external account" xml:space="preserve">
-    <value>Войти с помощью внешней учетной записи</value>
+    <value>Увійти за допомогою зовнішнього облікового запису</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Log out" xml:space="preserve">
-    <value>Выйти</value>
+    <value>Вийти</value>
     <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Вход</value>
+    <value>Вхід</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Manage" xml:space="preserve">
-    <value>Управление</value>
+    <value>Управління</value>
     <comment>Pages/Shared/_LoginPartial.cshtml</comment>
   </data>
   <data name="Manage your account" xml:space="preserve">
-    <value>Управление вашей учетной записью</value>
+    <value>Управління вашим обліковим записом</value>
     <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
   </data>
   <data name="Manage your external logins" xml:space="preserve">
-    <value>Управление внешними логинами</value>
+    <value>Управління зовнішніми логінами</value>
     <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
   </data>
   <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
-    <value>После того, как вы сосканировали QR-код или ввели ключ выше, приложение двухфакторной аутентификации предоставит вам уникальный код. Введите код в поле подтверждения ниже.</value>
+    <value>Після того, як ви зісканували QR-код або ввели ключ вище, додаток двофакторної аутентифікації надасть вам унікальний код. Введіть код в поле підтвердження нижче.</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Password" xml:space="preserve">
@@ -348,111 +348,111 @@
     <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
   </data>
   <data name="Password not correct." xml:space="preserve">
-    <value>Пароль неверный.</value>
+    <value>Пароль невірний.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Personal Data" xml:space="preserve">
-    <value>Личные данные</value>
+    <value>Особисті дані</value>
     <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
   </data>
   <data name="Please check your email to reset your password." xml:space="preserve">
-    <value>Пожалуйста, проверьте свою электронную почту для сброса пароля.</value>
+    <value>Будь ласка, перевірте свою електронну пошту для скидання пароля.</value>
     <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
   </data>
   <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
-    <value>Пожалуйста, подтвердите свой аккаунт, &lt;a href='{0}'&gt; нажав здесь&lt;/a&gt;.</value>
+    <value>Будь ласка, підтвердіть свій аккаунт, &lt;a href='{0}'&gt; натиснувши тут &lt;/a&gt;.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Please enter a valid number." xml:space="preserve">
-    <value>Пожалуйста, введите корректное число.</value>
+    <value>Будь ласка, введіть коректне число.</value>
     <comment>Pages/SampleForm.cshtml</comment>
   </data>
   <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
-    <value>Сбросьте пароль, &lt;a href='{0}'&gt; нажав здесь &lt;/a&gt;.</value>
+    <value>Скиньте пароль, &lt;a href='{0}'&gt; натиснувши тут &lt;/a&gt;.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Privacy" xml:space="preserve">
-    <value>Конфиденциальность</value>
+    <value>Конфіденційність</value>
     <comment>Pages/Shared/_Layout.cshtml</comment>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
-    <value>Политика конфиденциальности</value>
+    <value>Політика конфіденційності</value>
     <comment>Pages/Privacy.cshtml</comment>
   </data>
   <data name="Profile" xml:space="preserve">
-    <value>Профиль</value>
+    <value>Профіль</value>
     <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
   </data>
   <data name="Recovery code verification" xml:space="preserve">
-    <value>Код подтверждения для восстановления</value>
+    <value>Код підтвердження для відновлення</value>
     <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
   </data>
   <data name="Register" xml:space="preserve">
-    <value>Регистрация</value>
+    <value>Реєстрація</value>
     <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
   </data>
   <data name="Register as a new user" xml:space="preserve">
-    <value>Зарегистрироваться как новый пользователь</value>
+    <value>Зареєструватися як новий користувач</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Registered Logins" xml:space="preserve">
-    <value>Зарегистрированные Логины</value>
+    <value>Зареєстровані Логіни</value>
     <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
   </data>
   <data name="Remember me?" xml:space="preserve">
-    <value>Запомни меня?</value>
+    <value>Запам'ятай мене?</value>
     <comment>Login.cshtml</comment>
   </data>
   <data name="Remove this login from your account" xml:space="preserve">
-    <value>Удалить логин с вашей учетной записи</value>
+    <value>Видалити цей логін з вашого облікового запису</value>
     <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
   </data>
   <data name="Remove {0}" xml:space="preserve">
-    <value>Удалить {0}</value>
+    <value>Видалити {0}</value>
     <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
   </data>
   <data name="Request ID:" xml:space="preserve">
-    <value>Запрос ID:</value>
+    <value>Запит ID:</value>
     <comment>Pages/Error.cshtml</comment>
   </data>
   <data name="Reset" xml:space="preserve">
-    <value>Сброс</value>
+    <value>Скидання</value>
     <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
   </data>
   <data name="Reset authenticator app" xml:space="preserve">
-    <value>Сброс приложение проверки подлинности</value>
+    <value>Скидання додатку перевірки автентичності</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Reset authenticator key" xml:space="preserve">
-    <value>Сброс ключа аутентификации</value>
+    <value>Скидання ключа аутентифікації</value>
     <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
   </data>
   <data name="Reset password" xml:space="preserve">
-    <value>Сброс пароля</value>
+    <value>Скидання пароля</value>
     <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
   </data>
   <data name="Reset password confirmation" xml:space="preserve">
-    <value>Сбросить подтверждение пароля</value>
+    <value>Скинути підтвердження пароля</value>
     <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
   </data>
   <data name="Reset recovery codes" xml:space="preserve">
-    <value>Сбросить коды восстановления</value>
+    <value>Скинути коди відновлення</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Reset your password." xml:space="preserve">
-    <value>Сбросить пароль.</value>
+    <value>Скинути пароль.</value>
     <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
   </data>
   <data name="Sample Form" xml:space="preserve">
-    <value>Образец формы</value>
+    <value>Зразок форми</value>
     <comment>Pages/SampleForm.cshtml</comment>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Сохранить</value>
+    <value>Зберегти</value>
     <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
   </data>
   <data name="Send verification email" xml:space="preserve">
-    <value>Отправить письмо с подтверждением</value>
+    <value>Надіслати лист із підтвердженням</value>
     <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
   </data>
   <data name="Set password" xml:space="preserve">
@@ -460,19 +460,19 @@
     <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
   </data>
   <data name="Setup authenticator app" xml:space="preserve">
-    <value>Настройка приложения-аутентификатора</value>
+    <value>Налаштування програми автентифікатора</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Submit" xml:space="preserve">
-    <value>Отправить</value>
+    <value>Надіслати</value>
     <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
   </data>
   <data name="Thank you for confirming your email." xml:space="preserve">
-    <value>Благодарим Вас за подтверждение вашей электронной почты.</value>
+    <value>Дякуємо Вам за підтвердження вашої електронної пошти.</value>
     <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
   </data>
   <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
-    <value>В настоящее время браузер был забыт. При входе снова от этого браузера будет предложено ввести свой код 2FA.</value>
+    <value>В даний час браузер був забутий. При вході знову від цього браузера буде запропоновано ввести свій код 2FA.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="The external login was added." xml:space="preserve">
@@ -480,121 +480,122 @@
     <comment>Custom back end message</comment>
   </data>
   <data name="The external login was removed." xml:space="preserve">
-    <value>Внешний логин был удален.</value>
+    <value>Зовнішній логін був видалений.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="There are no external authentication services configured. See &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services." xml:space="preserve">
-    <value>Отсутствуют настроенные внешние службы аутентификации. См. &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt; статью&lt;/a&gt; для информации о настройке этого приложения ASP.NET для поддержки входа в систему с помощью внешних сервисов.</value>
+    <value>Відсутні налаштовані зовнішні служби аутентифікації. Див. &lt;a href='https://go.microsoft.com/fwlink/?LinkID=532715'&gt; статтю &lt;/a&gt; для інформації про налаштування цього додатка ASP.NET для підтримки входу в систему за допомогою зовнішніх сервісів.</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="This account has been locked out, please try again later." xml:space="preserve">
-    <value>Эта учетная запись была заблокирована, пожалуйста, повторите попытку позже.</value>
+    <value>Цей обліковий запис було заблоковано, будь ласка, спробуйте ще раз пізніше.</value>
     <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
   </data>
   <data name="To enable QR code generation please read our &lt;a href=&quot;{0}&quot;&gt;documentation&lt;/a&gt;." xml:space="preserve">
-    <value>Для того, чтобы дать возможность генерации QR-кода, пожалуйста, ознакомьтесь с нашей &lt;a href="{0}"&gt; документацией&lt;/a&gt;.</value>
+    <value>Для того, щоб дати можливість генерації QR-коду, будь ласка, ознайомтеся з нашою &lt;a href="{0}"&gt; документацією &lt;/a&gt;.</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
-    <value>Чтобы использовать приложение проверки подлинности пройти следующие шаги:</value>
+    <value>Щоб використовувати додаток перевірки автентичності пройти наступні кроки:</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Two-factor authentication" xml:space="preserve">
-    <value>Двухфакторная аутентификация</value>
+    <value>Двофакторна аутентифікація</value>
     <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
   </data>
   <data name="Two-factor authentication (2FA)" xml:space="preserve">
-    <value>Двухфакторная аутентификация (2FA)</value>
+    <value>Двофакторна аутентифікація (2FA)</value>
     <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
   </data>
   <data name="Update password" xml:space="preserve">
-    <value>Обновление пароля</value>
+    <value>Оновлення пароля</value>
     <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
   </data>
   <data name="Use a local account to log in." xml:space="preserve">
-    <value>Используйте локальную учетную запись для входа.</value>
+    <value>Використовуйте локальний обліковий запис для входу.</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Use another service to log in." xml:space="preserve">
-    <value>Используйте другую службу для входа.</value>
+    <value>Використовуйте іншу службу для входу.</value>
     <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
   </data>
   <data name="Use this page to detail your site's privacy policy." xml:space="preserve">
-    <value>Используйте эту страницу с подробной политикой конфиденциальности вашего сайта.</value>
+    <value>Використовуйте цю сторінку з детальною політикою конфіденційності вашого сайту.</value>
     <comment>Pages/Privacy.cshtml</comment>
   </data>
   <data name="Use this space to summarize your privacy and cookie use policy. &lt;a href=&quot;{0}&quot;&gt;Learn More&lt;/a&gt;.&#xA;        &lt;button type=&quot;button&quot; class=&quot;accept-policy close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot; data-cookie-string=&quot;{1}&quot;&gt;&#xA;            &lt;span aria-hidden=&quot;true&quot;&gt;Accept&lt;/span&gt;&#xA;        &lt;/button&gt;" xml:space="preserve">
-    <value>Используйте это место для краткого изложения вашей политики конфиденциальности и использования файлов cookie. &lt;a href="{0}"&gt;Подробнее&lt;/a&gt;. 
-&lt;button type = "button" class = "accept-policy close" data-dismiss = "alert" aria-label = "Close" data-cookie-string = "{1}"&gt;
-             &lt;span aria-hidden = "true"&gt; Принять &lt;/span&gt;&lt;/button&gt;</value>
+    <value>Використовуйте це місце для короткого викладу вашої політики конфіденційності та використання файлів cookie. &lt;a href="{0}"&gt; Детальніше &lt;/a&gt;.
+&lt;button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string ="{1}"&gt;
+&lt;span aria-hidden="true"&gt; Прийняти &lt;/span&gt;&lt;/button&gt;</value>
     <comment>Pages/Shared/_CookieConsentPartial.cshtml</comment>
   </data>
   <data name="Verification Code" xml:space="preserve">
-    <value>Код подтверждения</value>
+    <value>Код підтвердження</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Verification email sent. Please check your email." xml:space="preserve">
-    <value>Письмо с подтверждением отправлено. Пожалуйста, проверьте вашу электронную почту.</value>
+    <value>Лист з підтвердженням надіслано. Будь ласка, перевірте вашу електронну пошту.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Verify" xml:space="preserve">
-    <value>Проверить</value>
+    <value>Перевірити</value>
     <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Добро пожаловать</value>
+    <value>Ласкаво просимо</value>
     <comment>Pages/Index.cshtml</comment>
   </data>
   <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
-    <value>У вас нет локального имени пользователя/пароля для этого сайта. Добавьте локальную учетную запись, чтобы вы могли войти без внешнего входа.</value>
+    <value>У вас немає локального імені користувача / пароля для цього сайту. Додайте 
+локальний обліковий запис, щоб ви могли увійти без зовнішніх пристроїв.</value>
     <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
   </data>
   <data name="You do not have access to this resource." xml:space="preserve">
-    <value>У вас нет доступа к этому ресурсу.</value>
+    <value>У вас немає доступу до цього ресурсу.</value>
     <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
   </data>
   <data name="You have generated new recovery codes." xml:space="preserve">
-    <value>Вы сгенерировали новые коды восстановления.</value>
+    <value>Ви згенерували нові коди відновлення.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
-    <value>Вы запросили вход с кодом восстановления. Этот логин не будет запомнен до тех пор, пока вы не введете код приложения аутентификатора при входе в систему или не отключите 2FA и не войдете снова.</value>
+    <value>Ви запросили вхід з кодом відновлення. Цей користувач не буде запомнен до тих пір, поки ви не введете код додатка аутентифікатора при вході в систему або не вимкнете 2FA і не ввійдете знову.</value>
     <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
   </data>
   <data name="You have successfully logged out of the application." xml:space="preserve">
-    <value>Вы успешно вышли из приложения.</value>
+    <value>Ви успішно вийшли з додатку.</value>
     <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
   </data>
   <data name="You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
-    <value>Вы успешно прошли проверку подлинности с помощью &lt;strong&gt; {0} &lt;/strong&gt;. Пожалуйста, введите адрес электронной почты для этого сайта ниже и нажмите кнопку Зарегистрироваться, чтобы завершить вход в систему.</value>
+    <value>Ви успішно пройшли перевірку автентичності за допомогою &lt;strong&gt; {0} &lt;/ strong&gt;. Будь ласка, введіть адресу електронної пошти для цього сайту нижче і натисніть кнопку Зареєструватися, щоб завершити вхід в систему.</value>
     <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
   </data>
   <data name="Your authenticator app has been verified." xml:space="preserve">
-    <value>Ваше приложение для проверки подлинности было проверено.</value>
+    <value>Ваше додаток для перевірки автентичності було перевірено.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
-    <value>Ваш ключ приложения-аутентификатора был сброшен, вам нужно будет настроить приложение-аутентификатор, используя новый ключ.</value>
+    <value>Ваш ключ додатка-аутентифікатора був скинутий, вам потрібно буде налаштувати додаток-аутентифікатор, використовуючи новий ключ.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
-    <value>Ваш логин защищен приложением-аутентификатором. Введите код аутентификатора ниже.</value>
+    <value>Ваш логін захищений додатком-аутентифікатором. Введіть код аутентифікатора нижче.</value>
     <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
   </data>
   <data name="Your password has been changed." xml:space="preserve">
-    <value>Ваш пароль был изменен.</value>
+    <value>Ваш пароль був змінений.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Your password has been reset. Please &lt;a href=&quot;{0}&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
-    <value>Ваш пароль был сброшен. Пожалуйста, &lt;a href="{0}"&gt; нажмите здесь для входа&lt;/a&gt;.</value>
+    <value>Ваш пароль був скинутий. Будь ласка, &lt;a href="{0}"&gt; натисніть тут для входу &lt;/a&gt;.</value>
     <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
   </data>
   <data name="Your password has been set." xml:space="preserve">
-    <value>Ваш пароль был установлен.</value>
+    <value>Ваш пароль був встановлений.</value>
     <comment>Custom back end message</comment>
   </data>
   <data name="Your profile has been updated" xml:space="preserve">
-    <value>Ваш профиль был обновлен</value>
+    <value>Ваш профіль був оновлений</value>
     <comment>Custom back end message</comment>
   </data>
 </root>

@@ -126,7 +126,7 @@
     <comment>Identity: LoginAlreadyAssociated</comment>
   </data>
   <data name="A value for the '{0}' parameter or property was not provided." xml:space="preserve">
-    <value>не было представлено значение для «{0}» параметра или свойства.</value>
+    <value>Не было представлено значение для '{0}' параметра или свойства.</value>
     <comment>ModelBinding: ModelBinding_MissingBindRequiredMember</comment>
   </data>
   <data name="A value is required." xml:space="preserve">
@@ -134,19 +134,19 @@
     <comment>ModelBinding: KeyValuePair_BothKeyAndValueMustBePresent</comment>
   </data>
   <data name="An unknown failure has occurred." xml:space="preserve">
-    <value>Неизвестная авария произошла.</value>
+    <value>Произошла неизвестная ошибка.</value>
     <comment>Identity: DefaultError</comment>
   </data>
   <data name="Both ErrorMessageResourceType and ErrorMessageResourceName need to be set on this attribute." xml:space="preserve">
-    <value>Оба ErrorMessageResourceType и ErrorMessageResourceName должны быть установлены в этом атрибуте.</value>
+    <value>Для этого атрибута должны быть установлены как ErrorMessageResourceType, так и ErrorMessageResourceName.</value>
     <comment>DataAnnotations: ValidationAttribute_NeedBothResourceTypeAndResourceName</comment>
   </data>
   <data name="Cannot retrieve property '{0}' because localization failed.  Type '{1}' is not public or does not contain a public static string property with the name '{2}'." xml:space="preserve">
-    <value>Невозможно получить свойство «{0}», потому что локализация не удалось. Тип «{1}» не является общедоступной или не содержит публичный статический строковое свойство с именем «{2}».</value>
+    <value>Невозможно получить свойство '{0}', потому что локализация не удалось. Тип '{1}' не является общедоступным или не содержит публичное статическое строковое свойство с именем '{2}'.</value>
     <comment>DataAnnotations: LocalizableString_LocalizationFailed</comment>
   </data>
   <data name="Confirm password" xml:space="preserve">
-    <value>Подтвердите Пароль</value>
+    <value>Подтверждение пароля</value>
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Could not convert the value of type '{0}' to '{1}' as expected by method {2}.{3}." xml:space="preserve">
@@ -162,7 +162,7 @@
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Either ErrorMessageString or ErrorMessageResourceName must be set, but not both." xml:space="preserve">
-    <value>Либо ErrorMessageString или ErrorMessageResourceName должен быть установлен, но не оба.</value>
+    <value>Либо ErrorMessageString или ErrorMessageResourceName должны быть установлены, но не оба.</value>
     <comment>DataAnnotations: ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource</comment>
   </data>
   <data name="Email" xml:space="preserve">
@@ -170,15 +170,15 @@
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Email '{0}' is already taken." xml:space="preserve">
-    <value>Отправить «{0}» уже принято.</value>
+    <value>Эл. адрес '{0}' уже занят.</value>
     <comment>Identity: DuplicateEmail</comment>
   </data>
   <data name="Email '{0}' is invalid." xml:space="preserve">
-    <value>Отправить '{0}' является недействительным.</value>
+    <value>Эл. адрес '{0}' является недействительным.</value>
     <comment>Identity: InvalidEmail</comment>
   </data>
   <data name="ID" xml:space="preserve">
-    <value>Я БЫ</value>
+    <value>ID</value>
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Incorrect password." xml:space="preserve">
@@ -186,7 +186,7 @@
     <comment>Identity: PasswordMismatch</comment>
   </data>
   <data name="Invalid token." xml:space="preserve">
-    <value>Недопустимый маркер.</value>
+    <value>Недопустимый токен.</value>
     <comment>Identity: InvalidToken</comment>
   </data>
   <data name="IsValid(object value) has not been implemented by this class.  The preferred entry point is GetValidationResult() and classes should override IsValid(object value, ValidationContext context)." xml:space="preserve">
@@ -210,39 +210,39 @@
     <comment>DataAnnotations: MinLengthAttribute_InvalidMinLength</comment>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>название</value>
+    <value>Имя</value>
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
-    <value>Отказ Оптимистичный параллелизм, объект был изменен.</value>
+    <value>Ошибка оптимистичного параллелизма, объект был изменен.</value>
     <comment>Identity : ConcurrencyFailure</comment>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>пароль</value>
+    <value>Пароль</value>
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Passwords must be at least {0} characters." xml:space="preserve">
-    <value>Пароли должны быть по крайней мере {0} символов.</value>
+    <value>Пароли должны содержать не менее {0} символов.</value>
     <comment>Identity: PasswordTooShort</comment>
   </data>
   <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
-    <value>Пароли должны иметь по крайней мере одну цифру ( «0» - «9»).</value>
+    <value>Пароли должны содержать по крайней мере одну цифру.</value>
     <comment>Identity: PasswordRequiresDigit</comment>
   </data>
   <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
-    <value>Пароли должны иметь по крайней мере, один нижний регистр ( «A» - «Z»).</value>
+    <value>Пароли должны иметь хотя бы одну строчную букву ('a'-'z').</value>
     <comment>Identity: PasswordRequiresLower</comment>
   </data>
   <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
-    <value>Пароли должны иметь по крайней мере один не алфавитно-цифровой символ.</value>
+    <value>Пароли должны содержать хотя бы один не буквенно-цифровой символ.</value>
     <comment>Identity: PasswordRequiresNonAlphanumeric</comment>
   </data>
   <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
-    <value>Пароли должны иметь по меньшей мере один верхний регистр ( «A» - «Z»).</value>
+    <value>Пароли должны содержать хотя бы одну заглавную букву ('A'-'Z').</value>
     <comment>Identity: PasswordRequiresUpper</comment>
   </data>
   <data name="Passwords must use at least {0} different characters." xml:space="preserve">
-    <value>Пароли должны использовать по крайней мере {0} различных символов.</value>
+    <value>Пароли должны содержать не менее {0} разных символов.</value>
     <comment>Identity: PasswordRequiresUniqueChars</comment>
   </data>
   <data name="Price" xml:space="preserve">
@@ -250,43 +250,45 @@
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Recovery code redemption failed." xml:space="preserve">
-    <value>Восстановление код выкуп не удался.</value>
+    <value>Ошибка восстановления кода.</value>
     <comment>Identity: RecoveryCodeRedemptionFailed</comment>
   </data>
   <data name="Role name '{0}' is already taken." xml:space="preserve">
-    <value>Имя роли «{0}» уже принято.</value>
+    <value>Имя роли '{0}' уже занято.</value>
     <comment>Identity: DuplicateRoleName</comment>
   </data>
   <data name="Role name '{0}' is invalid." xml:space="preserve">
-    <value>Имя роли «{0}» является недействительным.</value>
+    <value>Имя роли '{0}' является недействительным.</value>
     <comment>Identity: InvalidRoleName</comment>
   </data>
   <data name="The argument '{0}' cannot be null, empty or contain only whitespace." xml:space="preserve">
-    <value>Аргумент «{0}» не может быть пустым, пустым или содержать только пробелы.</value>
+    <value>Аргумент '{0}' не может быть нулевым, пустым или содержать только пробел.</value>
     <comment>DataAnnotations: ArgumentIsNullOrWhitespace</comment>
   </data>
   <data name="The associated metadata type for type '{0}' contains the following unknown properties or fields: {1}. Please make sure that the names of these members match the names of the properties on the main type." xml:space="preserve">
-    <value>Соответствующий тип метаданных для типа «{0}» содержит следующие неизвестные свойства или полей: {1}. Пожалуйста, убедитесь, что имена этих членов совпадают с именами свойств на основном виде.</value>
+    <value>Связанный тип метаданных для типа '{0}' содержит следующие неизвестные свойства или поля: {1}. Пожалуйста, убедитесь, что имена этих членов совпадают с именами свойств основного типа.</value>
     <comment>DataAnnotations: AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties</comment>
   </data>
   <data name="The custom DataType string cannot be null or empty." xml:space="preserve">
-    <value>Строка пользовательских DataType не может быть нулевой или пустой.</value>
+    <value>Пользовательская строка DataType не может быть нулевой или пустой.</value>
     <comment>DataAnnotations: DataTypeAttribute_EmptyDataTypeString</comment>
   </data>
   <data name="The custom validation type '{0}' must be public." xml:space="preserve">
-    <value>Пользовательский тип проверки «{0}» должен быть публичным.</value>
+    <value>Пользовательский тип проверки '{0}' должен быть публичным.</value>
     <comment>DataAnnotations: CustomValidationAttribute_Type_Must_Be_Public</comment>
   </data>
   <data name="The CustomValidationAttribute method '{0}' does not exist in type '{1}' or is not public and static." xml:space="preserve">
-    <value>Метод CustomValidationAttribute «{0}» не существует в типа «{1}» или не является общедоступной и статическим.</value>
+    <value>Метод CustomValidationAttribute '{0}' не существует в типе '{1}' или не является общедоступным и статическим.</value>
     <comment>DataAnnotations: CustomValidationAttribute_Method_Not_Found</comment>
   </data>
   <data name="The CustomValidationAttribute method '{0}' in type '{1}' must match the expected signature: public static ValidationResult {0}(object value, ValidationContext context).  The value can be strongly typed.  The ValidationContext parameter is optional." xml:space="preserve">
-    <value>Метод CustomValidationAttribute '{0}' по типу '{1}' должен соответствовать ожидаемому подпись: публичный статический ValidationResult {0} (значение объекта, ValidationContext контекст). Значение может быть сильно типизированных. Параметр ValidationContext является необязательным.</value>
+    <value>Метод CustomValidationAttribute '{0}' в типе '{1}' должен соответствовать ожидаемой подписи: public static ValidationResult {0} (object value, ValidationContext context). 
+Значение может быть типизировано. Параметр ValidationContext является необязательным.</value>
     <comment>DataAnnotations: CustomValidationAttribute_Method_Signature</comment>
   </data>
   <data name="The CustomValidationAttribute method '{0}' in type '{1}' must return System.ComponentModel.DataAnnotations.ValidationResult.  Use System.ComponentModel.DataAnnotations.ValidationResult.Success to represent success." xml:space="preserve">
-    <value>Метод CustomValidationAttribute '{0}' по типу '{1}' должен вернуть System.ComponentModel.DataAnnotations.ValidationResult. Используйте System.ComponentModel.DataAnnotations.ValidationResult.Success для представления успеха.</value>
+    <value>Метод CustomValidationAttribute «{0}» типа «{1}» должен возвращать System.ComponentModel.DataAnnotations.ValidationResult. 
+Используйте System.ComponentModel.DataAnnotations.ValidationResult.Success при успехе.</value>
     <comment>DataAnnotations: CustomValidationAttribute_Method_Must_Return_ValidationResult</comment>
   </data>
   <data name="The CustomValidationAttribute.Method was not specified." xml:space="preserve">
@@ -302,55 +304,56 @@
     <comment>ModelBinding: HtmlGeneration_NonPropertyValueMustBeNumber</comment>
   </data>
   <data name="The field of type {0} must be a string, array or ICollection type." xml:space="preserve">
-    <value>Поле типа {0} должна быть строка, массив или тип ICollection.</value>
+    <value>Поле типа {0} должно быть строкой, массивом или типом ICollection.</value>
     <comment>DataAnnotations: LengthAttribute_InvalidValueType</comment>
   </data>
   <data name="The field {0} is invalid." xml:space="preserve">
-    <value>Поле {0} является недопустимым.</value>
+    <value>Поле '{0}' является недопустимым.</value>
     <comment>DataAnnotations: ValidationAttribute_ValidationError</comment>
   </data>
   <data name="The field {0} must be a number." xml:space="preserve">
-    <value>Поле {0} должно быть числом.</value>
+    <value>Поле '{0}' должно быть числом.</value>
     <comment>ModelBinding: HtmlGeneration_ValueMustBeNumber</comment>
   </data>
   <data name="The field {0} must be a string or array type with a maximum length of '{1}'." xml:space="preserve">
-    <value>Поле {0} должно быть строка или массив типа с максимальной длиной «{1}».</value>
+    <value>Поле '{0}' должно иметь тип строки или массива с максимальной длиной '{1}'.</value>
     <comment>DataAnnotations: MaxLengthAttribute_ValidationError</comment>
   </data>
   <data name="The field {0} must be a string or array type with a minimum length of '{1}'." xml:space="preserve">
-    <value>Поле {0} должно быть строка или массив типа с минимальной длиной «{1}».</value>
+    <value>Поле '{0}' должно быть типом строки или массива с минимальной длиной {1}.</value>
     <comment>DataAnnotations: MinLengthAttribute_ValidationError</comment>
   </data>
   <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
-    <value>Поле {0} должна быть строка с максимальной длиной {1}.</value>
+    <value>Поле '{0}' должно быть строкой с максимальной длиной {1}.</value>
     <comment>DataAnnotations: StringLengthAttribute_ValidationError</comment>
   </data>
   <data name="The field {0} must be a string with a minimum length of {2} and a maximum length of {1}." xml:space="preserve">
-    <value>Поле {0} должно быть строка с минимальной длиной {2} и максимальной длиной {1}.</value>
+    <value>Поле '{0}' должно быть строкой с длиной от {2} по {1}.</value>
     <comment>DataAnnotations: StringLengthAttribute_ValidationErrorIncludingMinimum</comment>
   </data>
   <data name="The field {0} must be between {1} and {2}." xml:space="preserve">
-    <value>Поле {0} должно быть между {1} ​​и {2}.</value>
+    <value>Поле '{0}' должно быть между {1} ​​и {2}.</value>
     <comment>DataAnnotations: RangeAttribute_ValidationError</comment>
   </data>
   <data name="The field {0} must match the regular expression '{1}'." xml:space="preserve">
-    <value>Поле {0} должно соответствовать регулярному выражению «{1}».</value>
+    <value>Поле '{0}' должно соответствовать регулярному выражению '{1}'.</value>
     <comment>DataAnnotations: RegexAttribute_ValidationError</comment>
   </data>
   <data name="The instance provided must match the ObjectInstance on the ValidationContext supplied." xml:space="preserve">
-    <value>Экземпляр при условии, должен соответствовать ObjectInstance на ValidationContext поставки.</value>
+    <value>Предоставленный экземпляр должен соответствовать ObjectInstance в предоставленном ValidationContext.</value>
     <comment>DataAnnotations: Validator_InstanceMustMatchValidationContextInstance</comment>
   </data>
   <data name="The key parameter at position {0} is null. Every key control parameter must be a string." xml:space="preserve">
-    <value>Ключевой параметр в позиции {0} равен нуль. Каждый ключевой параметр управления должен быть строкой.</value>
+    <value>Ключевой параметр в позиции {0} является нулевым. 
+Каждый ключевой параметр управления должен быть строкой.</value>
     <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNull</comment>
   </data>
   <data name="The key parameter at position {0} with value '{1}' is not a string. Every key control parameter must be a string." xml:space="preserve">
-    <value>Ключевой параметр в позиции {0} со значением «{1}» не является строкой. Каждый ключевой параметр управления должен быть строкой.</value>
+    <value>Ключевой параметр в позиции {0} со значением '{1}' не является строкой. Каждый ключевой параметр управления должен быть строкой.</value>
     <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNotAString</comment>
   </data>
   <data name="The key parameter at position {0} with value '{1}' occurs more than once." xml:space="preserve">
-    <value>Ключевой параметр в позиции {0} со значением «{1}» встречается более чем один раз.</value>
+    <value>Ключевой параметр в позиции {0} со значением '{1}' встречается более одного раза.</value>
     <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyOccursMoreThanOnce</comment>
   </data>
   <data name="The maximum length must be a nonnegative integer." xml:space="preserve">
@@ -358,15 +361,15 @@
     <comment>DataAnnotations: StringLengthAttribute_InvalidMaxLength</comment>
   </data>
   <data name="The maximum value '{0}' must be greater than or equal to the minimum value '{1}'." xml:space="preserve">
-    <value>Максимальное значение «{0}» должно быть больше или равно минимальному значению «{1}».</value>
+    <value>Максимальное значение {0} должно быть больше или равно минимальному значению {1}.</value>
     <comment>DataAnnotations: RangeAttribute_MinGreaterThanMax</comment>
   </data>
   <data name="The minimum and maximum values must be set." xml:space="preserve">
-    <value>Минимальные и максимальные значения должны быть установлены.</value>
+    <value>Минимальное и максимальное значения должны быть установлены.</value>
     <comment>DataAnnotations: RangeAttribute_Must_Set_Min_And_Max</comment>
   </data>
   <data name="The number of control parameters must be even." xml:space="preserve">
-    <value>Количество управляющих параметров должно быть четным.</value>
+    <value>Количество контрольных параметров должно быть четным.</value>
     <comment>DataAnnotations: UIHintImplementation_NeedEvenNumberOfControlParameters</comment>
   </data>
   <data name="The OperandType must be set when strings are used for minimum and maximum values." xml:space="preserve">
@@ -374,107 +377,107 @@
     <comment>DataAnnotations: RangeAttribute_Must_Set_Operand_Type</comment>
   </data>
   <data name="The pattern must be set to a valid regular expression." xml:space="preserve">
-    <value>Шаблон должен быть установлен действительный регулярное выражение.</value>
+    <value>Шаблон должен быть установлен в правильное регулярное выражение.</value>
     <comment>DataAnnotations: RegularExpressionAttribute_Empty_Pattern</comment>
   </data>
   <data name="The property '{0}' on resource type '{1}' is not a string type." xml:space="preserve">
-    <value>Свойство «{0}» на тип ресурса «{1}» не строковый тип.</value>
+    <value>Свойство '{0}' для типа ресурса '{1}' не является строковым типом.</value>
     <comment>DataAnnotations:ValidationAttribute_ResourcePropertyNotStringType</comment>
   </data>
   <data name="The property {0}.{1} could not be found." xml:space="preserve">
-    <value>Свойство {0}. {1} не может быть найден.</value>
+    <value>Свойство {0}.{1} не может быть найдено.</value>
     <comment>DataAnnotations: Common_PropertyNotFound</comment>
   </data>
   <data name="The resource type '{0}' does not have an accessible static property named '{1}'." xml:space="preserve">
-    <value>Тип ресурса «{0}» не имеет доступного статическое свойство с именем «{1}».</value>
+    <value>Тип ресурса '{0}' не имеет доступного статического свойства с именем '{1}'.</value>
     <comment>DataAnnotations: ValidationAttribute_ResourceTypeDoesNotHaveProperty</comment>
   </data>
   <data name="The supplied value is invalid for {0}." xml:space="preserve">
-    <value>Производимое значение является недопустимым для {0}.</value>
+    <value>Предоставленное значение недопустимо для {0}.</value>
     <comment>ModelBinding: ModelState_UnknownValueIsInvalid</comment>
   </data>
   <data name="The supplied value is invalid." xml:space="preserve">
-    <value>Производимое значение является недействительным.</value>
+    <value>Предоставленное значение недействительно.</value>
     <comment>ModelBinding: ModelState_NonPropertyUnknownValueIsInvalid</comment>
   </data>
   <data name="The type '{0}' does not contain a public property named '{1}'." xml:space="preserve">
-    <value>Типа «{0}» не содержит открытое свойство с именем «{1}».</value>
+    <value>Тип '{0}' не содержит публичного свойства с именем '{1}'.</value>
     <comment>DataAnnotations: AttributeStore_Unknown_Property</comment>
   </data>
   <data name="The type '{0}' needs to represent an enumeration type." xml:space="preserve">
-    <value>Типа «{0}» должен представлять тип перечисления.</value>
+    <value>Тип '{0}' должен представлять собой тип перечисления.</value>
     <comment>DataAnnotations: EnumDataTypeAttribute_TypeNeedsToBeAnEnum</comment>
   </data>
   <data name="The type provided for EnumDataTypeAttribute cannot be null." xml:space="preserve">
-    <value>Тип предусмотрено EnumDataTypeAttribute не может быть пустым.</value>
+    <value>Тип, предоставленный для EnumDataTypeAttribute, не может быть нулевым.</value>
     <comment>DataAnnotations: EnumDataTypeAttribute_TypeCannotBeNull</comment>
   </data>
   <data name="The type {0} must implement {1}." xml:space="preserve">
-    <value>Тип {0} должен реализовывать {1}.</value>
+    <value>Тип '{0}' должен реализовывать '{1}'.</value>
     <comment>DataAnnotations: RangeAttribute_ArbitraryTypeNotIComparable</comment>
   </data>
   <data name="The value '{0}' is invalid." xml:space="preserve">
-    <value>Значение «{0}» является недействительным.</value>
+    <value>Значение '{0}' недопустимо.</value>
     <comment>ModelBinding: HtmlGeneration_ValueIsInvalid, ModelBinding_NullValueNotValid</comment>
   </data>
   <data name="The value '{0}' is not valid for {1}." xml:space="preserve">
-    <value>Значение '{0}' не является допустимым для {1}.</value>
+    <value>Значение '{0}' недопустимо для {1}.</value>
     <comment>ModelBinding: ModelState_AttemptedValueIsInvalid</comment>
   </data>
   <data name="The value '{0}' is not valid." xml:space="preserve">
-    <value>Значение «{0}» не является допустимым.</value>
+    <value>Значение '{0}' недопустимо.</value>
     <comment>ModelBinding: ModelState_NonPropertyAttemptedValueIsInvalid</comment>
   </data>
   <data name="The value for property '{0}' must be of type '{1}'." xml:space="preserve">
-    <value>Значение свойства «{0}» должен быть типа «{1}».</value>
+    <value>Значение свойства '{0}' должно иметь тип '{1}'.</value>
     <comment>DataAnnotations: Validator_Property_Value_Wrong_Type</comment>
   </data>
   <data name="The {0} field is not a valid credit card number." xml:space="preserve">
-    <value>{0} поле не является допустимым номер кредитной карты.</value>
+    <value>Поле '{0}' не является допустимым номером кредитной карты.</value>
     <comment>DataAnnotations: CreditCardAttribute_Invalid</comment>
   </data>
   <data name="The {0} field is not a valid e-mail address." xml:space="preserve">
-    <value>{0} поле не является действительным адресом электронной почты.</value>
+    <value>Поле '{0}' не является действительным адресом электронной почты.</value>
     <comment>DataAnnotations: EmailAddressAttribute_Invalid</comment>
   </data>
   <data name="The {0} field is not a valid fully-qualified http, https, or ftp URL." xml:space="preserve">
-    <value>{0} поле не является действительным полностью квалифицированное HTTP, HTTPS, FTP или URL.</value>
+    <value>Поле '{0}' не является действительным полностью квалифицированным HTTP, HTTPS, FTP или URL.</value>
     <comment>DataAnnotations: UrlAttribute_Invalid</comment>
   </data>
   <data name="The {0} field is not a valid phone number." xml:space="preserve">
-    <value>{0} поле не является допустимым номером телефона.</value>
+    <value>Поле '{0}' не является допустимым номером телефона.</value>
     <comment>DataAnnotations: PhoneAttribute_Invalid</comment>
   </data>
   <data name="The {0} field is required." xml:space="preserve">
-    <value>требуется {0} поле.</value>
+    <value>Поле '{0}' обязательно для заполнения.</value>
     <comment>DataAnnotations: RequiredAttribute_ValidationError</comment>
   </data>
   <data name="The {0} field only accepts files with the following extensions: {1}" xml:space="preserve">
-    <value>{0} поле принимает только файлы со следующими расширениями: {1}</value>
+    <value>Поле '{0}' принимает только файлы со следующими расширениями: {1}</value>
     <comment>DataAnnotations: FileExtensionsAttribute_Invalid</comment>
   </data>
   <data name="The {0} property has not been set.  Use the {1} method to get the value." xml:space="preserve">
-    <value>{0} свойство не было установлено. С помощью метода {1}, чтобы получить значение.</value>
+    <value>Свойство '{0}' не было установлено. Используйте метод '{1}', чтобы получить значение.</value>
     <comment>DataAnnotations: DisplayAttribute_PropertyNotSet</comment>
   </data>
   <data name="User already has a password set." xml:space="preserve">
-    <value>Пользователь уже имеет набор пароля.</value>
+    <value>У пользователя уже установлен пароль.</value>
     <comment>Identity: UserAlreadyHasPassword</comment>
   </data>
   <data name="User already in role '{0}'." xml:space="preserve">
-    <value>Пользователь уже в роли «{0}».</value>
+    <value>Пользователь уже имеет роль '{0}'.</value>
     <comment>Identity: UserAlreadyInRole</comment>
   </data>
   <data name="User is not in role '{0}'." xml:space="preserve">
-    <value>Пользователь не в роли «{0}».</value>
+    <value>У пользователя нет роли '{0}'.</value>
     <comment>Identity: UserNotInRole</comment>
   </data>
   <data name="User name '{0}' is already taken." xml:space="preserve">
-    <value>Имя пользователя «{0}» уже принято.</value>
+    <value>Имя пользователя '{0}' уже занято.</value>
     <comment>Identity: DuplicateUserName</comment>
   </data>
   <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
-    <value>Имя пользователя «{0}» является недействительным, может содержать только букву или цифру.</value>
+    <value>Имя пользователя '{0}' недопустимо, может содержать только буквы или цифры.</value>
     <comment>Identity: InvalidUserName</comment>
   </data>
   <data name="{0} is not valid." xml:space="preserve">

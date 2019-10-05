@@ -158,7 +158,7 @@
     <comment>DataAnnotations: CompareAttribute_UnknownProperty</comment>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Rendez-vous amoureux</value>
+    <value>Date</value>
     <comment>DataAnnotations: Custom value</comment>
   </data>
   <data name="Either ErrorMessageString or ErrorMessageResourceName must be set, but not both." xml:space="preserve">
