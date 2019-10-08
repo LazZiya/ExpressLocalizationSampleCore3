@@ -35,11 +35,11 @@ namespace ExpressLocalizationSampleCore3
 
             var cultures = new[]
             {
+                new CultureInfo("en"),
                 new CultureInfo("ar"),
                 new CultureInfo("cs"),
                 new CultureInfo("de"),
                 new CultureInfo("es"),
-                new CultureInfo("en"),
                 new CultureInfo("fa"),
                 new CultureInfo("fr"),
                 new CultureInfo("hi"),
@@ -62,6 +62,8 @@ namespace ExpressLocalizationSampleCore3
             services.AddRazorPages()
                 .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(ops =>
                 {
+                    // uncomment and set to true to use only route culture provider
+                    // ops.UseAllCultureProviders = false;
                     ops.ResourcesPath = "LocalizationResources";
                     ops.RequestLocalizationOptions = o =>
                     {

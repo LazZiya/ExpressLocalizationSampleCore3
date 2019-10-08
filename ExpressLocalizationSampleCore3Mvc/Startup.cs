@@ -30,10 +30,10 @@ namespace ExpressLocalizationSampleCore3Mvc
             var cultures = new[]
             {
                 new CultureInfo("ar"),
+                new CultureInfo("en"),
                 new CultureInfo("cs"),
                 new CultureInfo("de"),
                 new CultureInfo("es"),
-                new CultureInfo("en"),
                 new CultureInfo("fa"),
                 new CultureInfo("fr"),
                 new CultureInfo("hi"),
@@ -56,6 +56,8 @@ namespace ExpressLocalizationSampleCore3Mvc
             services.AddControllersWithViews()
                 .AddExpressLocalization<ExpressLocalizationResource,ViewLocalizationResource>(ops=>
                 {
+                    // uncomment and set to true to use only route culture provider
+                    // ops.UseAllCultureProviders = false;
                     ops.ResourcesPath = "LocalizationResources";
                     ops.RequestLocalizationOptions = o =>
                     {
