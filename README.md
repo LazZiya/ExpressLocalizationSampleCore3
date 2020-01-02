@@ -63,6 +63,6 @@ Some parts of this project is using [LazZiya.TagHelpers][3] like:
 ## License:
 MIT
 
-[1]: https://github.com/LazZiya/ExpressLocalization/tree/ExpressLocalizationCore3
-[2]: https://github.com/LazZiya/TagHelpers.Localization/tree/TagHelpersLocalizationCore3
-[3]: https://github.com/LazZiya/TagHelpers/tree/TagHelpersCore3
+[1]: https://github.com/LazZiya/ExpressLocalization/
+[2]: https://github.com/LazZiya/TagHelpers.Localization/
+[3]: https://github.com/LazZiya/TagHelpers/
