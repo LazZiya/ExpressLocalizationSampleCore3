@@ -27,7 +27,7 @@
                  else
                 {
                     <input asp-for="Email" class="form-control" disabled />
-                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link"  asp-route-culture="@culture" localize-content>Send verification email</button>
+                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link"   localize-content>Send verification email</button>
                 }
             </div>
             <div class="form-group">
@@ -35,7 +35,7 @@
                 <input asp-for="Input.NewEmail" class="form-control" />
                 <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
             </div>
-            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary"  asp-route-culture="@culture" localize-content>Change email</button>
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary"   localize-content>Change email</button>
         </form>
     </div>
 </div>

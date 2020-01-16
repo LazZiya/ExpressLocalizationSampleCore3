@@ -10,10 +10,10 @@
     @if (SignInManager.IsSignedIn(User))
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" asp-route-culture="@culture" title="Manage" localize-args="@(new[] { User.Identity.Name })">Hello {0}!</a>
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index"  title="Manage" localize-args="@(new[] { User.Identity.Name })">Hello {0}!</a>
         </li>
         <li class="nav-item">
-            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-culture="@culture" asp-route-returnUrl="@Url.Page("/", new { area = "", culture })" method="post">
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"  asp-route-returnUrl="@Url.Page("/", new { area = "", culture })" method="post">
                 <button type="submit" class="nav-link btn btn-link text-dark" localize-content>Logout</button>
             </form>
         </li>
@@ -21,10 +21,10 @@
     else
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register" asp-route-culture="@culture" localize-content>Register</a>
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register"  localize-content>Register</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login"  asp-route-culture="@culture" localize-content>Login</a>
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login"   localize-content>Login</a>
         </li>
     }
 </ul>

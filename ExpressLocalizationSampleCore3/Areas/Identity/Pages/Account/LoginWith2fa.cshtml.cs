@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using LazZiya.ExpressLocalization;
+using LazZiya.ExpressLocalization.DataAnnotations;
 using LazZiya.ExpressLocalization.Messages;
 using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Authorization;
@@ -40,8 +41,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
-            [StringLength(7, ErrorMessage = DataAnnotationsErrorMessages.StringLengthAttribute_ValidationErrorIncludingMinimum, MinimumLength = 6)]
+            [ExRequired]
+            [ExStringLength(7, MinimumLength = 6)]
             [DataType(DataType.Text)]
             [Display(Name = "Authenticator code")]
             public string TwoFactorCode { get; set; }

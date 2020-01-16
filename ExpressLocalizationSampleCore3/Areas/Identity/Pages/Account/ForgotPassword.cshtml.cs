@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using LazZiya.ExpressLocalization;
 using LazZiya.ExpressLocalization.Messages;
+using LazZiya.ExpressLocalization.DataAnnotations;
 
 namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
 {
@@ -36,8 +37,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
-            [EmailAddress(ErrorMessage = DataAnnotationsErrorMessages.EmailAddressAttribute_Invalid)]
+            [ExRequired]
+            [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
         }

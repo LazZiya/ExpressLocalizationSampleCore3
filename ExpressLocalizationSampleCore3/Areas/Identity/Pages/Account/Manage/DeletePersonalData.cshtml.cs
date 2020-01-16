@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using LazZiya.ExpressLocalization;
+using LazZiya.ExpressLocalization.DataAnnotations;
 using LazZiya.ExpressLocalization.Messages;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +37,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
+            [ExRequired]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }

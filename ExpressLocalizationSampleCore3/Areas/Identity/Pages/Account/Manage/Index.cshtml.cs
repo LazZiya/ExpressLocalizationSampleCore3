@@ -38,7 +38,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Phone(ErrorMessage = DataAnnotationsErrorMessages.PhoneAttribute_Invalid)]
+            [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
         }

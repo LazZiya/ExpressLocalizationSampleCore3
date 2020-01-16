@@ -14,11 +14,11 @@
         <p>
             <strong localize-content>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
         </p>
-        <form id="download-data" asp-page="DownloadPersonalData" method="post" class="form-group" asp-route-culture="@culture">
+        <form id="download-data" asp-page="DownloadPersonalData" method="post" class="form-group" >
             <button class="btn btn-primary" type="submit" localize-content>Download</button>
         </form>
         <p>
-            <a id="delete" asp-page="DeletePersonalData" class="btn btn-primary" asp-route-culture="@culture">Delete</a>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-primary" >Delete</a>
         </p>
     </div>
 </div>

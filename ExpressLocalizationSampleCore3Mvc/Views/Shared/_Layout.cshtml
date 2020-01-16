@@ -11,9 +11,6 @@
         <link rel="stylesheet" href="~/css/rtl.css" />
     }
 </head>
-@{ 
-    var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
-}
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -26,10 +23,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" asp-route-culture="@culture" localize-content>Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"  localize-content>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy" asp-route-culture="@culture" localize-content>Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"  localize-content>Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +42,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - ExpressLocalizationSampleCore3Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy" asp-route-culture="@culture" localize-content>Privacy</a>
+            &copy; 2019 - ExpressLocalizationSampleCore3Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy"  localize-content>Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.js"></script>
