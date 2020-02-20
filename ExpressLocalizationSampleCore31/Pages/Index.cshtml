@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+    var urlObj = new[] { "https://docs.microsoft.com/aspnet/core" };
+}
+
+<div class="text-center">
+    <h1 class="display-4" localize-content>Welcome</h1>
+    <p localize-args="urlObj">Learn about <a href="{0}">building Web apps with ASP.NET Core</a>.</p>
+</div>

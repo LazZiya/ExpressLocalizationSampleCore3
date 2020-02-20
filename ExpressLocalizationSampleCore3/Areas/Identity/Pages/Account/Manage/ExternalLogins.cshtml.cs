@@ -15,14 +15,14 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
         private readonly string culture;
 
 
         public ExternalLoginsModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            SharedCultureLocalizer loc)
+            ISharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;

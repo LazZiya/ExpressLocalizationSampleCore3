@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </div>
-                <language-nav language-label="NativeName"></language-nav>
+                <language-nav language-label="NativeName" cookie-handler-url="@(Url.Action("OnGetSetCultureCookie", "", new { area= "", cltr="{0}", returnUrl="{1}" }))"></language-nav>
             </div>
         </nav>
     </header>

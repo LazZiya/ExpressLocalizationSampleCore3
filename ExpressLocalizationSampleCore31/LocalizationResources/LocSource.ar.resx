@@ -1,0 +1,1013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="'{0}' and '{1}' do not match." xml:space="preserve">
+    <value>'{0}' و '{1}' غير متطابقين.</value>
+    <comment>DataAnnotations: CompareAttribute_MustMatch</comment>
+  </data>
+  <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
+    <value>تم تعطيل 2FA. يمكنك إعادة تمكين 2FA عند إعداد التطبيق الموثق</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;If you reset your authenticator key your authenticator app will not work until you reconfigure it.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        This process disables 2FA until you verify your authenticator app.&#xA;        If you do not complete your authenticator app configuration you may lose access to your account.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;تمتد الطبقة = "glyphicon glyphicon-التحذير علامة"&gt; &lt;/ SPAN&gt;
+        &lt;strong&gt; إذا قمت بإعادة تعيين مفتاح المصدق الخاص بك وسوف التطبيق الموثق الخاص بك لا يعمل حتى إعادة تكوين ذلك. &lt;/ قوي&gt;
+    &lt;/ P&gt;
+    &lt;P&gt;
+        هذه العملية تعطيل 2FA حتى التحقق من التطبيق الموثق الخاص بك.
+        إذا لم يكن لاستكمال التكوين المصادق التطبيق الخاص بك قد تفقد الوصول إلى حسابك.
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        &lt;span class=&quot;glyphicon glyphicon-warning-sign&quot;&gt;&lt;/span&gt;&#xA;        &lt;strong&gt;Put these codes in a safe place.&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        If you lose your device and don't have the recovery codes you will lose access to your account.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key&#xA;        used in an authenticator app you should &lt;a href=&quot;{0}&quot;&gt;reset your authenticator keys.&lt;/a&gt;&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        &lt;تمتد الطبقة = "glyphicon glyphicon-التحذير علامة"&gt; &lt;/ SPAN&gt;
+        على &lt;strong&gt; وضع هذه الرموز في مكان آمن. &lt;/ قوي&gt;
+    &lt;/ P&gt;
+    &lt;P&gt;
+        إذا فقدت جهازك وليس لديهم رموز الانتعاش سوف تفقد الوصول إلى حسابك.
+    &lt;/ P&gt;
+    &lt;P&gt;
+        توليد رموز انتعاش جديدة لا يغير المفاتيح المستخدمة في تطبيقات المصدق. إذا كنت ترغب في تغيير مفتاح
+        المستخدمة في التطبيق الموثق يجب &lt;a href="{0}"&gt; إعادة تعيين مفاتيح المصدق الخاص بك. &lt;/A&gt;
+    &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;&#xA;        Swapping to the &lt;strong&gt;Development&lt;/strong&gt; environment displays detailed information about the error that occurred.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&#xA;        &lt;strong&gt;The Development environment shouldn't be enabled for deployed applications.&lt;/strong&gt; It can result in displaying sensitive information from exceptions to end users. For local debugging, enable the &lt;strong&gt;Development&lt;/strong&gt; environment by setting the &lt;strong&gt;ASPNETCORE_ENVIRONMENT&lt;/strong&gt; environment variable to &lt;strong&gt;Development&lt;/strong&gt; and restarting the app.&#xA;    &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;P&gt;
+        مبادلة لل&lt;قوية&gt; التنمية &lt;/ strong&gt; المعلومات يعرض البيئة مفصلة حول الخطأ الذي حدث.
+    &lt;/ P&gt;
+    &lt;P&gt;
+        على &lt;strong&gt; لا يجب تمكين وتنمية البيئة لتطبيقات نشرها. &lt;/ قوي&gt; ويمكن أن يؤدي في عرض المعلومات الحساسة من استثناءات للمستخدمين النهائيين. من أجل التصحيح المحلي، تمكن &lt;قوية&gt; التنمية &lt;/ قوي&gt; البيئة من خلال وضع على &lt;strong&gt; ASPNETCORE_ENVIRONMENT &lt;/ قوي&gt; متغير البيئة على &lt;strong&gt; التنمية &lt;/ strong&gt; و إعادة تشغيل التطبيق.
+    &lt;/ P&gt;</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="&lt;p&gt;Your account contains personal data that you have given us. This page allows you to download or delete that data.&lt;/p&gt;&#xA;            &lt;p&gt;&#xA;                &lt;strong&gt;Deleting this data will permanently remove your account, and this cannot be recovered.&lt;/strong&gt;&#xA;            &lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p&gt; والحساب الخاص بك يحتوي على البيانات الشخصية التي قدمتموها لنا. هذه الصفحة تسمح لك بتحميل أو حذف تلك البيانات. &lt;/ P&gt;
+            &lt;P&gt;
+                على &lt;strong&gt; إن حذف هذه البيانات بشكل دائم إزالة حسابك، وهذا لا يمكن استردادها. &lt;/ قوي&gt;
+            &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have 1 recovery code left.&lt;/strong&gt;&#xA;            &lt;p&gt;You can &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>على &lt;strong&gt; لقد كود 1 الانتعاش اليسار. &lt;/ قوي&gt;
+            &lt;p&gt; يمكنك &lt;a href="{0}"&gt; إنشاء مجموعة جديدة من الرموز الانتعاش &lt;/A&gt;. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have no recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You must &lt;a href=&quot;{0}&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code.&lt;/p&gt;" xml:space="preserve">
+    <value>على &lt;strong&gt; لا يوجد لديك رموز الانتعاش نقاط. &lt;/ قوي&gt;
+            &lt;p&gt; &lt;a يجب href="{0}"&gt; إنشاء مجموعة جديدة من الرموز الانتعاش &lt;/A&gt; قبل أن تتمكن من تسجيل الدخول باستخدام رمز الاسترداد. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="&lt;strong&gt;You have {0} recovery codes left.&lt;/strong&gt;&#xA;            &lt;p&gt;You should &lt;a href=&quot;{1}&quot;&gt;generate a new set of recovery codes&lt;/a&gt;.&lt;/p&gt;" xml:space="preserve">
+    <value>على &lt;strong&gt; لقد {0} تركت رموز الانتعاش. &lt;/ قوي&gt;
+            &lt;p&gt; &lt;a يجب href="{1}"&gt; إنشاء مجموعة جديدة من الرموز الانتعاش &lt;/A&gt;. &lt;/ P&gt;</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="A non-empty request body is required." xml:space="preserve">
+    <value>مطلوب نص طلب غير فارغ.</value>
+    <comment>ModelBinding: ModelBinding_MissingRequestBodyRequiredMember</comment>
+  </data>
+  <data name="A user with this login already exists." xml:space="preserve">
+    <value>هناك مستخدم لديه معلومات تسجيل الدخول هذه.</value>
+    <comment>Identity: LoginAlreadyAssociated</comment>
+  </data>
+  <data name="A value for the '{0}' parameter or property was not provided." xml:space="preserve">
+    <value>لم يتم توفير قيمة للعامل أو الخاصية '{0}'.</value>
+    <comment>ModelBinding: ModelBinding_MissingBindRequiredMember</comment>
+  </data>
+  <data name="A value is required." xml:space="preserve">
+    <value>القيمة مطلوبة.</value>
+    <comment>ModelBinding: KeyValuePair_BothKeyAndValueMustBePresent</comment>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value>تم الرفض</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value>إضافة خدمة أخرى لتسجيل الدخول.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Add authenticator app" xml:space="preserve">
+    <value>إضافة التطبيق الموثق</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="An error occurred while processing your request." xml:space="preserve">
+    <value>حدث خطأ أثناء معالجة طلبك.</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="An unknown failure has occurred." xml:space="preserve">
+    <value>حدث فشل غير معروف.</value>
+    <comment>Identity: DefaultError</comment>
+  </data>
+  <data name="Associate your {0} account." xml:space="preserve">
+    <value>إقران {0} الحساب.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Both ErrorMessageResourceType and ErrorMessageResourceName need to be set on this attribute." xml:space="preserve">
+    <value>يجب تعيين كل من ErrorMessageResourceType و ErrorMessageResourceName على هذه السمة.</value>
+    <comment>DataAnnotations: ValidationAttribute_NeedBothResourceTypeAndResourceName</comment>
+  </data>
+  <data name="Cannot retrieve property '{0}' because localization failed.  Type '{1}' is not public or does not contain a public static string property with the name '{2}'." xml:space="preserve">
+    <value>لا يمكن استرداد الخاصية '{0}' بسبب فشل الترجمة. النوع '{1}' ليس عامًا أو لا يحتوي على خاصية سلسلة ثابتة عامة بالاسم '{2}'.</value>
+    <comment>DataAnnotations: LocalizableString_LocalizationFailed</comment>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>غير كلمة السر</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value>تغيير إعدادات حسابك</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Configure authenticator app" xml:space="preserve">
+    <value>تكوين التطبيق الموثق</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Confirm email" xml:space="preserve">
+    <value>تأكيد عنوان البريد الإلكتروني</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="Confirm new password" xml:space="preserve">
+    <value>تأكيد كلمة المرور الجديدة</value>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Confirm your email" xml:space="preserve">
+    <value>تأكيد البريد الإلكتروني الخاص بك</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Could not convert the value of type '{0}' to '{1}' as expected by method {2}.{3}." xml:space="preserve">
+    <value>لا يمكن تحويل قيمة النوع '{0}' إلى '{1}' كما هو متوقع من الطريقة {2}. {3}.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Conversion_Failed</comment>
+  </data>
+  <data name="Could not find a property named {0}." xml:space="preserve">
+    <value>تعذر العثور على خاصية باسم {0}.</value>
+    <comment>DataAnnotations: CompareAttribute_UnknownProperty</comment>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value>انشاء حساب جديد.</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Current password" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>التاريخ</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+    <comment>PersonalData.cshtml</comment>
+  </data>
+  <data name="Development Mode" xml:space="preserve">
+    <value>وضع التنمية</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Disable 2FA" xml:space="preserve">
+    <value>2FA تعطيل</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Don't have access to your authenticator device? You can &lt;a id=&quot;recovery-code-login&quot; href=&quot;{0}&quot;&gt;log in with a recovery code&lt;/a&gt;." xml:space="preserve">
+    <value>لم يكن لديك الوصول إلى جهاز المصدق الخاص بك؟ يمكنك &lt;a id="recovery-code-login" href="{0}"&gt; تسجيل الدخول باستخدام رمز الاسترداد &lt;/A&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>تحميل</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for &lt;a href=&quot;{0}&quot;&gt;Windows Phone&lt;/a&gt;, &lt;a href=&quot;{1}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{2}&quot;&gt;iOS&lt;/a&gt; or" xml:space="preserve">
+    <value>تحميل الموثق التطبيق اثنين عامل مثل مايكروسوفت الموثق ل&lt;a href="{0}"&gt; هاتف ويندوز &lt;/a&gt; أو &lt;a href="{1}"&gt; الروبوت &lt;/a&gt; و &lt;لأ href = "{ (2)} "&gt; دائرة الرقابة الداخلية &lt;/a&gt; أو</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Download Your Data" xml:space="preserve">
+    <value>تحميل البيانات الخاصة بك</value>
+    <comment>Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml</comment>
+  </data>
+  <data name="Either ErrorMessageString or ErrorMessageResourceName must be set, but not both." xml:space="preserve">
+    <value>يجب تعيين إما ErrorMessageString أو ErrorMessageResourceName ، ولكن ليس كلاهما.</value>
+    <comment>DataAnnotations: ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Email '{0}' is already taken." xml:space="preserve">
+    <value>البريد الإلكتروني '{0}' مسجل مسبقاً.</value>
+    <comment>Identity: DuplicateEmail</comment>
+  </data>
+  <data name="Email '{0}' is invalid." xml:space="preserve">
+    <value>البريد الإلكتروني '{0}' غير صالح.</value>
+    <comment>Identity: InvalidEmail</comment>
+  </data>
+  <data name="Enter your email." xml:space="preserve">
+    <value>ادخل بريدك الإلكتروني.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Error from external provider: {0}" xml:space="preserve">
+    <value>خطأ من مزود خارجي: {0}</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information during confirmation." xml:space="preserve">
+    <value>خطأ في تحميل معلومات تسجيل الدخول الخارجية خلال التأكيد.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Error loading external login information." xml:space="preserve">
+    <value>خطأ في تحميل معلومات تسجيل الدخول الخارجية.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="External logins" xml:space="preserve">
+    <value>تسجيلات خارجية</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Forget this browser" xml:space="preserve">
+    <value>ننسى هذا المتصفح</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Forgot password confirmation" xml:space="preserve">
+    <value>تأكيدا نسيت كلمة المرور</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>نسيت رقمك السري؟</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Generate Recovery Codes" xml:space="preserve">
+    <value>توليد رموز الاسترداد</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
+    <value>توليد اثنين عامل التوثيق (2FA) رموز الانتعاش</value>
+    <comment>Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml</comment>
+  </data>
+  <data name="Google Authenticator for &lt;a href=&quot;{3}&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;{4}&quot;&gt;iOS&lt;/a&gt;." xml:space="preserve">
+    <value>أداة مصادقة Google ل&lt;a href="{3}"&gt; الروبوت &lt;/a&gt; و &lt;a href="{4}"&gt; دائرة الرقابة الداخلية &lt;/A&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Hello {0}!" xml:space="preserve">
+    <value>مرحبا {0}!</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Home page" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>الهوية</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Incorrect password." xml:space="preserve">
+    <value>رقم السر غير صحيح</value>
+    <comment>Identity: PasswordMismatch</comment>
+  </data>
+  <data name="Invalid authenticator code." xml:space="preserve">
+    <value>كود الموثق صالح.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value>محاولة تسجيل الدخول غير صالحة.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid recovery code entered." xml:space="preserve">
+    <value>دخلت رمز الاسترداد صالح.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Invalid token." xml:space="preserve">
+    <value>رمز غير صالح.</value>
+    <comment>Identity: InvalidToken</comment>
+  </data>
+  <data name="IsValid(object value) has not been implemented by this class.  The preferred entry point is GetValidationResult() and classes should override IsValid(object value, ValidationContext context)." xml:space="preserve">
+    <value>لم يتم تطبيق IsValid (قيمة الكائن) بواسطة هذه الفئة. نقطة الإدخال المفضلة هي GetValidationResult () ويجب أن تتجاوز الفئات IsValid (قيمة الكائن ، سياق ValidationContext).</value>
+    <comment>DataAnnotations: ValidationAttribute_IsValid_NotImplemented</comment>
+  </data>
+  <data name="Learn about &lt;a href=&quot;{0}&quot;&gt;building Web apps with ASP.NET Core&lt;/a&gt;." xml:space="preserve">
+    <value>تعرف على &lt;a href="{0}"&gt; التطبيقات بناء ويب مع ASP.NET الأساسية &lt;/A&gt;.</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="Locked out" xml:space="preserve">
+    <value>اقفل</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="Lockout is not enabled for this user." xml:space="preserve">
+    <value>لم يتم تمكين تأمين لهذا المستخدم.</value>
+    <comment>Identity: UserLockoutNotEnabled</comment>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log in using your external account" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام حساب خارجي</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Log out" xml:space="preserve">
+    <value>الخروج</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>الإدارة</value>
+    <comment>Pages/Shared/_LoginPartial.cshtml</comment>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value>إدارة حسابك</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_Layout.cshtml</comment>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value>إدارة تسجيل الدخول الخاصة بك الخارجية</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="MaxLengthAttribute must have a Length value that is greater than zero. Use MaxLength() without parameters to indicate that the string or array can have the maximum allowable length." xml:space="preserve">
+    <value>يجب أن يكون MaxLengthAttribute قيمة طول أكبر من الصفر. استخدم MaxLength () بدون عوامل للإشارة إلى أن السلسلة أو الصفيف يمكن أن يكون الحد الأقصى للطول المسموح به.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="MetadataClassType cannot be null." xml:space="preserve">
+    <value>لا يمكن لـ MetadataClassType أن تكون خالية.</value>
+    <comment>DataAnnotations: MetadataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="MinLengthAttribute must have a Length value that is zero or greater." xml:space="preserve">
+    <value>يجب أن يكون لـ MinLengthAttribute قيمة طول صفر أو أكبر.</value>
+    <comment>DataAnnotations: MinLengthAttribute_InvalidMinLength</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="New password" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+  </data>
+  <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
+    <value>وبمجرد الانتهاء من تفحص رمز الاستجابة السريعة أو إدخال مفتاح أعلاه، سيكون لديك التطبيق المصادقة اثنين عامل توفر لك مع رمز فريد من نوعه. أدخل رمز في مربع التأكيد أدناه.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
+    <value>فشل التزامن متفائل ، تم تعديل الكائن.</value>
+    <comment>Identity : ConcurrencyFailure</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Password not correct." xml:space="preserve">
+    <value>كلمة المرور غير صحيحة.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Password1" xml:space="preserve">
+    <value>كلمه السر</value>
+    <comment>Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml</comment>
+  </data>
+  <data name="Passwords must be at least {0} characters." xml:space="preserve">
+    <value>يجب أن تكون كلمات المرور {0} على الأقل من الأحرف.</value>
+    <comment>Identity: PasswordTooShort</comment>
+  </data>
+  <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
+    <value>يجب أن تحتوي كلمات المرور على رقم واحد على الأقل ('0' - '9').</value>
+    <comment>Identity: PasswordRequiresDigit</comment>
+  </data>
+  <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
+    <value>يجب أن تحتوي كلمات المرور على حرف صغير واحد على الأقل ('a' - 'z').</value>
+    <comment>Identity: PasswordRequiresLower</comment>
+  </data>
+  <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
+    <value>يجب أن تحتوي كلمات المرور على حرف غير أبجدي رقمي واحد على الأقل.</value>
+    <comment>Identity: PasswordRequiresNonAlphanumeric</comment>
+  </data>
+  <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
+    <value>يجب أن تحتوي كلمات المرور على حرف كبير واحد على الأقل ("A" - "Z").</value>
+    <comment>Identity: PasswordRequiresUpper</comment>
+  </data>
+  <data name="Passwords must use at least {0} different characters." xml:space="preserve">
+    <value>يجب أن تستخدم كلمات المرور {0} أحرف مختلفة على الأقل.</value>
+    <comment>Identity: PasswordRequiresUniqueChars</comment>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value>بيانات شخصية</value>
+    <comment>Areas/Identity/Pages/Account/Manage/PersonalData.cshtml</comment>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Please check your email to reset your password." xml:space="preserve">
+    <value>يرجى التحقق من البريد الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك.</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>الرجاء التأكد من حسابك عن طريق &lt;a href='{0}'&gt; النقر هنا &lt;/a&gt;.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Please enter a valid number." xml:space="preserve">
+    <value>من فضلك أدخل رقما صالحا.</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value>يرجى إعادة تعيين كلمة المرور الخاصة بك عن طريق &lt;a href='{0}'&gt; النقر هنا &lt;/a&gt;.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>السعر</value>
+    <comment>DataAnnotations: Custom value</comment>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>الخصوصية</value>
+    <comment>Pages/Shared/_Layout.cshtml</comment>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Recovery code redemption failed." xml:space="preserve">
+    <value>فشل استرداد رمز الاسترداد.</value>
+    <comment>Identity: RecoveryCodeRedemptionFailed</comment>
+  </data>
+  <data name="Recovery code verification" xml:space="preserve">
+    <value>تأكيد رمز الاسترجاع</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+    <comment>Areas/Identity/Pages/Account/Register.cshtml</comment>
+  </data>
+  <data name="Register as a new user" xml:space="preserve">
+    <value>تسجيل كمستخدم جديد</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value>محدودة مسجلة</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>تذكرني</value>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>تذكرنى؟</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Remember this machine?" xml:space="preserve">
+    <value>تدكر هذا الجهاز؟</value>
+  </data>
+  <data name="Remove this login from your account" xml:space="preserve">
+    <value>إزالة هذا الدخول من حسابك</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Remove {0}" xml:space="preserve">
+    <value>إزالة {0}</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml</comment>
+  </data>
+  <data name="Request ID:" xml:space="preserve">
+    <value>طلب معرف:</value>
+    <comment>Pages/Error.cshtml</comment>
+  </data>
+  <data name="Resend email confirmation" xml:space="preserve">
+    <value>إعادة إرسال التوثيق على البريد الإلكتروني</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset authenticator app" xml:space="preserve">
+    <value>التطبيق الموثق إعادة تعيين</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset authenticator key" xml:space="preserve">
+    <value>مفتاح الموثق إعادة تعيين</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml</comment>
+  </data>
+  <data name="Reset password" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Reset password confirmation" xml:space="preserve">
+    <value>تأكيدا إعادة تعيين كلمة المرور</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Reset recovery codes" xml:space="preserve">
+    <value>إعادة تعيين رموز الانتعاش</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Reset your password." xml:space="preserve">
+    <value>اعد ضبط كلمه السر.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPassword.cshtml</comment>
+  </data>
+  <data name="Role name '{0}' is already taken." xml:space="preserve">
+    <value>اسم الدور '{0}' مسجل مسبقاً.</value>
+    <comment>Identity: DuplicateRoleName</comment>
+  </data>
+  <data name="Role name '{0}' is invalid." xml:space="preserve">
+    <value>Rol adı '{0}' geçerli değildir.</value>
+    <comment>Identity: InvalidRoleName</comment>
+  </data>
+  <data name="Sample Form" xml:space="preserve">
+    <value>نموذج عينة</value>
+    <comment>Pages/SampleForm.cshtml</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Send verification email" xml:space="preserve">
+    <value>ارسل ايميل التفعيل</value>
+    <comment>Areas/Identity/Pages/Account/Manage/Index.cshtml</comment>
+  </data>
+  <data name="Set password" xml:space="preserve">
+    <value>ضبط كلمة السر</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="Setup authenticator app" xml:space="preserve">
+    <value>التطبيق الموثق الإعداد</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>إرسال</value>
+    <comment>Areas/Identity/Pages/Account/ForgotPassword.cshtml</comment>
+  </data>
+  <data name="Thank you for confirming your email." xml:space="preserve">
+    <value>شكرا لكم لتأكيد بريدك الإلكتروني.</value>
+    <comment>Areas/Identity/Pages/Account/ConfirmEmail.cshtml</comment>
+  </data>
+  <data name="The argument '{0}' cannot be null, empty or contain only whitespace." xml:space="preserve">
+    <value>لا يمكن أن تكون الوسيطة '{0}' خالية أو فارغة أو تحتوي على مسافة بيضاء فقط.</value>
+    <comment>DataAnnotations: ArgumentIsNullOrWhitespace</comment>
+  </data>
+  <data name="The associated metadata type for type '{0}' contains the following unknown properties or fields: {1}. Please make sure that the names of these members match the names of the properties on the main type." xml:space="preserve">
+    <value>يحتوي نوع البيانات الوصفية المرتبطة بالنوع '{0}' على الخصائص أو الحقول غير المعروفة التالية: {1}. يرجى التأكد من أن أسماء هؤلاء الأعضاء تتطابق مع أسماء الخصائص على النوع الرئيسي.</value>
+    <comment>DataAnnotations: AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties</comment>
+  </data>
+  <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
+    <value>وقد نسي المستعرض الحالي. عند تسجيل الدخول مرة أخرى من هذا المتصفح سيطلب منك لرمز 2FA الخاص بك.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The custom DataType string cannot be null or empty." xml:space="preserve">
+    <value>لا يمكن أن تكون سلسلة DataType المخصصة خالية أو فارغة.</value>
+    <comment>DataAnnotations: DataTypeAttribute_EmptyDataTypeString</comment>
+  </data>
+  <data name="The custom validation type '{0}' must be public." xml:space="preserve">
+    <value>يجب أن يكون نوع التحقق المخصص '{0}' عامًا.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Type_Must_Be_Public</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' does not exist in type '{1}' or is not public and static." xml:space="preserve">
+    <value>طريقة CustomValidationAttribute '{0}' غير موجودة في النوع '{1}' أو ليست عامة وثابتة.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Not_Found</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must match the expected signature: public static ValidationResult {0}(object value, ValidationContext context).  The value can be strongly typed.  The ValidationContext parameter is optional." xml:space="preserve">
+    <value>يجب أن تطابق طريقة CustomValidationAttribute '{0}' في النوع '{1}' التوقيع المتوقع: ثابت ثابت ValidationResult {0} (قيمة الكائن ، سياق ValidationContext). يمكن كتابة القيمة بشدة. المعلمة ValidationContext اختيارية.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Signature</comment>
+  </data>
+  <data name="The CustomValidationAttribute method '{0}' in type '{1}' must return System.ComponentModel.DataAnnotations.ValidationResult.  Use System.ComponentModel.DataAnnotations.ValidationResult.Success to represent success." xml:space="preserve">
+    <value>يجب أن تقوم طريقة CustomValidationAttribute '{0}' في النوع '{1}' بإرجاع System.ComponentModel.DataAnnotations.ValidationResult. استخدم System.ComponentModel.DataAnnotations.ValidationResult.Success لتمثيل النجاح.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Must_Return_ValidationResult</comment>
+  </data>
+  <data name="The CustomValidationAttribute.Method was not specified." xml:space="preserve">
+    <value>لم يتم تحديد CustomValidationAttribute.Method.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_Method_Required</comment>
+  </data>
+  <data name="The CustomValidationAttribute.ValidatorType was not specified." xml:space="preserve">
+    <value>لم يتم تحديد CustomValidationAttribute.ValidatorType.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidatorType_Required</comment>
+  </data>
+  <data name="The external login was added." xml:space="preserve">
+    <value>تم إضافة تسجيل الدخول الخارجي.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The external login was removed." xml:space="preserve">
+    <value>تم إزالة تسجيل الدخول الخارجي.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="The field must be a number." xml:space="preserve">
+    <value>يجب أن يكون الحقل رقمًا.</value>
+    <comment>ModelBinding: HtmlGeneration_NonPropertyValueMustBeNumber</comment>
+  </data>
+  <data name="The field of type {0} must be a string, array or ICollection type." xml:space="preserve">
+    <value>يجب أن يكون حقل النوع {0} عبارة عن سلسلة أو صف أو نوع ICollection.</value>
+    <comment>DataAnnotations: LengthAttribute_InvalidValueType</comment>
+  </data>
+  <data name="The field {0} is invalid." xml:space="preserve">
+    <value>الحقل {0} غير صالح.</value>
+    <comment>DataAnnotations: ValidationAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a number." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} رقماً.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueMustBeNumber</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a maximum length of '{1}'." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} عبارة عن سلسلة أو نوع صفّي بطول أقصى '{1}'.</value>
+    <comment>DataAnnotations: MaxLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string or array type with a minimum length of '{1}'." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} عبارة عن سلسلة أو نوع صفّي بطول لا يقل عن '{1}'.</value>
+    <comment>DataAnnotations: MinLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} عبارة عن سلسلة بطول أقصى {1}.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must be a string with a minimum length of {2} and a maximum length of {1}." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} عبارة عن سلسلة بطول الحد الأدنى {2} والحد الأقصى للطول {1}.</value>
+    <comment>DataAnnotations: StringLengthAttribute_ValidationErrorIncludingMinimum</comment>
+  </data>
+  <data name="The field {0} must be between {1} and {2}." xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} بين {1} و {2}.</value>
+    <comment>DataAnnotations: RangeAttribute_ValidationError</comment>
+  </data>
+  <data name="The field {0} must match the regular expression '{1}'." xml:space="preserve">
+    <value>يجب أن يتطابق الحقل {0} مع التعبير العادي '{1}'.</value>
+    <comment>DataAnnotations: RegexAttribute_ValidationError</comment>
+  </data>
+  <data name="The instance provided must match the ObjectInstance on the ValidationContext supplied." xml:space="preserve">
+    <value>يجب أن يتطابق المثيل المقدم مع ObjectInstance على ValidationContext الموفر.</value>
+    <comment>DataAnnotations: Validator_InstanceMustMatchValidationContextInstance</comment>
+  </data>
+  <data name="The key parameter at position {0} is null. Every key control parameter must be a string." xml:space="preserve">
+    <value>العامل الرئيسي في الموضع {0} خالٍ. يجب أن يكون كل عامل تحكم رئيسي عبارة عن سلسلة.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNull</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' is not a string. Every key control parameter must be a string." xml:space="preserve">
+    <value>العامل المفتاحي في الموضع {0} بالقيمة '{1}' ليس سلسلة. يجب أن يكون كل عامل تحكم رئيسي عبارة عن سلسلة.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyIsNotAString</comment>
+  </data>
+  <data name="The key parameter at position {0} with value '{1}' occurs more than once." xml:space="preserve">
+    <value>يتواجد العامل الرئيسي في الموضع {0} بالقيمة '{1}' أكثر من مرة.</value>
+    <comment>DataAnnotations: UIHintImplementation_ControlParameterKeyOccursMoreThanOnce</comment>
+  </data>
+  <data name="The maximum length must be a nonnegative integer." xml:space="preserve">
+    <value>يجب أن يكون الحد الأقصى للطول عددًا صحيحًا غير سالب.</value>
+    <comment>DataAnnotations: StringLengthAttribute_InvalidMaxLength</comment>
+  </data>
+  <data name="The maximum value '{0}' must be greater than or equal to the minimum value '{1}'." xml:space="preserve">
+    <value>يجب أن تكون القيمة القصوى '{0}' أكبر من أو تساوي الحد الأدنى للقيمة '{1}'.</value>
+    <comment>DataAnnotations: RangeAttribute_MinGreaterThanMax</comment>
+  </data>
+  <data name="The minimum and maximum values must be set." xml:space="preserve">
+    <value>يجب تعيين الحد الأدنى والحد الأقصى للقيم.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Min_And_Max</comment>
+  </data>
+  <data name="The number of control parameters must be even." xml:space="preserve">
+    <value>يجب أن يكون عدد عوامل التحكم متساوٍ.</value>
+    <comment>DataAnnotations: UIHintImplementation_NeedEvenNumberOfControlParameters</comment>
+  </data>
+  <data name="The OperandType must be set when strings are used for minimum and maximum values." xml:space="preserve">
+    <value>يجب تعيين OperandType عند استخدام السلاسل للقيم الدنيا والقصوى.</value>
+    <comment>DataAnnotations: RangeAttribute_Must_Set_Operand_Type</comment>
+  </data>
+  <data name="The pattern must be set to a valid regular expression." xml:space="preserve">
+    <value>يجب ضبط النمط على تعبير منتظم صالح.</value>
+    <comment>DataAnnotations: RegularExpressionAttribute_Empty_Pattern</comment>
+  </data>
+  <data name="The property '{0}' on resource type '{1}' is not a string type." xml:space="preserve">
+    <value>الخاصية '{0}' على نوع المورد '{1}' ليست نوع سلسلة.</value>
+    <comment>DataAnnotations:ValidationAttribute_ResourcePropertyNotStringType</comment>
+  </data>
+  <data name="The property {0}.{1} could not be found." xml:space="preserve">
+    <value>لم يتم العثور على الخاصية {0}. {1}.</value>
+    <comment>DataAnnotations: Common_PropertyNotFound</comment>
+  </data>
+  <data name="The resource type '{0}' does not have an accessible static property named '{1}'." xml:space="preserve">
+    <value>لا يحتوي نوع المورد '{0}' على خاصية ثابتة يمكن الوصول إليها باسم '{1}'.</value>
+    <comment>DataAnnotations: ValidationAttribute_ResourceTypeDoesNotHaveProperty</comment>
+  </data>
+  <data name="The supplied value is invalid for {0}." xml:space="preserve">
+    <value>القيمة المتوفرة غير صالحة لـ {0}.</value>
+    <comment>ModelBinding: ModelState_UnknownValueIsInvalid</comment>
+  </data>
+  <data name="The supplied value is invalid." xml:space="preserve">
+    <value>القيمة المتوفرة غير صالحة.</value>
+    <comment>ModelBinding: ModelState_NonPropertyUnknownValueIsInvalid</comment>
+  </data>
+  <data name="The type '{0}' does not contain a public property named '{1}'." xml:space="preserve">
+    <value>لا يحتوي النوع '{0}' على خاصية عامة تسمى '{1}'.</value>
+    <comment>DataAnnotations: AttributeStore_Unknown_Property</comment>
+  </data>
+  <data name="The type '{0}' needs to represent an enumeration type." xml:space="preserve">
+    <value>يحتاج النوع '{0}' إلى تمثيل نوع التعداد.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeNeedsToBeAnEnum</comment>
+  </data>
+  <data name="The type provided for EnumDataTypeAttribute cannot be null." xml:space="preserve">
+    <value>لا يمكن أن يكون النوع المتاح لـ EnumDataTypeAttribute خاليًا.</value>
+    <comment>DataAnnotations: EnumDataTypeAttribute_TypeCannotBeNull</comment>
+  </data>
+  <data name="The type {0} must implement {1}." xml:space="preserve">
+    <value>يجب على النوع {0} أن يطبق النوع {1}.</value>
+    <comment>DataAnnotations: RangeAttribute_ArbitraryTypeNotIComparable</comment>
+  </data>
+  <data name="The value '{0}' is invalid." xml:space="preserve">
+    <value>القيمة '{0}' غير صالحة.</value>
+    <comment>ModelBinding: HtmlGeneration_ValueIsInvalid, ModelBinding_NullValueNotValid</comment>
+  </data>
+  <data name="The value '{0}' is not valid for {1}." xml:space="preserve">
+    <value>القيمة '{0}' غير صالحة لـ {1}.</value>
+    <comment>ModelBinding: ModelState_AttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value '{0}' is not valid." xml:space="preserve">
+    <value>القيمة '{0}' غير صالحة.</value>
+    <comment>ModelBinding: ModelState_NonPropertyAttemptedValueIsInvalid</comment>
+  </data>
+  <data name="The value for property '{0}' must be of type '{1}'." xml:space="preserve">
+    <value>يجب أن تكون قيمة الخاصية '{0}' من النوع '{1}'.</value>
+    <comment>DataAnnotations: Validator_Property_Value_Wrong_Type</comment>
+  </data>
+  <data name="The {0} field is not a valid credit card number." xml:space="preserve">
+    <value>الحقل {0} ليس رقم بطاقة ائتمان صالحًا.</value>
+    <comment>DataAnnotations: CreditCardAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid e-mail address." xml:space="preserve">
+    <value>الحقل {0} ليس عنوان بريد إلكتروني صالحًا.</value>
+    <comment>DataAnnotations: EmailAddressAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid fully-qualified http, https, or ftp URL." xml:space="preserve">
+    <value>الحقل {0} ليس عنوان URL صالحًا بالكامل أو http أو https أو ftp.</value>
+    <comment>DataAnnotations: UrlAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is not a valid phone number." xml:space="preserve">
+    <value>الحقل {0} ليس رقم هاتف صالحًا.</value>
+    <comment>DataAnnotations: PhoneAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>الحقل {0} مطلوب.</value>
+    <comment>DataAnnotations: RequiredAttribute_ValidationError</comment>
+  </data>
+  <data name="The {0} field only accepts files with the following extensions: {1}" xml:space="preserve">
+    <value>يقبل الحقل {0} فقط الملفات ذات الملحقات التالية: {1}</value>
+    <comment>DataAnnotations: FileExtensionsAttribute_Invalid</comment>
+  </data>
+  <data name="The {0} property has not been set.  Use the {1} method to get the value." xml:space="preserve">
+    <value>لم يتم تعيين الخاصية {0}. استخدم الطريقة {1} للحصول على القيمة.</value>
+    <comment>DataAnnotations: DisplayAttribute_PropertyNotSet</comment>
+  </data>
+  <data name="There are no external authentication services configured. See &lt;a href='{0}'&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services." xml:space="preserve">
+    <value>لا توجد خدمات التوثيق الخارجي تكوينه. انظر &lt;a href='{0}'&gt; هذه المقالة &lt;/a&gt; للحصول على تفاصيل حول إعداد هذا التطبيق ASP.NET لدعم تسجيل الدخول عبر الخدمات الخارجية.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="This account has been locked out, please try again later." xml:space="preserve">
+    <value>تم تأمين هذا الحساب خارج، يرجى المحاولة مرة أخرى في وقت لاحق.</value>
+    <comment>Areas/Identity/Pages/Account/Lockout.cshtml</comment>
+  </data>
+  <data name="To enable QR code generation please read our &lt;a href=&quot;{0}&quot;&gt;documentation&lt;/a&gt;." xml:space="preserve">
+    <value>لتمكين الجيل رمز الاستجابة السريعة يرجى قراءة الوثائق href="{0}"&gt; &lt;a &lt;/A&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
+    <value>لاستخدام التطبيق الموثق تذهب من خلال الخطوات التالية:</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication" xml:space="preserve">
+    <value>توثيق ذو عاملين</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Two-factor authentication (2FA)" xml:space="preserve">
+    <value>اثنين عامل التوثيق (2FA)</value>
+    <comment>Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml</comment>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value>تطوير كلمة السر</value>
+    <comment>Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml</comment>
+  </data>
+  <data name="Use a local account to log in." xml:space="preserve">
+    <value>استخدام حساب محلي لتسجيل الدخول.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use another service to log in." xml:space="preserve">
+    <value>استخدام خدمة أخرى لتسجيل الدخول.</value>
+    <comment>Areas/Identity/Pages/Account/Login.cshtml</comment>
+  </data>
+  <data name="Use this page to detail your site's privacy policy." xml:space="preserve">
+    <value>استخدم هذه الصفحة لسياسة الخصوصية التفاصيل موقعك.</value>
+    <comment>Pages/Privacy.cshtml</comment>
+  </data>
+  <data name="Use this space to summarize your privacy and cookie use policy. &lt;a href=&quot;{0}&quot;&gt;Learn More&lt;/a&gt;.&#xA;        &lt;button type=&quot;button&quot; class=&quot;accept-policy close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot; data-cookie-string=&quot;{1}&quot;&gt;&#xA;            &lt;span aria-hidden=&quot;true&quot;&gt;Accept&lt;/span&gt;&#xA;        &lt;/button&gt;" xml:space="preserve">
+    <value>استخدام هذا الفضاء لتلخيص الخصوصية والكوكيز سياسة الاستخدام الخاصة بك. &lt;a href="{0}"&gt; تعرف على المزيد &lt;/A&gt;.
+        &lt;نوع زر = "زر" الطبقة = "استعرض السياسة وثيق"، رفض البيانات = "تنبيه" الأغنية التسمية = "إغلاق" ملف تعريف الارتباط سلسلة البيانات = "{1}"&gt;
+            &lt;مخبأة الأغنية تمتد = "صحيح"&gt; اقبل &lt;/ SPAN&gt;
+        &lt;/ زر&gt;</value>
+    <comment>Pages/Shared/_CookieConsentPartial.cshtml</comment>
+  </data>
+  <data name="User already has a password set." xml:space="preserve">
+    <value>المستخدم لديه كلمة مرور موضوعة مسبقاً.</value>
+    <comment>Identity: UserAlreadyHasPassword</comment>
+  </data>
+  <data name="User already in role '{0}'." xml:space="preserve">
+    <value>المستخدم موجود في الدور '{0}' مسبقاً.</value>
+    <comment>Identity: UserAlreadyInRole</comment>
+  </data>
+  <data name="User is not in role '{0}'." xml:space="preserve">
+    <value>المستخدم ليس في الدور '{0}'.</value>
+    <comment>Identity: UserNotInRole</comment>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="User name '{0}' is already taken." xml:space="preserve">
+    <value>اسم المستخدم '{0}' مسجل مسبقاَ.</value>
+    <comment>Identity: DuplicateUserName</comment>
+  </data>
+  <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
+    <value>اسم المستخدم '{0}' غير صالح ، يمكن أن يحتوي فقط على أحرف أو أرقام.</value>
+    <comment>Identity: InvalidUserName</comment>
+  </data>
+  <data name="Verification code" xml:space="preserve">
+    <value>رمز التأكيد</value>
+  </data>
+  <data name="Verification Code1" xml:space="preserve">
+    <value>شيفرة التأكيد</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Verification email sent. Please check your email." xml:space="preserve">
+    <value>تم إرسال رسالة التحقق. من فضلك تفقد بريدك الالكتروني.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>التحقق</value>
+    <comment>Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml</comment>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>أهلا بك</value>
+    <comment>Pages/Index.cshtml</comment>
+  </data>
+  <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
+    <value>لم يكن لديك اسم مستخدم المحلية / كلمة المرور لهذا الموقع. إضافة حساب محلي حتى تتمكن من تسجيل الدخول بدون تسجيل الدخول الخارجي.</value>
+    <comment>Areas/Identity/Pages/Account/Manage/SetPassword.cshtml</comment>
+  </data>
+  <data name="You do not have access to this resource." xml:space="preserve">
+    <value>ليس لديك حق الوصول إلى هذه الموارد.</value>
+    <comment>Areas/Identity/Pages/Account/AccessDenied.cshtml</comment>
+  </data>
+  <data name="You have generated new recovery codes." xml:space="preserve">
+    <value>كنت قد ولدت رموز انتعاش جديدة.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
+    <value>لقد طلبت إلى تسجيل الدخول باستخدام رمز الاسترداد. لن يتم تذكر هذا الدخول حتى تقوم بتوفير رمز التطبيق الموثق في السجل أو تعطيل 2FA وتسجيل الدخول مرة أخرى.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml</comment>
+  </data>
+  <data name="You have successfully logged out of the application." xml:space="preserve">
+    <value>قمت بتسجيل الدخول بنجاح للخروج من التطبيق.</value>
+    <comment>Areas/Identity/Pages/Account/Logout.cshtml</comment>
+  </data>
+  <data name="You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
+    <value>لقد مصادقة بنجاح مع على &lt;strong&gt; {0} &lt;/ قوي&gt;. يرجى إدخال عنوان البريد الإلكتروني لهذا الموقع أدناه وانقر على زر التسجيل لإنهاء تسجيل في.</value>
+    <comment>Areas/Identity/Pages/Account/ExternalLogin.cshtml</comment>
+  </data>
+  <data name="Your authenticator app has been verified." xml:space="preserve">
+    <value>تم التحقق من التطبيق الموثق الخاص بك.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
+    <value>وكان مفتاح التطبيق الموثق الخاص بك إعادة تعيين، وسوف تحتاج إلى تكوين التطبيق الموثق باستخدام مفتاح جديد.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
+    <value>تسجيل الدخول الخاص بك محمي مع التطبيق الموثق. أدخل رمز الموثق أدناه.</value>
+    <comment>Areas/Identity/Pages/Account/LoginWith2fa.cshtml</comment>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value>تم تغيير كلمة السر الخاصة بك.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your password has been reset. Please &lt;a href=&quot;{0}&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
+    <value>تم إعادة تعيين كلمة المرور الخاصة بك. يرجى &lt;a href="{0}"&gt; انقر هنا للدخول &lt;/A&gt;.</value>
+    <comment>Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml</comment>
+  </data>
+  <data name="Your password has been set." xml:space="preserve">
+    <value>تم تعيين كلمة المرور الخاصة بك.</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="Your profile has been updated" xml:space="preserve">
+    <value>تم تحديث ملفك الشخصي</value>
+    <comment>Custom back end message</comment>
+  </data>
+  <data name="{0} is not valid." xml:space="preserve">
+    <value>{0} غير صالح.</value>
+    <comment>DataAnnotations: CustomValidationAttribute_ValidationError</comment>
+  </data>
+</root>

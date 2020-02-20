@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using LazZiya.ExpressLocalization;
 using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Identity;
@@ -18,14 +15,14 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<TwoFactorAuthenticationModel> _logger;
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
         private readonly string culture;
 
         public TwoFactorAuthenticationModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<TwoFactorAuthenticationModel> logger,
-            SharedCultureLocalizer loc)
+            ISharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _signInManager = signInManager;

@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using ExpressLocalizationSampleCore3Mvc.Models;
 using LazZiya.ExpressLocalization;
 using LazZiya.TagHelpers.Alerts;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Http;
 
 namespace ExpressLocalizationSampleCore3Mvc.Controllers
 {
@@ -16,9 +18,9 @@ namespace ExpressLocalizationSampleCore3Mvc.Controllers
         private readonly ILogger<HomeController> _logger;
         
         // To localize backend strings inject SahredCultureLocalizer
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
 
-        public HomeController(ILogger<HomeController> logger, SharedCultureLocalizer loc)
+        public HomeController(ILogger<HomeController> logger, ISharedCultureLocalizer loc)
         {
             _logger = logger;
             _loc = loc;
@@ -48,6 +50,17 @@ namespace ExpressLocalizationSampleCore3Mvc.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        
+        public IActionResult OnGetSetCultureCookie(string cltr, string returnUrl)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(cltr)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                );
+
+            return LocalRedirect(returnUrl);
         }
     }
 }

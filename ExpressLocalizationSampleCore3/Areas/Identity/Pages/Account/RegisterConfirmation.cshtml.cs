@@ -15,10 +15,10 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IEmailSender _sender;
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
         private readonly string culture;
 
-        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender, SharedCultureLocalizer loc)
+        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender, ISharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _sender = sender;

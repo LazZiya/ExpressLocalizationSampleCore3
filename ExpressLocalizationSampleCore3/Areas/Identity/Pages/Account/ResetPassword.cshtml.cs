@@ -19,10 +19,10 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
     public class ResetPasswordModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
         private readonly string culture;
 
-        public ResetPasswordModel(UserManager<IdentityUser> userManager, SharedCultureLocalizer loc)
+        public ResetPasswordModel(UserManager<IdentityUser> userManager, ISharedCultureLocalizer loc)
         {
             _userManager = userManager;
             _loc = loc;

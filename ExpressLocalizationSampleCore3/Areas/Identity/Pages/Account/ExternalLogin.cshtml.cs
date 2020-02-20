@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using LazZiya.ExpressLocalization;
+using LazZiya.ExpressLocalization.DataAnnotations;
 using LazZiya.ExpressLocalization.Messages;
 using LazZiya.TagHelpers.Alerts;
 using Microsoft.AspNetCore.Authorization;
@@ -26,7 +27,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger<ExternalLoginModel> _logger;
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
         private readonly string culture;
 
         public ExternalLoginModel(
@@ -34,7 +35,7 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
             UserManager<IdentityUser> userManager,
             ILogger<ExternalLoginModel> logger,
             IEmailSender emailSender,
-            SharedCultureLocalizer loc)
+            ISharedCultureLocalizer loc)
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -53,8 +54,8 @@ namespace ExpressLocalizationSampleCore3.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage = DataAnnotationsErrorMessages.RequiredAttribute_ValidationError)]
-            [EmailAddress(ErrorMessage = DataAnnotationsErrorMessages.EmailAddressAttribute_Invalid)]
+            [ExRequired]
+            [EmailAddress]
             public string Email { get; set; }
         }
 

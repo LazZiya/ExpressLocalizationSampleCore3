@@ -5,11 +5,14 @@
     <UserSecretsId>aspnet-ExpressLocalizationSampleCore3-6CF485F6-BEC6-4E65-AB18-98C44DB970F6</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Areas\Identity\Pages\Account\Manage\ve-65CC.tmp" />
+  </ItemGroup>
+
 
   <ItemGroup>
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.2.0" />
-    <PackageReference Include="LazZiya.TagHelpers" Version="3.1.2" />
-    <PackageReference Include="LazZiya.TagHelpers.Localization" Version="1.3.0" />
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="4.0.0-preview1" />
+    <PackageReference Include="LazZiya.TagHelpers" Version="4.0.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />

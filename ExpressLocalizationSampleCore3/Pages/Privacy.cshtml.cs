@@ -15,9 +15,9 @@ namespace ExpressLocalizationSampleCore3.Pages
         private readonly ILogger<PrivacyModel> _logger;
 
         // To localize backend strings inject SahredCultureLocalizer
-        private readonly SharedCultureLocalizer _loc;
+        private readonly ISharedCultureLocalizer _loc;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger, SharedCultureLocalizer loc)
+        public PrivacyModel(ILogger<PrivacyModel> logger, ISharedCultureLocalizer loc)
         {
             _logger = logger;
             _loc = loc;
