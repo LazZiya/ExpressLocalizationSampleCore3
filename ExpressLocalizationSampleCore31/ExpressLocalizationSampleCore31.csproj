@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="4.0.0-preview1" />
-    <PackageReference Include="LazZiya.TagHelpers" Version="4.0.0-preview1" />
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="4.0.0" />
+    <PackageReference Include="LazZiya.TagHelpers" Version="4.0.0" />
   </ItemGroup>
 
 
