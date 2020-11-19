@@ -1,11 +1,12 @@
+> ### UPDATE Nov. 2020 : 
+> Do you want even more exciting localization experience? If yes, please check [XLocalizer](https://github.com/LazZiya/XLocalizer), a localization nuget with online translation support and auto resource creating.
+> * Repo: [XLocalizer](https://github.com/LazZiya/XLocalizer)
+> * Samples: [XLocalizer Samples](https://github.com/LazZiya/XLocalizer.Samples)
+> * Article: [XLocalizer for Asp.Net Core](http://ziyad.info/en/articles/1040-XLocalizer_for_Asp_Net_Core)
+
 # ExpressLocalization sample - Asp.Net Core 3.0
 Fully localized Asp.Net Core 3.0 project, based on the basic template from Visual Studio.
 Localized using [LazZiya.ExpressLocalization][1] and [LazZiya.TagHelpers.Localization][2].
-
-> ### UPDATE Nov. 2020 : 
-> If you are looking for a more exciting localization experience, please see [XLocalizer](https://github.com/XLocalizer), a localization nuget with online translation support and auto resource creating.
-> * Repo: [XLocalizer](https://github.com/XLocalizer)
-> * Samples: [XLocalizer Samples](https://github.com/XLocalizer.Samples)
 
 ## DotNetCore Version
 This project uses **dotnetcore3.0**.
