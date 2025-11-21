@@ -2,7 +2,7 @@
 > Do you want even more exciting localization experience? If yes, please check [XLocalizer](https://github.com/LazZiya/XLocalizer), a localization nuget with online translation support and auto resource creating.
 > * Repo: [XLocalizer](https://github.com/LazZiya/XLocalizer)
 > * Samples: [XLocalizer Samples](https://github.com/LazZiya/XLocalizer.Samples)
-> * Article: [XLocalizer for Asp.Net Core](http://ziyad.info/en/articles/1040-XLocalizer_for_Asp_Net_Core)
+> * Article: [XLocalizer for Asp.Net Core](http://ziya.info.tr/en/articles/1040-XLocalizer_for_Asp_Net_Core)
 
 # ExpressLocalization sample - Asp.Net Core 3.0
 Fully localized Asp.Net Core 3.0 project, based on the basic template from Visual Studio.
